@@ -1,62 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Tarmo</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-            <a href="index.html">
-                <img class="logo" src="img/Suomen_merimuseo_vaakalogo.png" alt="Suomen merimuseon logo"
-                title="Tarmo - Etusivulle">
-            </a>
-            
-                <button class="dropdown black_buttons">
-                    <span>Kansi</span>
-                    <div class="dropdown-content">
-                    <p>Hello World!</p>
-                    </div>
-                </button>
-                <button class="dropdown black_buttons">
-                    <span>Kansirakennus</span>
-                    <div class="dropdown-content">
-                    <p>Hello World!</p>
-                    </div>
-                </button>
-                <button class="dropdown black_buttons">
-                    <span>Pääkansi</span>
-                    <div class="dropdown-content">
-                    <p>Hello World!</p>
-                    </div>
-                </button>
-                <button class="dropdown black_buttons">
-                    <span>Konekansi</span>
-                    <div class="dropdown-content">
-                    <p>Hello World!</p>
-                    </div>
-                </button>
+      <a href="index.html">
+        <img
+          class="logo"
+          src="img/Suomen_merimuseo_vaakalogo.png"
+          alt="Suomen merimuseon logo"
+          title="Tarmo - Etusivulle"
+        />
+      </a>
 
-                <button class="dropdown black_buttons space_in_navbar">
-                    <span>FI</span>
-                    <div class="dropdown-content">
-                    <p>Hello World!</p>
-                    </div>
-                </button>
-            <input type="text" placeholder="Search..">
+      <button class="dropdown black-buttons">
+        <span>Kansi</span>
+        <div class="dropdown-content">
+          <p>Hello World!</p>
+        </div>
+      </button>
+      <button class="dropdown black-buttons">
+        <span>Kansirakennus</span>
+        <div class="dropdown-content">
+          <p>Hello World!</p>
+        </div>
+      </button>
+      <button class="dropdown black-buttons">
+        <span>Pääkansi</span>
+        <div class="dropdown-content">
+          <p>Hello World!</p>
+        </div>
+      </button>
+      <button class="dropdown black-buttons">
+        <span>Konekansi</span>
+        <div class="dropdown-content">
+          <p>Hello World!</p>
+        </div>
+      </button>
 
+      <button class="dropdown black-buttons space-in-navbar">
+        <span>FI</span>
+        <div class="dropdown-content">
+          <p>Hello World!</p>
+        </div>
+      </button>
+      <input type="text" placeholder="Search.." />
     </nav>
 
-    <main>
-        <img class="panorama" src="img/ocean.jpeg" alt="360 kuvat">
+    <main class="main-flex">
+      <section>
+        <img class="panorama" src="img/ocean.jpeg" alt="360 kuvat" />
+      </section>
 
+      <aside id="aside-window" class="aside">
+        <div class="info-flex">
+            <h1>Title</h1>
+            <button id="info-button" class="black-buttons">Info</button>
+        </div>
+        <div id="info-content" class="info-hidden" >
+            <h2 class="info-title">Päälikön toimisto</h2>
+            <p>Jäänmurtajan päällikkö oli usein mukana komentosillalla, varsinkin hankalissa paikoissa. 
+                Lisäksi tehtäviin kuului muiden muassa kansi- ja talouspuolen väen palkkaaminen, 
+                miehistöluettelon ylläpito ja käteiskassan hoito. Aluksen kassassa saattoi olla 
+                suuriakin rahasummia, koska palkat maksettiin käteisenä vielä 1960-luvulla.
+                 Myös emäntä tarvitsi rahaa elintarvikkeiden ostoon. Jäänmurtajien avustustoiminta 
+                 oli muuten maksutonta, mutta hinauksesta veloitettiin erikseen ja näistäkin rahoista 
+                 vastasi päällikkö.</p>
+            
+                 <img class="info-image" src="img/paalikonhytti.jpeg" alt="Kuva työhakemuksesta">
+                 <p>Heinäkuulta 1967 on säilynyt tämä työhakemus. Hakemus kannatti, sillä toinen pojista 
+                     otettiin Tarmolle ”konekalleksi” ja toinen sai paikan jäänmurtaja Sammolta.</p>
+
+            <img class="floor-plan-image" src="img/pohjapiirustus2.png" alt="Kannen pohjapiirustus">
+
+        </div>
+        <div id="control-buttons" class="controls-hidden">
+            <button class="button-zoom-text">Suurenna tekstiä</button>
+            <button class="button-previous">Edellinen</button>
+            <button class="button-next">Seuraava</button>
+        </div>
+      </aside>
     </main>
-
-    <aside>
-
-    </aside>
-    
-</body>
+  </body>
+  <script type="text/javascript" src="index.js"></script>
 </html>

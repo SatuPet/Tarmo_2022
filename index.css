@@ -3,6 +3,46 @@
     margin: 0;
   }
 
+body{
+    background-color: #101010;
+    /* max-width vain esimerkki! */
+    max-width: 1024px;
+}
+
+p{
+    color: #101010;
+    font-family: roman-font;
+}
+
+ h2, h3{
+     color: #101010;
+     font-family: roman-font;
+ } 
+
+ h1{
+     color: #fff;
+ }
+ button{
+     font-family: bold-font;
+ }
+
+ @font-face {
+    font-family: bold-font;
+    src: url(/fonts/Linotype-Univers-65Bold.otf);
+  }
+  @font-face {
+    font-family: roman-font;
+    src: url(/fonts/Linotype-Univers-55Roman.otf);
+  }
+  @font-face {
+    font-family: light-font;
+    src: url(/fonts/Linotype-Univers-45Light.otf);
+  }
+  @font-face {
+    font-family: belton-font;
+    src: url(/fonts/Benton-Cyrillic.otf);
+  }
+
 nav{
     background-color: #101010;
     height: 80px;
@@ -17,13 +57,14 @@ nav{
     width: auto;
 }
 
-.black_buttons{
+.black-buttons{
     background-color: #101010;
     color: #fff;
     border: 0;
+    cursor: pointer;
 }
 
-.space_in_navbar{
+.space-in-navbar{
     margin-left: auto;
 }
 
@@ -51,8 +92,120 @@ input{
     display: block;
   }
 
+  .main-flex{
+      display: flex;
+  }
+
   .panorama{
     width: 100vw;
     height: auto;
     background-repeat: no-repeat;
+    margin-top: 80px;
+    position: fixed;
   }
+
+  .aside{
+    width: 15em;
+    height: 50px;
+    background-color: #101010;
+    position: fixed;
+    right: 0;
+    margin-top: 80px;
+    display: grid;
+
+    transition: all 1s ease;
+  }
+
+  .aside-open{
+    width: 30em;
+    height: 100vh;
+}
+
+  .info-flex{
+      display: flex;
+      justify-content: space-around;
+      height: 50px;
+      align-items: center;
+  }
+
+  .info-title{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+
+  .info-hidden{
+    display: none !important;   
+}
+
+#info-content{
+    background-color: #fff;
+    margin: 2%;
+    overflow-y: scroll;
+    padding: 2%;
+    margin-bottom: 13em;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-image{
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.floor-plan-image{
+    width: 60%;
+    height: auto;
+    align-self: center;
+    margin-top: 5%;
+}
+
+.controls-hidden{
+    display: none !important;
+}
+
+#control-buttons{
+    width: 30em;
+    height: 15vh;
+    background-color: #101010;
+    position: inherit;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-row-gap: 10px;
+
+}
+
+.button-zoom-text{
+    grid-column: 7 / span 3;
+    width: 80%;
+    height: 85%;
+    justify-self: center;
+}
+
+.button-previous{
+    grid-column: span 3;
+    grid-row: 2;
+    width: 80%;
+    height: 85%;
+    justify-self: center;
+}
+
+.button-next{
+    grid-column: 7 / span 3;
+    grid-row:  2;
+    width: 80%;
+    height: 85%;
+    justify-self: center;
+}
+
+
+
+
+
+
+
+
