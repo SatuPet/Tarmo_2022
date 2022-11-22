@@ -60,9 +60,61 @@ window.onclick = function(event) {
   }
 }
 
+//NAVI JUTUT
 
+document.addEventListener('click', e => {
+  const isDropdownButton = e.target.matches('.linkki');
+  if (!isDropdownButton && e.target.closest('.droppi') != null) return;
 
+  let activeDropdown;
+  let activeButton = e.target.closest('.linkki');
+  if (isDropdownButton) {
+      activeDropdown = e.target.closest('.droppi');
+      console.log(activeDropdown.classList);
+      // toi on se divi
+      //activeDropdown.classList.add('active');
+      activeDropdown.classList.toggle('active');
+  }
 
+  document.querySelectorAll('.droppi.active').forEach(droppi => {
+      if (droppi === activeDropdown) return;
+      droppi.classList.remove('active');
+  });
+
+});
+
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") {
+      //let activeDropdown = e.target.closest('.droppi');
+      document.querySelectorAll('.droppi.active').forEach(droppi => {
+          droppi.classList.remove('active');
+      });
+  }
+});
+
+const hederi = document.querySelector('header');
+const kissa = document.querySelector('#kissa');
+let active;
+kissa.addEventListener('click', e => {
+  console.log('vittu');
+  if (active) {
+      hederi.classList.remove('mobiili');
+      document.querySelectorAll('.droppi').forEach(droppi => {
+          droppi.style.display = "none";
+      });
+      active = false;
+      return;
+  }
+  if (!active) {
+      hederi.classList.toggle('mobiili');
+      kissa2.classList.remove('hide');
+      document.querySelectorAll('.droppi').forEach(droppi => {
+      droppi.style.display = "flex";
+      });
+      active = true;
+      return;
+  }
+});
 
 
 

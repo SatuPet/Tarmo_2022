@@ -8,49 +8,94 @@
     <title>Tarmo</title>
   </head>
   <body>
-    <nav>
-      <a href="index.html">
-        <img
-          class="logo"
-          src="img/Suomen_merimuseo_vaakalogo.png"
-          alt="Suomen merimuseon logo"
-          title="Tarmo - Etusivulle"
-        />
-      </a>
-
-      <button class="dropdown black-buttons">
-        <span>Kansi</span>
-        <div class="dropdown-content">
-          <p>Hello World!</p>
-        </div>
-      </button>
-      <button class="dropdown black-buttons">
-        <span>Kansirakennus</span>
-        <div class="dropdown-content">
-          <p>Hello World!</p>
-        </div>
-      </button>
-      <button class="dropdown black-buttons">
-        <span>Pääkansi</span>
-        <div class="dropdown-content">
-          <p>Hello World!</p>
-        </div>
-      </button>
-      <button class="dropdown black-buttons">
-        <span>Konekansi</span>
-        <div class="dropdown-content">
-          <p>Hello World!</p>
-        </div>
-      </button>
-
-      <button class="dropdown black-buttons space-in-navbar">
-        <span>FI</span>
-        <div class="dropdown-content">
-          <p>Hello World!</p>
-        </div>
-      </button>
-      <input type="text" placeholder="Search.." />
-    </nav>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="img/Suomen_merimuseo_vaakalogo.png" alt="Suomen merimuseon logo"
+            title="Tarmo - Etusivulle">
+        </a>
+        <div id="kissa"></div>
+        <nav>
+            <!-- KANSI -->
+            <div class="droppi">
+                <button class="linkki">KANSI</button>
+                <ul class="droppi-menu">
+                    <li><a href="https://tarmo.kansallismuseo.fi/" target="_blank">Ulko- eli sääkansi</a></li>
+                    <li><a href="#">Pelastusvenekansi</a></li>
+                </ul>
+            </div>
+    
+            <!-- KANSIRANKENNUS -->
+            <div class="droppi">
+                <button id="otsikko" class="linkki" aria-expanded="false" aria-controls="lista">KANSIRAKENNUS</button>
+                <div id="lista" role="region" aria-labelledby="otsikko" class="droppi-menu">
+                    <a href="#">Komentosilta</a>
+                    <a href="#">Komentosilta</a>
+                    <a href="#">Ruorihytti</a>
+                    <a href="#">Karttahytti</a>
+                    <a href="#">Päällikön toimisto</a>
+                    <a href="#">Päällikön hytti</a>
+                    <a href="#">Salonki</a>
+                    <a href="#">Emännoitsijän hytti</a>
+                    <a href="#">Pentteri</a>
+                    <a href="#">Radiohytti</a>
+                </div>
+            </div>
+    
+            <!-- PÄÄKANSI -->   
+            <div class="droppi">
+                <button class="linkki">PÄÄKANSI</button>
+                <div class="droppi-menu">
+                    <a href="#">Miehistön pesuhuone</a>
+                    <a href="#">Päällystömessi</a>
+                    <a href="#">Keittiö</a>
+                    <a href="#">Konetyöverstas</a>
+                    <a href="#">1. perämihen hytti</a>
+                    <a href="#">Päällystön kylpyhuone</a>
+                    <a href="#">2. konemestarin hytti</a>
+                    <a href="#">1. konemestarin hytti</a>
+                    <a href="#">Konepäällikön hytti</a>
+                    <a href="#">Vararuorihuone</a>
+                    <a href="#">Donkeymiehen hytti</a>
+                    <a href="#">Miehistömessi</a>
+                    <a href="#">Talousvarasto</a>
+                    <a href="#">Talousapulaisen hytti</a>
+                    <a href="#">Miehistön hytti 1</a>
+                    <a href="#">Maalivarasto</a>
+                    <a href="#">Lyhtyvarasto</a>
+                    <a href="#">Miehistön hytti 2</a>
+                    <a href="#">Miehistön hytti 3</a>
+                </div>
+            </div>
+    
+            <!-- KONEKANSI -->
+            <div class="droppi">
+                <button class="linkki">KONEKANSI</button>
+                <div class="droppi-menu">
+                    <a href="#">Peräkonehuone</a>
+                    <a href="#">Kattilahuone</a>
+                    <a href="#">Keulakonehuone</a>
+                    <a href="#">Sauna</a>
+                </div>
+            </div>
+    
+            <!-- TESTINAPPI -->
+            <!-- <div class="droppi">
+                <button class="linkki">TESTINAPPI</button>
+                <div class="droppi-menu"        >
+                    <a class="kontentti" href="https://tarmo.kansallismuseo.fi/" target="_blank">HYTTI</a>
+                    <a href="#">HYTTI</a>
+                    <a href="#">HYTTI</a>
+                </div>
+            </div> -->
+            <div class="hide droppi kissa2">
+                <button class="linkki">FI</button>
+                <div class="droppi-menu">
+                    <p>ENG</p>
+                </div>
+            </div>
+            <input class="hide kissa2" type="text" placeholder="Search..">
+        </nav>
+    </header>
 
     <main class="main-flex">
       <section>

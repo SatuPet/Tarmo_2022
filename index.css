@@ -51,14 +51,23 @@ p{
     src: url(/fonts/Benton-Cyrillic.otf);
   }
 
-nav{
-    background-color: #101010;
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    align-items: center;
+header {
+  background-color: #101010;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
 }
+
+nav{
+  background-color: #101010;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin-left: 0.75rem;
+}
+
 
 .logo{
     height: 70px;
@@ -108,8 +117,6 @@ input{
     width: 100vw;
     height: auto;
     background-repeat: no-repeat;
-    margin-top: 80px;
-    position: fixed;
   }
 
   .aside{
@@ -301,10 +308,116 @@ input{
 
 }
 
+/* navi jutut */
 
+.linkki {
+  background-color: #101010;
+  cursor: pointer;
+  color: #fff;
+  border: 0;
+  padding: 0.5rem;
+  letter-spacing: 1.5px;
+}
 
+.droppi {
+  position: relative;
+  background-color: #101010;
+  margin: 0.5rem;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+}
 
+.droppi-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  left: -0.25rem;
+  top: calc(100% + 0.5rem);
+  width: 180px;
+  color: #fff;
+  background-color: #101010;
+  border-left: 1px solid #fff;
+  padding: .5rem;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in-out;
+}
 
+.droppi-menu > li {
+  font-family: light-font;
+  padding: 0.25rem;
+}
 
+.droppi.active > .linkki + .droppi-menu {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+}
 
+#kissa {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  display: none;
+}
 
+input {
+  color: #101010;
+}
+
+.mobiili {
+  justify-content: flex-start;
+  align-content: flex-start;
+  height: auto;
+}
+
+@media (max-width: 1020px) {
+  .hide {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .droppi {
+    display: none;
+    height: auto;
+  }
+
+  .droppi-menu {
+    position: relative;
+    left: 1.5rem;
+  }
+
+  .droppi > button {
+    align-self: flex-start;
+  }
+
+  .droppi.active {
+    height: auto;
+    z-index: 88;
+  }
+  
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  #kissa {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+
+}
