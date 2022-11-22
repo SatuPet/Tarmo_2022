@@ -797,10 +797,6 @@ body.view-control-buttons .viewControlButton {
   border-radius: 5px;
 }
 
-main {
-  width: 100vw;
-  height: 100vh;
-}
 
 
 
@@ -886,4 +882,12 @@ main {
     border-radius: 50%;
   }
 
+}
+
+@media (min-width: 1024px) {
+  .viewControlButton {
+    width: 5%;
+    padding-top: 5%;
+
+  }
 }
