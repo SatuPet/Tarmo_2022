@@ -309,6 +309,14 @@ input{
 }
 
 /* navi jutut */
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
 
 .linkki {
   background-color: #101010;
@@ -348,6 +356,12 @@ input{
 
 .droppi-menu > li {
   font-family: light-font;
+  padding: 0.25rem;
+}
+
+.droppi-menu > a {
+  font-family: light-font;
+  color: #fff;
   padding: 0.25rem;
 }
 
