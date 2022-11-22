@@ -59,30 +59,95 @@
 
       <aside id="aside-window" class="aside">
         <div class="info-flex">
-            <h1>Title</h1>
-            <button id="info-button" class="black-buttons">Info</button>
+          <h1 alt="Otsikko" title="Otsikkon oikea nimi">Title</h1>
+          <button
+            id="info-button"
+            class="black-buttons"
+            alt="Informaatio sivusta"
+          >
+            Info
+          </button>
         </div>
-        <div id="info-content" class="info-hidden" >
-            <h2 class="info-title">Päälikön toimisto</h2>
-            <p>Jäänmurtajan päällikkö oli usein mukana komentosillalla, varsinkin hankalissa paikoissa. 
-                Lisäksi tehtäviin kuului muiden muassa kansi- ja talouspuolen väen palkkaaminen, 
-                miehistöluettelon ylläpito ja käteiskassan hoito. Aluksen kassassa saattoi olla 
-                suuriakin rahasummia, koska palkat maksettiin käteisenä vielä 1960-luvulla.
-                 Myös emäntä tarvitsi rahaa elintarvikkeiden ostoon. Jäänmurtajien avustustoiminta 
-                 oli muuten maksutonta, mutta hinauksesta veloitettiin erikseen ja näistäkin rahoista 
-                 vastasi päällikkö.</p>
-            
-                 <img class="info-image" src="img/paalikonhytti.jpeg" alt="Kuva työhakemuksesta">
-                 <p>Heinäkuulta 1967 on säilynyt tämä työhakemus. Hakemus kannatti, sillä toinen pojista 
-                     otettiin Tarmolle ”konekalleksi” ja toinen sai paikan jäänmurtaja Sammolta.</p>
+        <div id="info-content" class="info-hidden">
+          <h2 class="info-title">Päälikön toimisto</h2>
+          <p
+            role="title"
+            alt="teksti versio yksi"
+            aria-label="teksti versio kaksi"
+            id="text"
+          >
+            Jäänmurtajan päällikkö oli usein mukana komentosillalla, varsinkin
+            hankalissa paikoissa. Lisäksi tehtäviin kuului muiden muassa kansi-
+            ja talouspuolen väen palkkaaminen, miehistöluettelon ylläpito ja
+            käteiskassan hoito. Aluksen kassassa saattoi olla suuriakin
+            rahasummia, koska palkat maksettiin käteisenä vielä 1960-luvulla.
+            Myös emäntä tarvitsi rahaa elintarvikkeiden ostoon. Jäänmurtajien
+            avustustoiminta oli muuten maksutonta, mutta hinauksesta
+            veloitettiin erikseen ja näistäkin rahoista vastasi päällikkö.
+          </p>
 
-            <img class="floor-plan-image" src="img/pohjapiirustus2.png" alt="Kannen pohjapiirustus">
+          <button id="myBtn" class="image-button">
+            <img
+              class="info-image"
+              src="img/paalikonhytti.jpeg"
+              alt="Kuva työhakemuksesta"
+            />
+          </button>
 
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <button class="close" alt="Sulje ikkuna" title="Sulje ikkuna">
+                <span>&times;</span>
+              </button>
+              <img
+                class="modal-image"
+                src="img/paalikonhytti.jpeg"
+                alt="Kuva työhakemuksesta"
+              />
+            </div>
+          </div>
+
+          <p>
+            Heinäkuulta 1967 on säilynyt tämä työhakemus. Hakemus kannatti,
+            sillä toinen pojista otettiin Tarmolle ”konekalleksi” ja toinen sai
+            paikan jäänmurtaja Sammolta.
+          </p>
+
+          <img
+            class="floor-plan-image"
+            src="img/pohjapiirustus2.png"
+            alt="Kannen pohjapiirustus"
+          />
+          
         </div>
         <div id="control-buttons" class="controls-hidden">
-            <button class="button-zoom-text">Suurenna tekstiä</button>
-            <button class="button-previous">Edellinen</button>
-            <button class="button-next">Seuraava</button>
+          <p class="zoom-text" alt="Suurenna tekstiä">
+            <button class="button-zoom-text button-a" style="font-size: small">
+              <span
+                onclick="document.getElementById('text').style.fontSize = '100%' "
+              >
+                A
+              </span>
+            </button>
+            <button class="button-zoom-text button-a" style="font-size: medium">
+              <span
+                onclick="document.getElementById('text').style.fontSize = '150%' "
+              >
+                A
+              </span>
+            </button>
+            <button class="button-zoom-text button-a" style="font-size: large">
+              <span
+                onclick="document.getElementById('text').style.fontSize = '200%' "
+              >
+                A
+              </span>
+            </button>
+          </p>
+          <button class="button-previous">Edellinen</button>
+          <button class="button-next">Seuraava</button>
         </div>
       </aside>
     </main>

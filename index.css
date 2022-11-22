@@ -12,6 +12,8 @@ body{
 p{
     color: #101010;
     font-family: roman-font;
+    max-width: 500px;
+    align-self: center;
 }
 
  h2, h3{
@@ -24,6 +26,12 @@ p{
  }
  button{
      font-family: bold-font;
+ }
+ button:active{
+     border: #fff 1px solid;
+ }
+ .button-a:focus{
+     border-bottom: #fff 2px solid;
  }
 
  @font-face {
@@ -153,12 +161,24 @@ input{
     height: auto;
     margin-top: 5%;
     margin-bottom: 2%;
+    align-self: center;
+    max-width: 500px;
+}
+
+.modal-image{
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-self: center;
+    max-width: 700px;
 }
 .floor-plan-image{
     width: 60%;
     height: auto;
     align-self: center;
     margin-top: 5%;
+    max-width: 300px;
 }
 
 .controls-hidden{
@@ -167,39 +187,118 @@ input{
 
 #control-buttons{
     width: 30em;
-    height: 15vh;
+    height: 17vh;
     background-color: #101010;
     position: inherit;
     bottom: 0;
     right: 0;
     display: grid;
-    grid-template-columns: repeat(9, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: repeat(2, minmax(0, 1fr));
     grid-row-gap: 10px;
 
 }
 
-.button-zoom-text{
-    grid-column: 7 / span 3;
-    width: 80%;
+.zoom-text{
+    grid-column: 2;
+    max-width: 80%;
     height: 85%;
     justify-self: center;
+    background-color: #101010;
+    color: #fff;
+    border: 0;
+    font-size: small;
+}
+.button-zoom-text{
+    max-width: 60%;
+    height: 85%;
+    justify-self: center;
+    background-color: #101010;
+    color: #fff;
+    border: 0;
+    letter-spacing: 1em;
 }
 
 .button-previous{
-    grid-column: span 3;
     grid-row: 2;
-    width: 80%;
+    max-width: 60%;
     height: 85%;
     justify-self: center;
+    background-color: #101010;
+    color: #fff;
+    border: 0;
 }
 
 .button-next{
-    grid-column: 7 / span 3;
     grid-row:  2;
-    width: 80%;
+    max-width: 120px;
     height: 85%;
     justify-self: center;
+    background-color: #101010;
+    color: #fff;
+    border: 0;
+}
+
+.image-button{
+    border: none;
+    background-color: transparent;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+@media (max-width:850px)
+{
+  .aside{
+      width: 100vw;
+    }
+    #control-buttons {
+        width: 100vw;
+        
+    }
+
 }
 
 
