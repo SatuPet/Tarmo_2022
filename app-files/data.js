@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-1peramiehenhytti",
-      "name": "1. perämiehenhytti",
+      "name": "1. perämiehen hytti",
       "levels": [
         {
           "tileSize": 256,
