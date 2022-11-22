@@ -884,10 +884,10 @@ body.view-control-buttons .viewControlButton {
 
 }
 
+
 @media (min-width: 1024px) {
   .viewControlButton {
     width: 5%;
     padding-top: 5%;
-
   }
 }
