@@ -363,7 +363,17 @@ a {
 .droppi-menu > a {
   font-family: light-font;
   color: #fff;
-  padding: 0.25rem;
+  padding: 0.5rem;
+}
+
+.droppi.active {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: .5rem;
+}
+
+.droppi > button {
+  font-family: roman-font;
 }
 
 .droppi.active > .linkki + .droppi-menu {
@@ -407,7 +417,8 @@ input {
 
   .droppi-menu {
     position: relative;
-    left: 1.5rem;
+    left: .5rem;
+    top: .25rem;
   }
 
   .droppi > button {
@@ -433,10 +444,17 @@ input {
 
   #kissa {
     display: block;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: 1rem;
+  }
+
+  .kissa2 {
+    margin-left: .5rem;
   }
 
 }
