@@ -3,7 +3,7 @@
   <!-- Head -->
   <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
   <head>
-    <title>Tarmo</title>
+    <title>Tarmo</title> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
     <style> @-ms-viewport { width: device-width; } </style>
@@ -100,9 +100,13 @@
             </div>
         </div> -->
         <div class="hide droppi kissa2">
-            <button class="linkki">FI</button>
+            <button onclick="setLanguage('fi')" lang="fi" class="linkki">FI</button>
+            <button onclick="setLanguage('en')" lang="en" class="linkki">ENG</button>
+            <button onclick="setLanguage('swe')" lang="swe" class="linkki">SWE</button>
             <div class="droppi-menu">
-                <p>ENG</p>
+              <button onclick="setLanguage('fi')">FI</button>
+              <button onclick="setLanguage('en')">ENG</button>
+              <button onclick="setLanguage('swe')">SWE</button>
             </div>
         </div>
         <input class="hide kissa3" type="text" placeholder="Search..">
@@ -185,6 +189,13 @@
           </div>
           <div id="info-content" class="info-hidden">
             <h2 class="info-title">Päällikön toimisto</h2>
+
+
+            <div lang="fi">Karamalmi Kampus</div>
+            <div lang="en">Karamalmi Campus</div>
+            <div lang="swe">Karamalmi ruotsinkielellä</div>
+
+
             <p
               role="title"
               alt="teksti versio yksi"
@@ -200,6 +211,7 @@
               avustustoiminta oli muuten maksutonta, mutta hinauksesta
               veloitettiin erikseen ja näistäkin rahoista vastasi päällikkö.
             </p>
+            
   
             <button id="myBtn" class="image-button" data-image-source="img/paalikonhytti.jpeg">
               <img
