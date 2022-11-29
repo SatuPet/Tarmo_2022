@@ -100,11 +100,15 @@
             </div>
         </div> -->
         <div class="hide droppi kissa2">
-            <button class="linkki">FI</button>
-            <div class="droppi-menu">
-                <p>ENG</p>
-            </div>
-        </div>
+          <button onclick="setLanguage('fi')" lang="fi" class="linkki">FI</button>
+          <button onclick="setLanguage('en')" lang="en" class="linkki">ENG</button>
+          <button onclick="setLanguage('swe')" lang="swe" class="linkki">SWE</button>
+          <div class="droppi-menu">
+            <button onclick="setLanguage('fi')">FI</button>
+            <button onclick="setLanguage('en')">ENG</button>
+            <button onclick="setLanguage('swe')">SWE</button>
+          </div>
+      </div>
         <input class="hide kissa3" type="text" placeholder="Search..">
     </nav>
     </header>
@@ -185,6 +189,11 @@
           </div>
           <div id="info-content" class="info-hidden">
             <h2 class="info-title">Päällikön toimisto</h2>
+
+            <div lang="fi">Karamalmi Kampus</div>
+            <div lang="en">Karamalmi Campus</div>
+            <div lang="swe">Karamalmi ruotsinkielellä</div>
+
             <p
               role="title"
               alt="teksti versio yksi"

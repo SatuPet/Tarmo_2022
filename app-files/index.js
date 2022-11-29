@@ -121,6 +121,44 @@ if (!active) {
 }
 });
 
+//change language
+
+// hide all languages
+const hideAllLanguageElements = () => {
+  document.querySelectorAll('p[lang="en"], a[lang="en"], div[lang="en"], button[lang="en"]').
+  forEach(text => text.style.display = 'none');
+  document.querySelectorAll('p[lang="fi"], a[lang="fi"], div[lang="fi"], button[lang="fi"]').
+  forEach(text => text.style.display = 'none');
+  document.querySelectorAll('p[lang="swe"], a[lang="swe"], div[lang="swe"], button[lang="swe"]').
+  forEach(text => text.style.display = 'none');
+}
+
+// show selected language
+const showLanguageElements = (language) => {
+  document.querySelectorAll(`p[lang="${language}"], a[lang="${language}"], div[lang="${language}"], button[lang="${language}"]`).
+  forEach(text => text.style.display = 'block');
+}
+// save languege to localStorage and show it
+const setLanguage = (language) => {
+  localStorage.setItem('languageSettings', language);
+  hideAllLanguageElements();
+  showLanguageElements(language);
+};
+
+// localStorage choose first finnish language then something else
+const languageInit = () => {
+  const languageSettings = localStorage.getItem('languageSettings');
+  if (languageSettings === null) {
+    localStorage.setItem('languageSettings', 'fi');
+    hideAllLanguageElements();
+    showLanguageElements('fi');
+  }
+  else{
+    hideAllLanguageElements();
+    showLanguageElements(languageSettings);
+  }
+}
+languageInit();
 
 
 
