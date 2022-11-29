@@ -30,10 +30,10 @@
         <!-- KANSI -->
         <div class="droppi">
             <button class="linkki">KANSI</button>
-            <ul class="droppi-menu">
-                <li><a href="https://tarmo.kansallismuseo.fi/" target="_blank">Ulko- eli sääkansi</a></li>
-                <li><a href="#">Pelastusvenekansi</a></li>
-            </ul>
+            <div class="droppi-menu">
+              <a href="https://tarmo.kansallismuseo.fi/" target="_blank">Ulko- eli sääkansi</a>
+              <a href="#">Pelastusvenekansi</a>
+          </div>
         </div>
 
         <!-- KANSIRANKENNUS -->
@@ -99,7 +99,7 @@
                 <a href="#">HYTTI</a>
             </div>
         </div> -->
-        <div class="hide droppi kissa2">
+      <div class="hide droppi kissa2">
           <button onclick="setLanguage('fi')" lang="fi" class="linkki">FI</button>
           <button onclick="setLanguage('en')" lang="en" class="linkki">ENG</button>
           <button onclick="setLanguage('swe')" lang="swe" class="linkki">SWE</button>
@@ -109,7 +109,10 @@
             <button onclick="setLanguage('swe')">SWE</button>
           </div>
       </div>
-        <input class="hide kissa3" type="text" placeholder="Search..">
+      <form autocomplete="off">
+        <input id="search" class="hide kissa3" type="text" placeholder="Search..">
+        <ul class="list"></ul>
+      </form>
     </nav>
     </header>
 
@@ -295,6 +298,7 @@
 
     <script src="data.js"></script>
     <script src="index.js"></script>
+    <script src="search.js"></script>
 
   </body>
 </html>

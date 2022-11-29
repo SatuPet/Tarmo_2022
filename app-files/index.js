@@ -87,6 +87,8 @@ document.querySelectorAll('.droppi.active').forEach(droppi => {
 
 });
 
+//document.getElementById('aside-window').classList.toggle('aside-open');
+
 document.addEventListener("keydown", e => {
 if (e.key === "Escape") {
     //let activeDropdown = e.target.closest('.droppi');
@@ -94,6 +96,11 @@ if (e.key === "Escape") {
         droppi.classList.remove('active');
     });
     modal.style.display = "none";
+    console.log(document.getElementById('aside-window').classList.contains('aside-open'));
+    console.log(modal.style.display === "");
+    if (modal.style.display === "") {
+      document.getElementById('aside-window').classList.remove('aside-open')
+    }
 }
 });
 
