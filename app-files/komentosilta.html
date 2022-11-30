@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+  <head>
+    <title>Tarmo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+    <style> @-ms-viewport { width: device-width; } </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="vendor/reset.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <!-- Body -->
+  <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+  <body class="single-scene view-control-buttons">
+
+    <!-- Header -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+    <header>
+      <a href="index.html">
+        <img class="logo" src="img/Suomen_merimuseo_vaakalogo.png" alt="Suomen merimuseon logo"
+        title="Tarmo - Etusivulle">
+    </a>
+    <div id="kissa"></div>
+    <nav>
+      <!-- KANSI -->
+      <div class="droppi">
+          <button class="linkki">KANSI</button>
+          <div class="droppi-menu">
+            <a href="sääkansi.html"  >Ulko- eli sääkansi</a>
+            <a href="pelastusvenekansi.html">Pelastusvenekansi</a>
+        </div>
+      </div>
+
+      <!-- KANSIRANKENNUS -->
+      <div class="droppi">
+          <button id="otsikko" class="linkki" aria-expanded="false" aria-controls="lista">KANSIRAKENNUS</button>
+          <div id="lista" role="region" aria-labelledby="otsikko" class="droppi-menu">
+              <a href="komentosilta.html">Komentosilta</a>
+              <a href="ruorihytti.html">Ruorihytti</a>
+              <a href="karttahytti.html">Karttahytti</a>
+              <a href="päälliköntoimisto.html">Päällikön toimisto</a>
+              <a href="päällikönhytti.html">Päällikön hytti</a>
+              <a href="salonki.html">Salonki</a>
+              <a href="emännöitsijänhytti.html">Emännoitsijän hytti</a>
+              <a href="pentteri.html">Pentteri</a>
+              <a href="radiohytti.html">Radiohytti</a>
+          </div>
+      </div>
+
+      <!-- PÄÄKANSI -->   
+      <div class="droppi">
+          <button class="linkki">PÄÄKANSI</button>
+          <div class="droppi-menu">
+              <a href="miehistöpesuhuone.html">Miehistön pesuhuone</a>
+              <a href="päällystömessi.html">Päällystömessi</a>
+              <a href="keittiö.html">Keittiö</a>
+              <a href="konetyöverstas.html">Konetyöverstas</a>
+              <a href="1perämiehenhytti.html">1. perämihen hytti</a>
+              <a href="päällystönkylpyhuone.html">Päällystön kylpyhuone</a>
+              <a href="2konemestarinhytti.html">2. konemestarin hytti</a>
+              <a href="1konemestarinhytti.html">1. konemestarin hytti</a>
+              <a href="konepäällikönhytti.html">Konepäällikön hytti</a>
+              <a href="vararuorihuone.html">Vararuorihuone</a>
+              <a href="donkeymiehenhytti.html">Donkeymiehen hytti</a>
+              <a href="miehistömessi.html">Miehistömessi</a>
+              <a href="talousvarasto.html">Talousvarasto</a>
+              <a href="talousapulaisenhytti.html">Talousapulaisen hytti</a>
+              <a href="miehistöhytti2.html">Miehistön hytti 1</a>
+              <a href="maalivarasto.html">Maalivarasto</a>
+              <a href="lyhtyvarasto.html">Lyhtyvarasto</a>
+              <a href="miehistöhytti3.html">Miehistön hytti 2</a>
+              <a href="miehistöhytti1.html">Miehistön hytti 3</a>
+          </div>
+      </div>
+
+      <!-- KONEKANSI -->
+      <div class="droppi">
+          <button class="linkki">KONEKANSI</button>
+          <div class="droppi-menu">
+              <a href="peräkonehuone.html">Peräkonehuone</a>
+              <a href="kattilahuone.html">Kattilahuone</a>
+              <a href="keulakonehuone.html">Keulakonehuone</a>
+              <a href="sauna.html">Sauna</a>
+          </div>
+      </div>
+
+        <!-- TESTINAPPI -->
+        <!-- <div class="droppi">
+            <button class="linkki">TESTINAPPI</button>
+            <div class="droppi-menu"        >
+                <a class="kontentti" href="https://tarmo.kansallismuseo.fi/"  >HYTTI</a>
+                <a href="#">HYTTI</a>
+                <a href="#">HYTTI</a>
+            </div>
+        </div> -->
+      <div class="hide droppi kissa2">
+          <button onclick="setLanguage('fi')" lang="fi" class="linkki">FI</button>
+          <button onclick="setLanguage('en')" lang="en" class="linkki">ENG</button>
+          <button onclick="setLanguage('swe')" lang="swe" class="linkki">SWE</button>
+          <div class="droppi-menu">
+            <button onclick="setLanguage('fi')">FI</button>
+            <button onclick="setLanguage('en')">ENG</button>
+            <button onclick="setLanguage('swe')">SWE</button>
+          </div>
+      </div>
+      <form autocomplete="off">
+        <input id="search" class="hide kissa3" type="text" placeholder="Search..">
+        <ul class="list"></ul>
+      </form>
+    </nav>
+    </header>
+
+    <!-- Panorama -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+    <div id="pano"></div>
+
+    <div id="sceneList">
+      <ul class="scenes">
+          <a href="javascript:void(0)" class="scene" data-id="2-komentosilta">
+            <li class="text">1perämiehenhytti</li>
+          </a>
+      </ul>
+    </div>
+
+
+    <!-- Selvitä mitkä koodin kannalta tarpeellisia -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+
+    <a href="javascript:void(0)" id="autorotateToggle">
+      <img class="icon off" src="img/play.png">
+      <img class="icon on" src="img/pause.png">
+    </a>
+
+    <a href="javascript:void(0)" id="fullscreenToggle">
+      <img class="icon off" src="img/fullscreen.png">
+      <img class="icon on" src="img/windowed.png">
+    </a>
+
+    <a href="javascript:void(0)" id="sceneListToggle">
+      <img class="icon off" src="img/expand.png">
+      <img class="icon on" src="img/collapse.png">
+    </a>
+
+
+    <!-- Main -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+
+      <main class="main-flex">
+        <div id="panoNav">
+          <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1 tooltip">
+            <img class="icon" src="img/up.png">
+            <span class="tooltiptext">Ylös</span>
+          </a>
+          <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2 tooltip">
+            <img class="icon" src="img/down.png">
+            <span class="tooltiptext">Alas</span>
+          </a>
+          <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3 tooltip">
+            <img class="icon" src="img/left.png">
+            <span class="tooltiptext">Vasen</span>
+          </a>
+          <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4 tooltip">
+            <img class="icon" src="img/right.png">
+            <span class="tooltiptext">Oikea</span>
+          </a>
+          <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5 tooltip">
+            <img class="icon" src="img/plus.png">
+            <span class="tooltiptext">Lähennä</span>
+          </a>
+          <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6 tooltip">
+            <img class="icon" src="img/minus.png">
+            <span class="tooltiptext">Loitonna</span>
+          </a>
+        </div>
+  
+        <aside id="aside-window" class="aside">
+          <div class="info-flex">
+            <h1 alt="Otsikko" title="Otsikkon oikea nimi">1. perämiehen hytti</h1>
+            <button
+              id="info-button"
+              class="black-buttons"
+              alt="Informaatio sivusta"
+            >
+              Info
+            </button>
+          </div>
+          <div id="info-content" class="info-hidden">
+            <h2 class="info-title">Päällikön toimisto</h2>
+
+            <div lang="fi">Karamalmi Kampus</div>
+            <div lang="en">Karamalmi Campus</div>
+            <div lang="swe">Karamalmi ruotsinkielellä</div>
+
+            <p
+              role="title"
+              alt="teksti versio yksi"
+              aria-label="teksti versio kaksi"
+              id="text"
+            >
+              Jäänmurtajan päällikkö oli usein mukana komentosillalla, varsinkin
+              hankalissa paikoissa. Lisäksi tehtäviin kuului muiden muassa kansi-
+              ja talouspuolen väen palkkaaminen, miehistöluettelon ylläpito ja
+              käteiskassan hoito. Aluksen kassassa saattoi olla suuriakin
+              rahasummia, koska palkat maksettiin käteisenä vielä 1960-luvulla.
+              Myös emäntä tarvitsi rahaa elintarvikkeiden ostoon. Jäänmurtajien
+              avustustoiminta oli muuten maksutonta, mutta hinauksesta
+              veloitettiin erikseen ja näistäkin rahoista vastasi päällikkö.
+            </p>
+  
+            <button id="myBtn" class="image-button" data-image-source="img/paalikonhytti.jpeg">
+              <img
+                class="info-image"
+                src="img/paalikonhytti.jpeg"
+                alt="Kuva työhakemuksesta"
+              />
+            </button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <button class="close" alt="Sulje ikkuna" title="Sulje ikkuna">
+                  <span>&times;</span>
+                </button>
+                <img
+                  class="modal-image"
+                  src="img/paalikonhytti.jpeg"
+                  alt="Kuva työhakemuksesta"
+                />
+              </div>
+            </div>
+
+            <p>
+              Heinäkuulta 1967 on säilynyt tämä työhakemus. Hakemus kannatti,
+              sillä toinen pojista otettiin Tarmolle ”konekalleksi” ja toinen sai
+              paikan jäänmurtaja Sammolta.
+            </p>
+  
+
+            <button id="myBtn" class="image-button" data-image-source="img/pohjapiirustus2.png">
+              <img
+              class="floor-plan-image"
+              src="img/pohjapiirustus2.png"
+              alt="Kannen pohjapiirustus"
+            />
+            </button>
+            
+          </div>
+          <div id="control-buttons" class="controls-hidden">
+            <p class="zoom-text" alt="Suurenna tekstiä">
+              <button class="button-zoom-text button-a" style="font-size: small">
+                <span
+                  onclick="document.getElementById('text').style.fontSize = '100%' "
+                >
+                  A
+                </span>
+              </button>
+              <button class="button-zoom-text button-a" style="font-size: medium">
+                <span
+                  onclick="document.getElementById('text').style.fontSize = '150%' "
+                >
+                  A
+                </span>
+              </button>
+              <button class="button-zoom-text button-a" style="font-size: large">
+                <span
+                  onclick="document.getElementById('text').style.fontSize = '200%' "
+                >
+                  A
+                </span>
+              </button>
+            </p>
+            <button class="button-previous">Edellinen</button>
+            <button class="button-next">Seuraava</button>
+          </div>
+        </aside>
+      </main>
+
+
+
+    <!-- Footer -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+    <Footer>
+
+    </Footer>
+
+    <!-- JS links -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+    <script src="vendor/screenfull.min.js" ></script>
+    <script src="vendor/bowser.min.js" ></script>
+    <script src="vendor/marzipano.js" ></script>
+
+    <script src="./js/data/komentosilta.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/search.js"></script>
+
+  </body>
+</html>
