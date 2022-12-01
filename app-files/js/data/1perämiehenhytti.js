@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "15-1peramiehenhytti",
-      "name": "1perämiehenhytti",
+      "name": "1peramiehenhytti.html",
       "levels": [
         {
           "tileSize": 256,
@@ -32,7 +32,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
   ],
-  
+
   "name": "Project Title",
   "settings": {
     "mouseViewMode": "drag",

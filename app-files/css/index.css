@@ -11,7 +11,7 @@ body{
 
 p{
     color: #101010;
-    font-family: bold-font;
+    font-family: roman-font;
     max-width: 500px;
     align-self: center;
 }
@@ -149,12 +149,14 @@ input{
       justify-content: space-around;
       height: 50px;
       align-items: center;
+      font-family: roman-font;
   }
 
   .info-title{
     text-align: center;
     margin-top: 10%;
     margin-bottom: 5%;
+    font-family: bold-font;
   }
 
   .info-hidden{
@@ -186,14 +188,14 @@ input{
     margin-top: 5%;
     margin-bottom: 5%;
     align-self: center;
-    max-width: 700px;
+    max-width: 900px;
 }
 .floor-plan-image{
-    width: 60%;
-    height: auto;
-    align-self: center;
-    margin-top: 5%;
-    max-width: 300px;
+  width: 100%;
+  height: auto;
+  align-self: center;
+  margin-top: 5%;
+  max-width: 800px;
 }
 
 .controls-hidden{

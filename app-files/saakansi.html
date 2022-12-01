@@ -178,6 +178,90 @@
       <img class="icon on" src="img/collapse.png" />
     </a>
 
+    <!-- Aside -->
+
+    <aside id="aside-window" class="aside">
+      <div class="info-flex">
+        <h1 lang="fi" alt="" title="Sääkansi">Sääkansi</h1>
+        <h1 lang="en" alt="" title="Weather deck">Weather deck</h1>
+        <h1 lang="swe" alt="" title="Väder deck">Väder deck</h1>
+        <button
+          id="info-button"
+          class="black-buttons"
+          alt="Informaatio sivusta"
+        >
+          Info
+        </button>
+      </div>
+      <div id="info-content" class="info-hidden">
+        <h2 lang="fi" class="info-title">Sääkansi</h2>
+        <h2 lang="en" class="info-title">Weather deck</h2>
+        <h2 lang="swe" class="info-title">Väder deck</h2>
+
+        <button
+          id="myBtn"
+          class="image-button"
+          data-image-source="img/tarmo-images/saakansi.jpeg"
+        >
+          <img
+            lang="fi"
+            class="info-image"
+            src="img/tarmo-images/saakansi.jpeg"
+            alt="Kuva Tarmon kannesta jäisellä merellä. 
+              Picture of Tarmo's deck on the icy sea.
+              Bild på Tarmos däck på det iskalla havet"
+          />
+        </button>
+
+        <p lang="fi" id="text" style="margin-bottom: 5%">
+          Tarmo avustamassa jäisellä merellä.
+        </p>
+
+        <button id="myBtn" class="image-button" data-image-source="">
+          <img class="floor-plan-image" src="" alt="" />
+        </button>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <button class="close" alt="Sulje ikkuna" title="Sulje ikkuna">
+            <span>&times;</span>
+          </button>
+          <img class="modal-image" src="" alt="" />
+        </div>
+      </div>
+
+      <div id="control-buttons" class="controls-hidden">
+        <p class="zoom-text" alt="Suurenna tekstiä">
+          <button class="button-zoom-text button-a" style="font-size: small">
+            <span
+              onclick="document.getElementById('text').style.fontSize = '100%' "
+            >
+              A
+            </span>
+          </button>
+          <button class="button-zoom-text button-a" style="font-size: medium">
+            <span
+              onclick="document.getElementById('text').style.fontSize = '150%' "
+            >
+              A
+            </span>
+          </button>
+          <button class="button-zoom-text button-a" style="font-size: large">
+            <span
+              onclick="document.getElementById('text').style.fontSize = '200%' "
+            >
+              A
+            </span>
+          </button>
+        </p>
+        <button class="button-previous">Edellinen</button>
+        <button class="button-next">Seuraava</button>
+      </div>
+    </aside>
+
     <!-- Main -->
     <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
 
@@ -232,108 +316,6 @@
           <span class="tooltiptext">Loitonna</span>
         </a>
       </div>
-
-      <aside id="aside-window" class="aside">
-        <div class="info-flex">
-          <h1 alt="Otsikko" title="Otsikkon oikea nimi">Sääkansi</h1>
-          <button
-            id="info-button"
-            class="black-buttons"
-            alt="Informaatio sivusta"
-          >
-            Info
-          </button>
-        </div>
-        <div id="info-content" class="info-hidden">
-          <h2 class="info-title">Päällikön toimisto</h2>
-
-          <div lang="fi">Karamalmi Kampus</div>
-          <div lang="en">Karamalmi Campus</div>
-          <div lang="swe">Karamalmi ruotsinkielellä</div>
-
-          <button
-            id="myBtn"
-            class="image-button"
-            data-image-source="img/paalikonhytti.jpeg"
-          >
-            <img
-              class="info-image"
-              src="img/paalikonhytti.jpeg"
-              alt="Kuva työhakemuksesta"
-            />
-          </button>
-
-          <p
-            lang="fi"
-            role="title"
-            alt="teksti versio yksi"
-            aria-label="teksti versio kaksi"
-            id="text"
-          >
-            Tarmo avustamassa jäisellä merellä.
-          </p>
-
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <button class="close" alt="Sulje ikkuna" title="Sulje ikkuna">
-                <span>&times;</span>
-              </button>
-              <img
-                class="modal-image"
-                src="img/paalikonhytti.jpeg"
-                alt="Kuva työhakemuksesta"
-              />
-            </div>
-          </div>
-
-          <p>
-            Heinäkuulta 1967 on säilynyt tämä työhakemus. Hakemus kannatti,
-            sillä toinen pojista otettiin Tarmolle ”konekalleksi” ja toinen sai
-            paikan jäänmurtaja Sammolta.
-          </p>
-
-          <button
-            id="myBtn"
-            class="image-button"
-            data-image-source="img/pohjapiirustus2.png"
-          >
-            <img
-              class="floor-plan-image"
-              src="img/pohjapiirustus2.png"
-              alt="Kannen pohjapiirustus"
-            />
-          </button>
-        </div>
-        <div id="control-buttons" class="controls-hidden">
-          <p class="zoom-text" alt="Suurenna tekstiä">
-            <button class="button-zoom-text button-a" style="font-size: small">
-              <span
-                onclick="document.getElementById('text').style.fontSize = '100%' "
-              >
-                A
-              </span>
-            </button>
-            <button class="button-zoom-text button-a" style="font-size: medium">
-              <span
-                onclick="document.getElementById('text').style.fontSize = '150%' "
-              >
-                A
-              </span>
-            </button>
-            <button class="button-zoom-text button-a" style="font-size: large">
-              <span
-                onclick="document.getElementById('text').style.fontSize = '200%' "
-              >
-                A
-              </span>
-            </button>
-          </p>
-          <button class="button-previous">Edellinen</button>
-          <button class="button-next">Seuraava</button>
-        </div>
-      </aside>
     </main>
 
     <!-- Footer -->

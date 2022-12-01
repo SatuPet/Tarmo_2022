@@ -132,17 +132,17 @@ if (!active) {
 
 // hide all languages
 const hideAllLanguageElements = () => {
-  document.querySelectorAll('p[lang="en"], a[lang="en"], div[lang="en"], button[lang="en"]').
+  document.querySelectorAll('p[lang="en"], a[lang="en"], div[lang="en"], button[lang="en"], h1[lang="en"], h2[lang="en"], img[lang="en"]').
   forEach(text => text.style.display = 'none');
-  document.querySelectorAll('p[lang="fi"], a[lang="fi"], div[lang="fi"], button[lang="fi"]').
+  document.querySelectorAll('p[lang="fi"], a[lang="fi"], div[lang="fi"], button[lang="fi"], h1[lang="fi"], h2[lang="fi"], img[lang="fi"]').
   forEach(text => text.style.display = 'none');
-  document.querySelectorAll('p[lang="swe"], a[lang="swe"], div[lang="swe"], button[lang="swe"]').
+  document.querySelectorAll('p[lang="swe"], a[lang="swe"], div[lang="swe"], button[lang="swe"], h1[lang="swe"], h2[lang="swe"], img[lang="swe"]').
   forEach(text => text.style.display = 'none');
 }
 
 // show selected language
 const showLanguageElements = (language) => {
-  document.querySelectorAll(`p[lang="${language}"], a[lang="${language}"], div[lang="${language}"], button[lang="${language}"]`).
+  document.querySelectorAll(`p[lang="${language}"], a[lang="${language}"], div[lang="${language}"], button[lang="${language}"], h1[lang="${language}"], h2[lang="${language}"], img[lang="${language}"]`).
   forEach(text => text.style.display = 'block');
 }
 // save languege to localStorage and show it

@@ -80,9 +80,9 @@
           <div class="droppi-menu">
             <a href="miehistopesuhuone.html">Miehistön pesuhuone</a>
             <a href="paallystomessi.html">Päällystömessi</a>
-            <a href="keittiö.html">Keittiö</a>
-            <a href="konetyöverstas.html">Konetyöverstas</a>
-            <a href="1perämiehenhytti.html">1. perämihen hytti</a>
+            <a href="keittio.html">Keittiö</a>
+            <a href="konetyoverstas.html">Konetyöverstas</a>
+            <a href="1peramiehenhytti.html">1. perämihen hytti</a>
             <a href="paallystonkylpyhuone.html">Päällystön kylpyhuone</a>
             <a href="2konemestarinhytti.html">2. konemestarin hytti</a>
             <a href="1konemestarinhytti.html">1. konemestarin hytti</a>
@@ -159,7 +159,7 @@
           class="scene"
           data-id="21-donkeymiehenhytti"
         >
-          <li class="text">1perämiehenhytti</li>
+          <li class="text">1peramiehenhytti.html</li>
         </a>
       </ul>
     </div>
@@ -181,6 +181,131 @@
       <img class="icon off" src="img/expand.png" />
       <img class="icon on" src="img/collapse.png" />
     </a>
+
+    <!-- Aside -->
+
+    <aside id="aside-window" class="aside">
+      <div class="info-flex">
+        <h1 lang="fi" alt="" title="Donkeymiehen hytti">Donkeymiehen hytti</h1>
+        <h1 lang="en" alt="" title="Donkeyman's cabin">Donkeyman's cabin</h1>
+        <h1 lang="swe" alt="" title="Donkeymannens hytt">Donkeymannens hytt</h1>
+        <button
+          id="info-button"
+          class="black-buttons"
+          alt="Informaatio sivusta"
+        >
+          Info
+        </button>
+      </div>
+      <div id="info-content" class="info-hidden">
+        <h2 lang="fi" class="info-title">Donkeymiehen hytti</h2>
+        <h2 lang="en" class="info-title">Donkeyman's cabin</h2>
+        <h2 lang="swe" class="info-title">DDonkeymannens hytt</h2>
+
+        <p lang="fi" id="text" style="margin-bottom: 5%">
+          Koneapulainen, tunkki, donkeymies oli konemiesten työnjohtaja.
+          Donkeymies hoiti ajon aikana pumppaukset ja vettä kattiloihin. Hän
+          teki laivalla myös pieniä korjaustöitä. Donkeymies-nimitys on muisto
+          ajalta, jolloin pumppujen, vinttureiden ja muiden laitteiden
+          voimanlähteenä oli aasi tai hevonen. Tämän jälkeen voimanlähteeksi
+          tuli apukattila, jolle periytyi nimitys donkeykattila ja kattilan
+          hoitajasta tuli donkeymies.
+        </p>
+
+        <p lang="en" id="text" style="margin-bottom: 2%">
+          The donkeyman worked with the engines. He took care of ship's various
+          pumps and boilers' water supply.
+        </p>
+        <p lang="en" id="text" style="margin-bottom: 5%">
+          The word 'donkey' in this connection meant a small steam engine which
+          powered the pumps, winches and other equipment. It was a 19th century
+          model of donkey powered whim.
+        </p>
+
+        <p lang="swe" id="text" style="margin-bottom: 2%">
+          KDonkeymannen, maskinassistenten, var maskinmännens arbetsledare.
+          Donkeymannen skötte pumpningarna och ångpannornas vattenförsörjning då
+          fartyget var i trafik
+        </p>
+        <p lang="swe" id="text" style="margin-bottom: 5%">
+          Uttrycket har sitt ursprung i en liten ångmaskin som drev pumpar och
+          andra maskiner. Den var alltså åsne- eller hästkraftens moderna
+          version (engelskans donkey = åsna).
+        </p>
+
+        <button
+          id="myBtn"
+          class="image-button"
+          data-image-source="img/tarmo-images/donkeymiehen-hytti.jpeg"
+        >
+          <img
+            class="info-image"
+            src="img/tarmo-images/donkeymiehen-hytti.jpeg"
+            alt="Donkeymies töissä kenttäahjon kärjessä.
+            Donkeyman at work at the head of the field drive.
+            Donkeymannen på jobbet i spetsen för fältet enheten."
+          />
+        </button>
+
+        <p lang="fi" id="text" style="margin-bottom: 5%">
+          Donkeymies Onni Hurtén sepän töissä kenttäahjon ääressä J/M Tarmolla
+          vuonna 1957.
+        </p>
+
+        <button
+          id="myBtn"
+          class="image-button"
+          data-image-source="img/floor-plans/donkeymiehen-hytti.png"
+        >
+          <img
+            class="floor-plan-image"
+            src="img/floor-plans/donkeymiehen-hytti.png"
+            alt="Kannen pohjapiirustus.
+            Deck floor plan.
+            Däcks planlösning."
+          />
+        </button>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <button class="close" alt="Sulje ikkuna" title="Sulje ikkuna">
+            <span>&times;</span>
+          </button>
+          <img class="modal-image" src="" alt="" />
+        </div>
+      </div>
+
+      <div id="control-buttons" class="controls-hidden">
+        <p class="zoom-text" alt="Suurenna tekstiä">
+          <button class="button-zoom-text button-a" style="font-size: small">
+            <span
+              onclick="document.getElementById('text').style.fontSize = '100%' "
+            >
+              A
+            </span>
+          </button>
+          <button class="button-zoom-text button-a" style="font-size: medium">
+            <span
+              onclick="document.getElementById('text').style.fontSize = '150%' "
+            >
+              A
+            </span>
+          </button>
+          <button class="button-zoom-text button-a" style="font-size: large">
+            <span
+              onclick="document.getElementById('text').style.fontSize = '200%' "
+            >
+              A
+            </span>
+          </button>
+        </p>
+        <button class="button-previous">Edellinen</button>
+        <button class="button-next">Seuraava</button>
+      </div>
+    </aside>
 
     <!-- Main -->
     <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
@@ -236,114 +361,6 @@
           <span class="tooltiptext">Loitonna</span>
         </a>
       </div>
-
-      <aside id="aside-window" class="aside">
-        <div class="info-flex">
-          <h1 alt="Otsikko" title="Otsikkon oikea nimi">1. perämiehen hytti</h1>
-          <button
-            id="info-button"
-            class="black-buttons"
-            alt="Informaatio sivusta"
-          >
-            Info
-          </button>
-        </div>
-        <div id="info-content" class="info-hidden">
-          <h2 class="info-title">Päällikön toimisto</h2>
-
-          <div lang="fi">Karamalmi Kampus</div>
-          <div lang="en">Karamalmi Campus</div>
-          <div lang="swe">Karamalmi ruotsinkielellä</div>
-
-          <p
-            role="title"
-            alt="teksti versio yksi"
-            aria-label="teksti versio kaksi"
-            id="text"
-          >
-            Jäänmurtajan päällikkö oli usein mukana komentosillalla, varsinkin
-            hankalissa paikoissa. Lisäksi tehtäviin kuului muiden muassa kansi-
-            ja talouspuolen väen palkkaaminen, miehistöluettelon ylläpito ja
-            käteiskassan hoito. Aluksen kassassa saattoi olla suuriakin
-            rahasummia, koska palkat maksettiin käteisenä vielä 1960-luvulla.
-            Myös emäntä tarvitsi rahaa elintarvikkeiden ostoon. Jäänmurtajien
-            avustustoiminta oli muuten maksutonta, mutta hinauksesta
-            veloitettiin erikseen ja näistäkin rahoista vastasi päällikkö.
-          </p>
-
-          <button
-            id="myBtn"
-            class="image-button"
-            data-image-source="img/paalikonhytti.jpeg"
-          >
-            <img
-              class="info-image"
-              src="img/paalikonhytti.jpeg"
-              alt="Kuva työhakemuksesta"
-            />
-          </button>
-
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <button class="close" alt="Sulje ikkuna" title="Sulje ikkuna">
-                <span>&times;</span>
-              </button>
-              <img
-                class="modal-image"
-                src="img/paalikonhytti.jpeg"
-                alt="Kuva työhakemuksesta"
-              />
-            </div>
-          </div>
-
-          <p>
-            Heinäkuulta 1967 on säilynyt tämä työhakemus. Hakemus kannatti,
-            sillä toinen pojista otettiin Tarmolle ”konekalleksi” ja toinen sai
-            paikan jäänmurtaja Sammolta.
-          </p>
-
-          <button
-            id="myBtn"
-            class="image-button"
-            data-image-source="img/pohjapiirustus2.png"
-          >
-            <img
-              class="floor-plan-image"
-              src="img/pohjapiirustus2.png"
-              alt="Kannen pohjapiirustus"
-            />
-          </button>
-        </div>
-        <div id="control-buttons" class="controls-hidden">
-          <p class="zoom-text" alt="Suurenna tekstiä">
-            <button class="button-zoom-text button-a" style="font-size: small">
-              <span
-                onclick="document.getElementById('text').style.fontSize = '100%' "
-              >
-                A
-              </span>
-            </button>
-            <button class="button-zoom-text button-a" style="font-size: medium">
-              <span
-                onclick="document.getElementById('text').style.fontSize = '150%' "
-              >
-                A
-              </span>
-            </button>
-            <button class="button-zoom-text button-a" style="font-size: large">
-              <span
-                onclick="document.getElementById('text').style.fontSize = '200%' "
-              >
-                A
-              </span>
-            </button>
-          </p>
-          <button class="button-previous">Edellinen</button>
-          <button class="button-next">Seuraava</button>
-        </div>
-      </aside>
     </main>
 
     <!-- Footer -->

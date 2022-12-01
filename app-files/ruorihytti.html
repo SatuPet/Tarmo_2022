@@ -80,9 +80,9 @@
           <div class="droppi-menu">
             <a href="miehistopesuhuone.html">Miehistön pesuhuone</a>
             <a href="paallystomessi.html">Päällystömessi</a>
-            <a href="keittiö.html">Keittiö</a>
-            <a href="konetyöverstas.html">Konetyöverstas</a>
-            <a href="1perämiehenhytti.html">1. perämihen hytti</a>
+            <a href="keittio.html">Keittiö</a>
+            <a href="konetyoverstas.html">Konetyöverstas</a>
+            <a href="1peramiehenhytti.html">1. perämihen hytti</a>
             <a href="paallystonkylpyhuone.html">Päällystön kylpyhuone</a>
             <a href="2konemestarinhytti.html">2. konemestarin hytti</a>
             <a href="1konemestarinhytti.html">1. konemestarin hytti</a>
@@ -155,7 +155,7 @@
     <div id="sceneList">
       <ul class="scenes">
         <a href="javascript:void(0)" class="scene" data-id="3-ruorihytti">
-          <li class="text">1perämiehenhytti</li>
+          <li class="text">1peramiehenhytti.html</li>
         </a>
       </ul>
     </div>
@@ -177,6 +177,141 @@
       <img class="icon off" src="img/expand.png" />
       <img class="icon on" src="img/collapse.png" />
     </a>
+
+    <!-- Aside -->
+
+    <aside id="aside-window" class="aside">
+      <div class="info-flex">
+        <h1 lang="fi" alt="" title="Ruorihytti">Ruorihytti</h1>
+        <h1 lang="en" alt="" title="Wheel house">Wheel house</h1>
+        <h1 lang="swe" alt="" title="Styrhytt">Styrhytt</h1>
+        <button
+          id="info-button"
+          class="black-buttons"
+          alt="Informaatio sivusta"
+        >
+          Info
+        </button>
+      </div>
+      <div id="info-content" class="info-hidden">
+        <h2 lang="fi" class="info-title">Ruorihytti</h2>
+        <h2 lang="en" class="info-title">Wheel house</h2>
+        <h2 lang="swe" class="info-title">Styrhytt</h2>
+
+        <p lang="fi" id="text" style="margin-bottom: 5%">
+          Ruorinpito oli yleensä matruusien tehtävä. Ruorissa oltiin tunti
+          kerrallaan, minkä jälkeen siirryttiin muihin tehtäviin.
+        </p>
+        <p lang="en" id="text" style="margin-bottom: 5%">
+          Part of the navigation and radio equipment is located in the wheel
+          house and chart room. During the first years each helm and look-out
+          watch lasted two hours, later only one hour.
+        </p>
+        <p lang="swe" id="text" style="margin-bottom: 5%">
+          I styr- och karthytterna finns fartygets navigerings- och
+          radioapparatur. Under de första åren räckte styr- och utkiksturerna
+          två timmar, under senare år en timme.
+        </p>
+
+        <button
+          id="myBtn"
+          class="image-button"
+          data-image-source="img/tarmo-images/ruorihytti-1.jpeg"
+        >
+          <img
+            class="info-image"
+            src="img/tarmo-images/ruorihytti-1.jpeg"
+            alt="Kuva puupalikasta jonka ympärillä oli ohje.
+            A picture of a block of wood with instructions around it.
+            En bild på ett träblock med instruktioner runt omkring."
+          />
+        </button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <button class="close" alt="Sulje ikkuna" title="Sulje ikkuna">
+              <span>&times;</span>
+            </button>
+            <img class="modal-image" src="" alt="" />
+          </div>
+        </div>
+
+        <p lang="fi" id="text" style="margin-bottom: 2%">
+          Avustettaville laivoille annettiin määräyksiä vauhdista ja koneen
+          käytöstä äänimerkein. Ennen liikkeelle lähtöä varmistettiin, että
+          kaikilla avustettavilla aluksilla oli muiden muassa
+          äänimerkkitaulukko.
+        </p>
+        <p lang="fi" id="text" style="margin-bottom: 5%">
+          Jos se puuttui joltain alukselta, jäänmurtaja ajoi hitaasti laivajonon
+          sivuitse ja laivan kannelle heitettiin puupalikka, jonka ympärille
+          tarvittavat ohjeet oli kääritty. Palikoita käytettiin ainakin
+          talvisotaan asti, sen jälkeen VHF-laitteet alkoivat yleistyä
+          laivoissa.
+        </p>
+
+        <button
+          id="myBtn"
+          class="image-button"
+          data-image-source="img/tarmo-images/ruorihytti-2.jpeg"
+        >
+          <img
+            class="info-image"
+            src="img/tarmo-images/ruorihytti-2.jpeg"
+            alt="Kuvassa lippu jossa neljä väriä (keltainen, sininen, punainen ja musta).
+            Bilden visar en flagga med fyra färger (gul, blå, röd och svart).
+            The picture shows a flag with four colors (yellow, blue, red and black)."
+          />
+        </button>
+
+        <p lang="fi" id="text" style="margin-bottom: 5%">
+          Ruorihytin kaapissa säilytettiin viestilippuja ja -viirejä. Tämä lippu
+          vastaa kirjainta Z, tai viestiä ”Tarvitsen hinaajan”.
+        </p>
+
+        <button
+          id="myBtn"
+          class="image-button"
+          data-image-source="img/floor-plans/ruori-ja-karttahytti.png"
+        >
+          <img
+            class="floor-plan-image"
+            src="img/floor-plans/ruori-ja-karttahytti.png"
+            alt="Kannen pohjapiirustus"
+          />
+        </button>
+      </div>
+
+      <div id="control-buttons" class="controls-hidden">
+        <p class="zoom-text" alt="Suurenna tekstiä">
+          <button class="button-zoom-text button-a" style="font-size: small">
+            <span
+              onclick="document.getElementById('text').style.fontSize = '100%' "
+            >
+              A
+            </span>
+          </button>
+          <button class="button-zoom-text button-a" style="font-size: medium">
+            <span
+              onclick="document.getElementById('text').style.fontSize = '150%' "
+            >
+              A
+            </span>
+          </button>
+          <button class="button-zoom-text button-a" style="font-size: large">
+            <span
+              onclick="document.getElementById('text').style.fontSize = '200%' "
+            >
+              A
+            </span>
+          </button>
+        </p>
+        <button class="button-previous">Edellinen</button>
+        <button class="button-next">Seuraava</button>
+      </div>
+    </aside>
 
     <!-- Main -->
     <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
@@ -232,114 +367,6 @@
           <span class="tooltiptext">Loitonna</span>
         </a>
       </div>
-
-      <aside id="aside-window" class="aside">
-        <div class="info-flex">
-          <h1 alt="Otsikko" title="Otsikkon oikea nimi">1. perämiehen hytti</h1>
-          <button
-            id="info-button"
-            class="black-buttons"
-            alt="Informaatio sivusta"
-          >
-            Info
-          </button>
-        </div>
-        <div id="info-content" class="info-hidden">
-          <h2 class="info-title">Päällikön toimisto</h2>
-
-          <div lang="fi">Karamalmi Kampus</div>
-          <div lang="en">Karamalmi Campus</div>
-          <div lang="swe">Karamalmi ruotsinkielellä</div>
-
-          <p
-            role="title"
-            alt="teksti versio yksi"
-            aria-label="teksti versio kaksi"
-            id="text"
-          >
-            Jäänmurtajan päällikkö oli usein mukana komentosillalla, varsinkin
-            hankalissa paikoissa. Lisäksi tehtäviin kuului muiden muassa kansi-
-            ja talouspuolen väen palkkaaminen, miehistöluettelon ylläpito ja
-            käteiskassan hoito. Aluksen kassassa saattoi olla suuriakin
-            rahasummia, koska palkat maksettiin käteisenä vielä 1960-luvulla.
-            Myös emäntä tarvitsi rahaa elintarvikkeiden ostoon. Jäänmurtajien
-            avustustoiminta oli muuten maksutonta, mutta hinauksesta
-            veloitettiin erikseen ja näistäkin rahoista vastasi päällikkö.
-          </p>
-
-          <button
-            id="myBtn"
-            class="image-button"
-            data-image-source="img/paalikonhytti.jpeg"
-          >
-            <img
-              class="info-image"
-              src="img/paalikonhytti.jpeg"
-              alt="Kuva työhakemuksesta"
-            />
-          </button>
-
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <button class="close" alt="Sulje ikkuna" title="Sulje ikkuna">
-                <span>&times;</span>
-              </button>
-              <img
-                class="modal-image"
-                src="img/paalikonhytti.jpeg"
-                alt="Kuva työhakemuksesta"
-              />
-            </div>
-          </div>
-
-          <p>
-            Heinäkuulta 1967 on säilynyt tämä työhakemus. Hakemus kannatti,
-            sillä toinen pojista otettiin Tarmolle ”konekalleksi” ja toinen sai
-            paikan jäänmurtaja Sammolta.
-          </p>
-
-          <button
-            id="myBtn"
-            class="image-button"
-            data-image-source="img/pohjapiirustus2.png"
-          >
-            <img
-              class="floor-plan-image"
-              src="img/pohjapiirustus2.png"
-              alt="Kannen pohjapiirustus"
-            />
-          </button>
-        </div>
-        <div id="control-buttons" class="controls-hidden">
-          <p class="zoom-text" alt="Suurenna tekstiä">
-            <button class="button-zoom-text button-a" style="font-size: small">
-              <span
-                onclick="document.getElementById('text').style.fontSize = '100%' "
-              >
-                A
-              </span>
-            </button>
-            <button class="button-zoom-text button-a" style="font-size: medium">
-              <span
-                onclick="document.getElementById('text').style.fontSize = '150%' "
-              >
-                A
-              </span>
-            </button>
-            <button class="button-zoom-text button-a" style="font-size: large">
-              <span
-                onclick="document.getElementById('text').style.fontSize = '200%' "
-              >
-                A
-              </span>
-            </button>
-          </p>
-          <button class="button-previous">Edellinen</button>
-          <button class="button-next">Seuraava</button>
-        </div>
-      </aside>
     </main>
 
     <!-- Footer -->
