@@ -87,16 +87,6 @@ nav{
     margin-left: auto;
 }
 
-input{
-    margin-right: 15px;
-    padding: .5rem;
-    background-color: #101010;
-    color: #fff;
-    border: none;
-    border-bottom: 1px solid #fff;
-    font-family: light-font;
-}
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -369,7 +359,7 @@ a {
 .droppi-menu > a {
   font-family: light-font;
   color: #fff;
-  padding: 0.75rem;
+  padding: .5rem;
 }
 
 .droppi.active {
@@ -416,6 +406,11 @@ a {
     display: none;
     height: auto;
   }
+
+  .hide {
+    display: block;
+    margin: 0 0 1rem .5rem;
+}
 
   .droppi-menu {
     position: relative;
@@ -464,11 +459,23 @@ a {
 }
 
 /* SEARCH */
+
 form {
   display: flex;
   flex-direction: column;
   position: relative;
 }
+
+input{
+  margin-right: 15px;
+  padding: .5rem;
+  background-color: #101010;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-family: light-font;
+}
+
 .list {
   height: auto;
   position: absolute;
@@ -487,4 +494,12 @@ form {
 
 .list-item:hover {
   background-color: #888
+}
+
+#search {
+  width: 200px;
+}
+
+.lista-piiloon {
+  display: none;
 }

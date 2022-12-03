@@ -6,8 +6,16 @@ let nimetSorted = nimiLista.sort();
 console.log(nimetSorted);
 
 let input = document.getElementById("search");
+let lista = document.getElementById("results");
+console.log(lista.innerHTML === "");
+
+if (lista.innerHTML === "") {
+    lista.classList.toggle("lista-piiloon");
+};
 
 input.addEventListener("keyup", e => {
+
+    lista.classList.remove("lista-piiloon");
 
     removeElements();
 
@@ -34,6 +42,9 @@ input.addEventListener("keyup", e => {
 function displayNames(value) {
     input.value = value;
     removeElements();
+    if (lista.innerHTML === "") {
+        lista.classList.toggle("lista-piiloon");
+    };
 }
 
 function removeElements() {
