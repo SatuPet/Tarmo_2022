@@ -1,55 +1,55 @@
 
 * {
-    margin: 0;
-  }
+  margin: 0;
+}
 
 body{
-    background-color: #101010;
-    /* max-width vain esimerkki! */
-    max-width: 1024px;
+  background-color: #101010;
+  /* max-width vain esimerkki! */
+  max-width: 1024px;
 }
 
 p{
-    color: #101010;
-    font-family: roman-font;
-    max-width: 500px;
-    align-self: center;
+  color: #101010;
+  font-family: roman-font;
+  max-width: 500px;
+  align-self: center;
 }
 
- h2, h3{
-     color: #101010;
-     font-family: bold-font;
- } 
+h2, h3{
+  color: #101010;
+  font-family: bold-font;
+} 
 
- h1{
-     color: #fff;
- }
- button{
-     font-family: bold-font;
- }
- button:active{
-     border: #fff 1px solid;
- }
- .button-a:focus{
-     border-bottom: #fff 2px solid;
- }
+h1{
+  color: #fff;
+}
+button{
+  font-family: bold-font;
+}
+button:active{
+  border: #fff 1px solid;
+}
+.button-a:focus{
+  border-bottom: #fff 2px solid;
+}
 
- @font-face {
-    font-family: bold-font;
-    src: url(/app-files/fonts/Linotype-Univers-65Bold.otf);
-  }
-  @font-face {
-    font-family: roman-font;
-    src: url(/app-files/fonts/Linotype-Univers-55Roman.otf);
-  }
-  @font-face {
-    font-family: light-font;
-    src: url(/app-files/fonts/Linotype-Univers-45Light.otf);
-  }
-  @font-face {
-    font-family: belton-font;
-    src: url(/app-files/fonts/Benton-Cyrillic.otf);
-  }
+@font-face {
+  font-family: bold-font;
+  src: url(/app-files/fonts/Linotype-Univers-65Bold.otf);
+}
+@font-face {
+  font-family: roman-font;
+  src: url(/app-files/fonts/Linotype-Univers-55Roman.otf);
+}
+@font-face {
+  font-family: light-font;
+  src: url(/app-files/fonts/Linotype-Univers-45Light.otf);
+}
+@font-face {
+  font-family: belton-font;
+  src: url(/app-files/fonts/Benton-Cyrillic.otf);
+}
 
 header {
   background-color: #101010;
@@ -72,113 +72,113 @@ nav{
 
 
 .logo{
-    height: 70px;
-    width: auto;
+  height: 70px;
+  width: auto;
 }
 
 .black-buttons{
-    background-color: #101010;
-    color: #fff;
-    border: 0;
-    cursor: pointer;
+  background-color: #101010;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
 }
 
 .space-in-navbar{
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #101010;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 5;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  .main-flex{
-      display: flex;
-  }
-
-  .panorama{
-    width: 100vw;
-    height: auto;
-    background-repeat: no-repeat;
-  }
-
-  .aside{
-    width: 15em;
-    height: 50px;
-    background-color: #101010;
-    position: fixed;
-    right: 0;
-    margin-top: 80px;
-    display: grid;
-
-    transition: all 1s ease;
-  }
-
-  .aside-open{
-    width: 30em;
-    height: 100vh;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
-  .info-flex{
-      display: flex;
-      justify-content: space-around;
-      height: 50px;
-      align-items: center;
-      font-family: roman-font;
-  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #101010;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 5;
+}
 
-  .info-title{
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 5%;
-    font-family: bold-font;
-  }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-  .info-hidden{
-    display: none !important;   
+.main-flex{
+  display: flex;
+}
+
+.panorama{
+  width: 100vw;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.aside{
+  width: 15em;
+  height: 50px;
+  background-color: #101010;
+  position: fixed;
+  right: 0;
+  margin-top: 80px;
+  display: grid;
+  
+  transition: all 1s ease;
+}
+
+.aside-open{
+  width: 30em;
+  height: 100vh;
+}
+
+.info-flex{
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  font-family: roman-font;
+}
+
+.info-title{
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-family: bold-font;
+}
+
+.info-hidden{
+  display: none !important;   
 }
 
 #info-content{
-    background-color: #fff;
-    margin: 2%;
-    overflow-y: scroll;
-    padding: 2%;
-    margin-bottom: 13em;
-    display: flex;
-    flex-direction: column;
+  background-color: #fff;
+  margin: 2%;
+  overflow-y: scroll;
+  padding: 2%;
+  margin-bottom: 13em;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-image{
-    width: 100%;
-    height: auto;
-    margin-top: 5%;
-    margin-bottom: 2%;
-    align-self: center;
-    max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  align-self: center;
+  max-width: 500px;
 }
 
 .modal-image{
-    width: 100%;
-    height: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    align-self: center;
-    max-width: 900px;
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  align-self: center;
+  max-width: 900px;
 }
 .floor-plan-image{
   width: 100%;
@@ -189,122 +189,122 @@ nav{
 }
 
 .controls-hidden{
-    display: none !important;
+  display: none !important;
 }
 
 #control-buttons{
-    width: 30em;
-    height: 17vh;
-    background-color: #101010;
-    position: inherit;
-    bottom: 0;
-    right: 0;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-    grid-row-gap: 10px;
-
+  width: 30em;
+  height: 17vh;
+  background-color: #101010;
+  position: inherit;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-row-gap: 10px;
+  
 }
 
 .zoom-text{
-    grid-column: 2;
-    max-width: 80%;
-    height: 85%;
-    justify-self: center;
-    background-color: #101010;
-    color: #fff;
-    border: 0;
-    font-size: small;
+  grid-column: 2;
+  max-width: 80%;
+  height: 85%;
+  justify-self: center;
+  background-color: #101010;
+  color: #fff;
+  border: 0;
+  font-size: small;
 }
 .button-zoom-text{
-    max-width: 60%;
-    height: 85%;
-    justify-self: center;
-    background-color: #101010;
-    color: #fff;
-    border: 0;
-    letter-spacing: 1em;
+  max-width: 60%;
+  height: 85%;
+  justify-self: center;
+  background-color: #101010;
+  color: #fff;
+  border: 0;
+  letter-spacing: 1em;
 }
 
 .button-previous{
-    grid-row: 2;
-    max-width: 60%;
-    height: 85%;
-    justify-self: center;
-    background-color: #101010;
-    color: #fff;
-    border: 0;
+  grid-row: 2;
+  max-width: 60%;
+  height: 85%;
+  justify-self: center;
+  background-color: #101010;
+  color: #fff;
+  border: 0;
 }
 
 .button-next{
-    grid-row:  2;
-    max-width: 120px;
-    height: 85%;
-    justify-self: center;
-    background-color: #101010;
-    color: #fff;
-    border: 0;
+  grid-row:  2;
+  max-width: 120px;
+  height: 85%;
+  justify-self: center;
+  background-color: #101010;
+  color: #fff;
+  border: 0;
 }
 
 .image-button{
-    border: none;
-    background-color: transparent;
+  border: none;
+  background-color: transparent;
 }
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    text-align: center;
-    margin-bottom: 20%;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    border: none;
-    background-color: transparent;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
 
 @media (max-width:850px)
 {
   .aside{
-      width: 100vw;
-    }
-    #control-buttons {
-        width: 100vw;
-        
-    }
+    width: 100vw;
+  }
+  #control-buttons {
+    width: 100vw;
+    
+  }
 }
 
 /* navi jutut */
@@ -353,14 +353,15 @@ a {
   pointer-events: none;
   transition: opacity 300ms ease-in-out;
   overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 .droppi-menu::-webkit-scrollbar
 {
   display: none;
-	width: 2px;
-	background-color: #000000;
-	border: 2px solid #555555;
+  width: 2px;
+  background-color: #000000;
+  border: 2px solid #555555;
   position: relative;
   left: 200px;
 }
@@ -368,7 +369,7 @@ a {
 .droppi-menu::-webkit-scrollbar-thumb
 {
   width: 2px;
-	background-color: #F5F5F5;
+  background-color: #F5F5F5;
 }
 
 .droppi-menu > li {
@@ -497,7 +498,7 @@ input{
     display: none;
     height: auto;
   }
-
+  
   .droppi-menu {
     position: relative;
     left: .5rem;
@@ -506,21 +507,21 @@ input{
     box-shadow: none;
     max-height: 420px;
   }
-
+  
   .droppi.active.kissa2 {
     margin-left: 0;
     left: 0.5rem;
-}
-
-.droppi.active.kissa2 > .droppi-menu {
-  width: 80px;
-  left: .5rem;
-}
-
+  }
+  
+  .droppi.active.kissa2 > .droppi-menu {
+    width: 80px;
+    left: .5rem;
+  }
+  
   .droppi > button {
     align-self: flex-start;
   }
-
+  
   .droppi.active {
     height: auto;
     z-index: 88;
@@ -530,14 +531,14 @@ input{
     flex-direction: column;
     align-items: flex-start;
   }
-
+  
   nav {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     height: auto;
   }
-
+  
   #kissa {
     display: block;
     position: absolute;
@@ -548,11 +549,11 @@ input{
     margin-left: auto;
     margin-right: 1rem;
   }
-
+  
   .kissa2 {
     margin-left: .5rem;
   }
-
+  
   .hide {
     margin: 0 0 1rem .5rem;
   }
@@ -562,5 +563,5 @@ input{
     width: calc(200px + .5rem);
     margin-left: .5rem;
   }
-
+  
 }

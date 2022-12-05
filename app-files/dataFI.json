@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Komentosilta",
+        "href": "komentosilta.html"
+    },
+    {
+        "name": "Ruorihytti",
+        "href": "ruorihytti.html"
+    },
+    {
+        "name": "Karttahytti",
+        "href": "karttahytti.html"
+    },
+    {
+        "name": "Päällikön toimisto",
+        "href": "paallikontoimisto.html"
+    },
+    {
+        "name": "Päällikön hytti",
+        "href": "paallikonhytti.html"
+    },
+    {
+        "name": "Salonki",
+        "href": "salonki.html"
+    },
+    {
+        "name": "Emännoitsijän hytti",
+        "href": "emannoitsijanhytti.html"
+    },
+    {
+        "name": "Pentteri",
+        "href": "pentteri.html"
+    },
+    {
+        "name": "Radiohytti",
+        "href": "radiohytti.html"
+    }
+]
