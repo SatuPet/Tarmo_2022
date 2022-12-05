@@ -230,9 +230,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/mieheistomessi.jpeg"
-            alt="Joulun viettoa miehistömessissä vuonna 1957.
-            Celebrating Christmas at the crew fair in 1957.
-            Firar jul på besättningsmässan 1957."
+            data-fi-alt="Joulun viettoa miehistömessissä vuonna 1957."
+            data-en-alt="Celebrating Christmas at the crew fair in 1957."
+            data-swe-alt="Firar jul på besättningsmässan 1957."
           />
         </button>
 
@@ -244,16 +244,24 @@
           Tarmolla vuosina 1967-1970 työskennellyt konemestari muistelee:
         </p>
 
+        <p lang="fi" id="text" style="margin-bottom: 2%">
+          Haastattelija:
+          <span style="font-family: light-font"
+            >kanssakäymistä muiden työtovereiden kanssa?</span
+          >
+        </p>
         <p lang="fi" id="text" style="margin-bottom: 5%">
-          Haastattelija: Oliko kanssakäymistä muiden työtovereiden kanssa?
-          Haastateltava: Oli. Kyllä vapaa-aikanakin juteltiin. Usein mentiin
-          sinne miehistön messiin, kun se on paljon suurempi. Tavallisesti pesun
-          jälkeen mentiin petiin. Enää ei ollut niin tarkkaa hierarkiaa.
-          Seurusteltiin myös miehistön jäsenten kanssa. Kyllä me konepuoli
-          oltiin siellä alhaallakin yhdessä, niin seurusteltiin vapaa-aikanakin.
-          Joitain tällaisia perämiehiäkin oli. Meillä oli hyvä henki. Televisio
-          hankittiin. Ei se ollut iso investointi, kun miehiä oli paljon. Ja ne
-          luvatkin sai MKH:lta.
+          Haastateltava:
+          <span style="font-family: light-font"
+            >Oli. Kyllä vapaa-aikanakin juteltiin. Usein mentiin sinne miehistön
+            messiin, kun se on paljon suurempi. Tavallisesti pesun jälkeen
+            mentiin petiin. Enää ei ollut niin tarkkaa hierarkiaa. Seurusteltiin
+            myös miehistön jäsenten kanssa. Kyllä me konepuoli oltiin siellä
+            alhaallakin yhdessä, niin seurusteltiin vapaa-aikanakin. Joitain
+            tällaisia perämiehiäkin oli. Meillä oli hyvä henki. Televisio
+            hankittiin. Ei se ollut iso investointi, kun miehiä oli paljon. Ja
+            ne luvatkin sai MKH:lta.</span
+          >
         </p>
 
         <button
@@ -264,9 +272,9 @@
           <img
             class="floor-plan-image"
             src="img/floor-plans/miehistomessi.png"
-            alt="Kannen pohjapiirustus.
-            Deck floor plan.
-            Däcks planlösning."
+            data-fi-alt="Kannen pohjapiirustus."
+            data-en-alt="Deck floor plan."
+            data-swe-alt="Däcks planlösning."
           />
         </button>
       </div>
@@ -278,40 +286,40 @@
           <button class="close" alt="Sulje ikkuna" title="Sulje ikkuna">
             <span>&times;</span>
           </button>
-          <img
-            class="modal-image"
-            src="img/paalikonhytti.jpeg"
-            alt="Kuva työhakemuksesta"
-          />
+          <img class="modal-image" src="" alt="" />
         </div>
       </div>
 
       <div id="control-buttons" class="controls-hidden">
         <p class="zoom-text" alt="Suurenna tekstiä">
-          <button class="button-zoom-text button-a" style="font-size: small">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '100%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('100%')"
+            class="button-zoom-text button-a"
+            style="font-size: small"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: medium">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '150%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('150%')"
+            class="button-zoom-text button-a"
+            style="font-size: medium"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: large">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '200%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('200%')"
+            class="button-zoom-text button-a"
+            style="font-size: large"
+          >
+            A
           </button>
         </p>
-        <button class="button-previous">Edellinen</button>
-        <button class="button-next">Seuraava</button>
+        <a class="button-next" href="talousvarasto.html">
+          <button>Seuraava</button>
+        </a>
+        <a class="button-previous" href="donkeymiehenhytti.html">
+          <button>Edellinen</button>
+        </a>
       </div>
     </aside>
 

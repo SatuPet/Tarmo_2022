@@ -232,9 +232,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/konetyoverstas-1.jpeg"
-            alt="Pihdit.
-            Pliers.
-            Tång."
+            data-fi-alt="Pihdit."
+            data-en-alt="Pliers."
+            data-swe-alt="Tång."
           />
         </button>
 
@@ -246,9 +246,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/konetyoverstas-2.jpeg"
-            alt="Leka.
-          Sledge-hammer.
-          Slägga."
+            data-fi-alt="Leka."
+            data-en-alt="Sledge-hammer."
+            data-swe-alt="Slägga."
           />
         </button>
 
@@ -260,9 +260,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/konetyoverstas-3.jpeg"
-            alt="Poranteriä.
-        Drill bits.
-        Borrkronor."
+            data-fi-alt="Poranteriä."
+            data-en-alt="Drill bits."
+            data-swe-alt="Borrkronor."
           />
         </button>
 
@@ -274,9 +274,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/konetyoverstas-4.jpeg"
-            alt="Kolvi.
-      Soldering iron.
-      Lödkolv."
+            data-fi-alt="Kolvi."
+            data-en-alt="Soldering iron."
+            data-swe-alt="Lödkolv."
           />
         </button>
 
@@ -288,9 +288,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/konetyoverstas-5.jpeg"
-            alt="Kolvi.
-    Soldering iron.
-    Lödkolv."
+            data-fi-alt="Kolvi."
+            data-en-alt="Soldering iron."
+            data-swe-alt="Lödkolv."
           />
         </button>
 
@@ -302,9 +302,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/konetyoverstas-6.jpeg"
-            alt="Kiintoavain.
-  Fixed key.
-  Fast nyckel."
+            data-fi-alt="Kiintoavain."
+            data-en-alt="Fixed key."
+            data-swe-alt="Fast nyckel."
           />
         </button>
 
@@ -316,9 +316,9 @@
           <img
             class="floor-plan-image"
             src="img/floor-plans/konetyoverstas.png"
-            alt="Kannen pohjapiirustus.
-              Deck floor plan.
-              Däcks planlösning."
+            data-fi-alt="Kannen pohjapiirustus."
+            data-en-alt="Deck floor plan."
+            data-swe-alt="Däcks planlösning."
           />
         </button>
       </div>
@@ -336,30 +336,34 @@
 
       <div id="control-buttons" class="controls-hidden">
         <p class="zoom-text" alt="Suurenna tekstiä">
-          <button class="button-zoom-text button-a" style="font-size: small">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '100%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('100%')"
+            class="button-zoom-text button-a"
+            style="font-size: small"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: medium">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '150%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('150%')"
+            class="button-zoom-text button-a"
+            style="font-size: medium"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: large">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '200%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('200%')"
+            class="button-zoom-text button-a"
+            style="font-size: large"
+          >
+            A
           </button>
         </p>
-        <button class="button-previous">Edellinen</button>
-        <button class="button-next">Seuraava</button>
+        <a class="button-next" href="1peramiehenhytti.html">
+          <button>Seuraava</button>
+        </a>
+        <a class="button-previous" href="keittio.html">
+          <button>Edellinen</button>
+        </a>
       </div>
     </aside>
 

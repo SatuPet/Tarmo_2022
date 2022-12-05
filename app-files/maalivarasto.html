@@ -222,9 +222,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/maalivarasto-1.jpeg"
-            alt="Maalikannu.
-          Paint jug.
-          Målarkanna."
+            data-fi-alt="Maalikannu."
+            data-en-alt="Paint jug."
+            data-swe-alt="Målarkanna."
           />
         </button>
 
@@ -243,7 +243,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/maalivarasto-2.jpeg"
-            alt=""
+            data-fi-alt="Kuva kyltistä."
+            data-en-alt="Picture of the sign."
+            data-swe-alt="Bild på skylten."
           />
         </button>
 
@@ -255,9 +257,9 @@
           <img
             class="floor-plan-image"
             src="img/floor-plans/maalivarasto.png"
-            alt="Kannen pohjapiirustus.
-            Deck floor plan.
-            Däcks planlösning."
+            data-fi-alt="Kannen pohjapiirustus."
+            data-en-alt="Deck floor plan."
+            data-swe-alt="Däcks planlösning."
           />
         </button>
       </div>
@@ -275,30 +277,34 @@
 
       <div id="control-buttons" class="controls-hidden">
         <p class="zoom-text" alt="Suurenna tekstiä">
-          <button class="button-zoom-text button-a" style="font-size: small">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '100%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('100%')"
+            class="button-zoom-text button-a"
+            style="font-size: small"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: medium">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '150%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('150%')"
+            class="button-zoom-text button-a"
+            style="font-size: medium"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: large">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '200%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('200%')"
+            class="button-zoom-text button-a"
+            style="font-size: large"
+          >
+            A
           </button>
         </p>
-        <button class="button-previous">Edellinen</button>
-        <button class="button-next">Seuraava</button>
+        <a class="button-next" href="lyhtyvarasto.html">
+          <button>Seuraava</button>
+        </a>
+        <a class="button-previous" href="miehistohytti2.html">
+          <button>Edellinen</button>
+        </a>
       </div>
     </aside>
 

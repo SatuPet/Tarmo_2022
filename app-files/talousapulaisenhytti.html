@@ -216,9 +216,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/talousapulaisen-hytti-2.jpeg"
-            alt="Valkoinen keittiöhenkilökunnan essu.
-            White kitchen staff apron.
-            Vitt kökspersonalförkläde."
+            data-fi-alt="Valkoinen keittiöhenkilökunnan essu."
+            data-en-alt="White kitchen staff apron."
+            data-swe-alt="Vitt kökspersonalförkläde."
           />
         </button>
 
@@ -243,9 +243,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/talousapulaisen-hytti-1.jpeg"
-            alt="Naishenkilökunta Tarmon täkillä kahvilla.
-            Female staff with coffee in Tarmo's blanket.
-            Kvinnlig personal med kaffe i Tarmos filt."
+            data-fi-alt="Naishenkilökunta Tarmon täkillä kahvilla."
+            data-en-alt="Female staff with coffee in Tarmo's blanket."
+            data-swe-alt="Kvinnlig personal med kaffe i Tarmos filt."
           />
         </button>
 
@@ -263,9 +263,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/talousapulaisen-hytti-3.jpeg"
-            alt="Keittäjä tyhjentämässä roskaämpäriä mereen.
-            A cook emptying a trash can into the sea.
-            En kock som tömmer en papperskorg i havet."
+            data-fi-alt="Keittäjä tyhjentämässä roskaämpäriä mereen."
+            data-en-alt="A cook emptying a trash can into the sea."
+            data-swe-alt="En kock som tömmer en papperskorg i havet."
           />
         </button>
 
@@ -282,9 +282,9 @@
           <img
             class="floor-plan-image"
             src="img/floor-plans/talousapulaisen-hytti.png"
-            alt="Kannen pohjapiirustus.
-            Deck floor plan.
-            Däcks planlösning."
+            data-fi-alt="Kannen pohjapiirustus."
+            data-en-alt="Deck floor plan."
+            data-swe-alt="Däcks planlösning."
           />
         </button>
       </div>
@@ -302,30 +302,17 @@
 
       <div id="control-buttons" class="controls-hidden">
         <p class="zoom-text" alt="Suurenna tekstiä">
-          <button class="button-zoom-text button-a" style="font-size: small">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '100%' "
-            >
-              A
-            </span>
-          </button>
-          <button class="button-zoom-text button-a" style="font-size: medium">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '150%' "
-            >
-              A
-            </span>
-          </button>
-          <button class="button-zoom-text button-a" style="font-size: large">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '200%' "
-            >
-              A
-            </span>
-          </button>
+          <button onclick="changeTextSize('100%')" class="button-zoom-text button-a" style="font-size: small">A</button>
+          <button onclick="changeTextSize('150%')" class="button-zoom-text button-a" style="font-size: medium">A</button>
+          <button onclick="changeTextSize('200%')" class="button-zoom-text button-a" style="font-size: large">A</button>
         </p>
-        <button class="button-previous">Edellinen</button>
-        <button class="button-next">Seuraava</button>
+
+        <a class="button-next" href="miehistohytti2.html">
+          <button >Seuraava</button>
+        </a>
+        <a class="button-previous" href="talousvarasto.html">
+          <button >Edellinen</button>
+        </a>
       </div>
     </aside>
 

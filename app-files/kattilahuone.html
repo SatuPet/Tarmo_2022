@@ -221,7 +221,11 @@
         <p lang="fi" id="text" style="margin-bottom: 2%">
           Tarmolla 1949-1950 työskennellyt lämmittäjä kertoo työstään:
         </p>
-        <p lang="fi" id="text" style="margin-bottom: 5%">
+        <p
+          lang="fi"
+          id="text"
+          style="margin-bottom: 5%; font-family: light-font"
+        >
           Minä muistan, että se oli neljä ja kahdeksan. Eli neljä tuntia töitä
           ja kahdeksan lepoa. Se oli täkilläkin sama. Se oli niin rankkaa. … Kun
           vahdista meni ylös ja kävi suihkussa, söi pikkasen ja kävi punkkaan ja
@@ -260,7 +264,6 @@
           De gamla kollagren gjordes om till oljebehållare.
         </p>
 
-
         <button
           id="myBtn"
           class="image-button"
@@ -269,9 +272,9 @@
           <img
             class="floor-plan-image"
             src="img/floor-plans/kattilahuone.png"
-            alt="Kannen pohjapiirustus.
-              Deck floor plan.
-              Däcks planlösning."
+            data-fi-alt="Kannen pohjapiirustus."
+            data-en-alt="Deck floor plan."
+            data-swe-alt="Däcks planlösning."
           />
         </button>
       </div>
@@ -289,30 +292,34 @@
 
       <div id="control-buttons" class="controls-hidden">
         <p class="zoom-text" alt="Suurenna tekstiä">
-          <button class="button-zoom-text button-a" style="font-size: small">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '100%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('100%')"
+            class="button-zoom-text button-a"
+            style="font-size: small"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: medium">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '150%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('150%')"
+            class="button-zoom-text button-a"
+            style="font-size: medium"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: large">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '200%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('200%')"
+            class="button-zoom-text button-a"
+            style="font-size: large"
+          >
+            A
           </button>
         </p>
-        <button class="button-previous">Edellinen</button>
-        <button class="button-next">Seuraava</button>
+        <a class="button-next" href="keulakonehuone.html">
+          <button>Seuraava</button>
+        </a>
+        <a class="button-previous" href="perakonehuone.html">
+          <button>Edellinen</button>
+        </a>
       </div>
     </aside>
 

@@ -211,9 +211,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/talousvarasto-1.jpeg"
-            alt="Kalakattila.
-            Fish kettle.
-            Fiskkokare."
+            data-fi-alt="Kalakattila."
+            data-en-alt="Fish kettle."
+            data-swe-alt="Fiskkokare."
           />
         </button>
 
@@ -225,9 +225,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/talousvarasto-2.jpeg"
-            alt="Paistinpannu.
-            Frying pan.
-            Stekpanna."
+            data-fi-alt="Paistinpannu."
+            data-en-alt="Frying pan."
+            data-swe-alt="Stekpanna."
           />
         </button>
 
@@ -239,9 +239,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/talousvarasto-3.jpeg"
-            alt="Vispilä.
-          Whisk.
-          Vispa."
+            data-fi-alt="Vispilä."
+            data-en-alt="Whisk."
+            data-swe-alt="Vispa."
           />
         </button>
 
@@ -253,9 +253,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/talousvarasto-4.jpeg"
-            alt="Kattila.
-        Saucepan.
-        Kastrull."
+            data-fi-alt="Kattila."
+            data-en-alt="Saucepan."
+            data-swe-alt="Kastrull."
           />
         </button>
 
@@ -267,9 +267,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/talousvarasto-5.jpeg"
-            alt="Peltirasia.
-      Tin box.
-      Plåtask."
+            data-fi-alt="Peltirasia."
+            data-en-alt="Tin box."
+            data-swe-alt="Plåtask."
           />
         </button>
 
@@ -281,9 +281,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/talousvarasto-6.jpeg"
-            alt="Patasuti.
-    A pot roast.
-    En grytstek."
+            data-fi-alt="Patasuti."
+            data-en-alt="A pot roast."
+            data-swe-alt="En grytstek."
           />
         </button>
 
@@ -295,9 +295,9 @@
           <img
             class="floor-plan-image"
             src="img/floor-plans/talousvarasto.png"
-            alt="Kannen pohjapiirustus.
-            Deck floor plan.
-            Däcks planlösning."
+            data-fi-alt="Kannen pohjapiirustus."
+            data-en-alt="Deck floor plan."
+            data-swe-alt="Däcks planlösning."
           />
         </button>
       </div>
@@ -315,30 +315,34 @@
 
       <div id="control-buttons" class="controls-hidden">
         <p class="zoom-text" alt="Suurenna tekstiä">
-          <button class="button-zoom-text button-a" style="font-size: small">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '100%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('100%')"
+            class="button-zoom-text button-a"
+            style="font-size: small"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: medium">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '150%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('150%')"
+            class="button-zoom-text button-a"
+            style="font-size: medium"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: large">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '200%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('200%')"
+            class="button-zoom-text button-a"
+            style="font-size: large"
+          >
+            A
           </button>
         </p>
-        <button class="button-previous">Edellinen</button>
-        <button class="button-next">Seuraava</button>
+        <a class="button-next" href="talousapulaisenhytti.html">
+          <button>Seuraava</button>
+        </a>
+        <a class="button-previous" href="miehistomessi.html">
+          <button>Edellinen</button>
+        </a>
       </div>
     </aside>
 

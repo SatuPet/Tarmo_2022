@@ -215,14 +215,14 @@
         <button
           id="myBtn"
           class="image-button"
-          data-image-source="iimg/tarmo-images/mieheiston-pesuhuone-1.jpeg"
+          data-image-source="img/tarmo-images/mieheiston-pesuhuone-1.jpeg"
         >
           <img
             class="info-image"
             src="img/tarmo-images/mieheiston-pesuhuone-1.jpeg"
-            alt="Pyyhe.
-              Towel.
-              Handduk."
+              data-fi-alt="Pyyhe."
+              data-en-alt="Towel."
+              data-swe-alt="Handduk."
           />
         </button>
 
@@ -235,6 +235,9 @@
             class="info-image"
             src="img/tarmo-images/miehiston-pesuhuone-2.jpeg"
             alt="joku juttu"
+            data-fi-alt="Pyykinpesu alusta."
+            data-en-alt="Laundry from scratch."
+            data-swe-alt="Tvätt från grunden."
           />
         </button>
 
@@ -259,9 +262,9 @@
             <img
               class="floor-plan-image"
               src="img/floor-plans/miehiston-pesuhuone.png"
-              alt="Kannen pohjapiirustus.
-              Deck floor plan.
-              Däcks planlösning."
+            data-fi-alt="Kannen pohjapiirustus."
+            data-en-alt="Deck floor plan."
+            data-swe-alt="Däcks planlösning."
             />
           </button>
         </p>
@@ -280,30 +283,16 @@
 
       <div id="control-buttons" class="controls-hidden">
         <p class="zoom-text" alt="Suurenna tekstiä">
-          <button class="button-zoom-text button-a" style="font-size: small">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '100%' "
-            >
-              A
-            </span>
-          </button>
-          <button class="button-zoom-text button-a" style="font-size: medium">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '150%' "
-            >
-              A
-            </span>
-          </button>
-          <button class="button-zoom-text button-a" style="font-size: large">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '200%' "
-            >
-              A
-            </span>
-          </button>
+          <button onclick="changeTextSize('100%')" class="button-zoom-text button-a" style="font-size: small">A</button>
+          <button onclick="changeTextSize('150%')" class="button-zoom-text button-a" style="font-size: medium">A</button>
+          <button onclick="changeTextSize('200%')" class="button-zoom-text button-a" style="font-size: large">A</button>
         </p>
-        <button class="button-previous">Edellinen</button>
-        <button class="button-next">Seuraava</button>
+        <a class="button-next" href="paallystomessi.html">
+          <button >Seuraava</button>
+        </a>
+        <a class="button-previous" href="radiohytti.html">
+          <button >Edellinen</button>
+        </a>
       </div>
     </aside>
 

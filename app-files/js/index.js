@@ -1,13 +1,19 @@
+// Side menu boolean as global so it can be accessed from anywhere
+let sideMenuOpen = false;
 
 // Open aside
 document.getElementById("info-button").addEventListener("click", function () {
   document.getElementById('aside-window').classList.toggle('aside-open');
+  
 
   // Info text change to sulje
-  if (this.innerText == "Info") {
-      this.innerText = "Sulje";
+  let buttonTexts = getAsideOpenButtonTexts(localStorage.getItem('languageSettings'));
+  if (!sideMenuOpen) {
+      this.innerText = buttonTexts[1];
+      sideMenuOpen = true;
     } else {
-      this.innerText = "Info";
+      this.innerText = buttonTexts[0];
+      sideMenuOpen = false;
     }
 
   // Open info content with timing
@@ -34,6 +40,29 @@ if (!controls.classList.contains('controls-hidden')) {
 
 });
 
+//Gives correct languages for aside closing button
+function getAsideOpenButtonTexts (languageSettings) {
+  let buttonClosedText = "Sulje";
+  let buttonOpenText = "Info";
+  switch (languageSettings) {
+    case 'en':
+      buttonClosedText = "Close";
+      buttonOpenText = "Info";
+      break;
+
+      case 'swe':
+        buttonClosedText = "Stänga";
+        buttonOpenText = "Info";
+        break;
+  
+    default:
+      buttonClosedText = "Sulje";
+      buttonOpenText = "Info";
+      break;
+  }
+  return [buttonOpenText,buttonClosedText]
+}
+
 // Get the modal
 let modal = document.getElementById("myModal");
 
@@ -50,6 +79,11 @@ btns.forEach(btn => {
     document.querySelector(".modal-image").src=btn.dataset.imageSource;
     }
 });
+
+// change text sizes
+function changeTextSize (size){
+  document.querySelectorAll('#text').forEach(text => text.style.fontSize = size)
+}
 
 
 // When the user clicks on <span> (x), close the modal
@@ -132,18 +166,29 @@ if (!active) {
 
 // hide all languages
 const hideAllLanguageElements = () => {
-  document.querySelectorAll('p[lang="en"], a[lang="en"], div[lang="en"], button[lang="en"], h1[lang="en"], h2[lang="en"], img[lang="en"]').
+  document.querySelectorAll('p[lang="en"], a[lang="en"], div[lang="en"], button[lang="en"], h1[lang="en"], h2[lang="en"]').
   forEach(text => text.style.display = 'none');
-  document.querySelectorAll('p[lang="fi"], a[lang="fi"], div[lang="fi"], button[lang="fi"], h1[lang="fi"], h2[lang="fi"], img[lang="fi"]').
+  document.querySelectorAll('p[lang="fi"], a[lang="fi"], div[lang="fi"], button[lang="fi"], h1[lang="fi"], h2[lang="fi"]').
   forEach(text => text.style.display = 'none');
-  document.querySelectorAll('p[lang="swe"], a[lang="swe"], div[lang="swe"], button[lang="swe"], h1[lang="swe"], h2[lang="swe"], img[lang="swe"]').
+  document.querySelectorAll('p[lang="swe"], a[lang="swe"], div[lang="swe"], button[lang="swe"], h1[lang="swe"], h2[lang="swe"]').
   forEach(text => text.style.display = 'none');
 }
 
 // show selected language
 const showLanguageElements = (language) => {
-  document.querySelectorAll(`p[lang="${language}"], a[lang="${language}"], div[lang="${language}"], button[lang="${language}"], h1[lang="${language}"], h2[lang="${language}"], img[lang="${language}"]`).
+  document.querySelectorAll(`p[lang="${language}"], a[lang="${language}"], div[lang="${language}"], button[lang="${language}"], h1[lang="${language}"], h2[lang="${language}"]`).
   forEach(text => text.style.display = 'block');
+  document.querySelectorAll('img')
+  .forEach(image => {
+    let altText = image.getAttribute(`data-${language}-alt`)
+    image.alt = altText
+  })
+
+  // Changes the aside button language
+  let closedState = sideMenuOpen ? 1 : 0;
+  let buttonText = getAsideOpenButtonTexts(language)[closedState];
+  document.getElementById('info-button').innerHTML = buttonText;
+
 }
 // save languege to localStorage and show it
 const setLanguage = (language) => {

@@ -221,22 +221,11 @@
           <img
             class="info-image"
             src="img/tarmo-images/ruorihytti-1.jpeg"
-            alt="Kuva puupalikasta jonka ympärillä oli ohje.
-            A picture of a block of wood with instructions around it.
-            En bild på ett träblock med instruktioner runt omkring."
+            data-fi-alt="Kuva puupalikasta jonka ympärillä oli ohje."
+            data-en-alt="A picture of a block of wood with instructions around it."
+            data-swe-alt="En bild på ett träblock med instruktioner runt omkring."
           />
         </button>
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <button class="close" alt="Sulje ikkuna" title="Sulje ikkuna">
-              <span>&times;</span>
-            </button>
-            <img class="modal-image" src="" alt="" />
-          </div>
-        </div>
 
         <p lang="fi" id="text" style="margin-bottom: 2%">
           Avustettaville laivoille annettiin määräyksiä vauhdista ja koneen
@@ -260,9 +249,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/ruorihytti-2.jpeg"
-            alt="Kuvassa lippu jossa neljä väriä (keltainen, sininen, punainen ja musta).
-            Bilden visar en flagga med fyra färger (gul, blå, röd och svart).
-            The picture shows a flag with four colors (yellow, blue, red and black)."
+            data-fi-alt="Kuvassa lippu jossa neljä väriä (keltainen, sininen, punainen ja musta)."
+            data-en-alt="The picture shows a flag with four colors (yellow, blue, red and black)."
+            data-swe-alt="Bilden visar en flagga med fyra färger (gul, blå, röd och svart)."
           />
         </button>
 
@@ -279,37 +268,54 @@
           <img
             class="floor-plan-image"
             src="img/floor-plans/ruori-ja-karttahytti.png"
-            alt="Kannen pohjapiirustus"
+            data-fi-alt="Kuva sijainnista laivassa."
+            data-en-alt="Picture of the location on the ship."
+            data-swe-alt="Bild på platsen på fartyget."
           />
         </button>
       </div>
 
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <button class="close" alt="Sulje ikkuna" title="Sulje ikkuna">
+                    <span>&times;</span>
+                  </button>
+                  <img class="modal-image" src="" alt="" />
+                </div>
+              </div>
+
       <div id="control-buttons" class="controls-hidden">
         <p class="zoom-text" alt="Suurenna tekstiä">
-          <button class="button-zoom-text button-a" style="font-size: small">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '100%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('100%')"
+            class="button-zoom-text button-a"
+            style="font-size: small"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: medium">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '150%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('150%')"
+            class="button-zoom-text button-a"
+            style="font-size: medium"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: large">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '200%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('200%')"
+            class="button-zoom-text button-a"
+            style="font-size: large"
+          >
+            A
           </button>
         </p>
-        <button class="button-previous">Edellinen</button>
-        <button class="button-next">Seuraava</button>
+        <a class="button-next" href="karttahytti.html">
+          <button >Seuraava</button>
+        </a>
+        <a class="button-previous" href="komentosilta.html">
+          <button >Edellinen</button>
+        </a>
       </div>
     </aside>
 

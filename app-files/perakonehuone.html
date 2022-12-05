@@ -248,9 +248,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/perakonehuone-1.jpeg"
-            alt="Mies vastaamassa Tarmon keulakoneen telegrammiin.
-            A man answering a telegram from Tarmo's bow plane.
-            En man som svarar på ett telegram från Tarmos bogplan."
+            data-fi-alt="Mies vastaamassa Tarmon keulakoneen telegrammiin."
+            data-en-alt="A man answering a telegram from Tarmo's bow plane."
+            data-swe-alt="En man som svarar på ett telegram från Tarmos bogplan."
           />
         </button>
 
@@ -262,7 +262,11 @@
         <p lang="fi" id="text" style="margin-bottom: 2%">
           Vuosina 1967-1970 Tarmolla työskennellyt konemestari muistelee:
         </p>
-        <p lang="fi" id="text" style="margin-bottom: 2%">
+        <p
+          lang="fi"
+          id="text"
+          style="margin-bottom: 2%; font-family: light-font"
+        >
           Kyllä korvakuulolla pysyi selvittämään, oliko koneissa vikaa. Käsin
           koeteltiin laakerit, peililaakerit ja ristipäälaakerit. Aina vasen
           käsi pantiin sinne ja sormen päästä katsottiin, jos öljy oli
@@ -270,31 +274,34 @@
           mutta jos se rupesi muuttumaan mustaksi, niin silloin tiesi, että se
           rupeaa lämpiämään liikaa ja öljyä piti sitten lisätä.
         </p>
-        <p lang="fi" id="text" style="margin-bottom: 5%">
+        <p
+          lang="fi"
+          id="text"
+          style="margin-bottom: 5%; font-family: light-font"
+        >
           Öljynkäyttöä ei enää 1960-luvulla säännöstelty. Kuitenkin vanhat
           jäteöljyt keitettiin. Ne pantiin pyttyyn ja kiehutettiin vesi pois ja
           sitä käytettiin pienien paikkojen rasvaamiseen.
         </p>
 
         <button
-        id="myBtn"
-        class="image-button"
-        data-image-source="img/tarmo-images/perakonehuone-2.jpeg"
-      >
-        <img
-          class="info-image"
-          src="img/tarmo-images/perakonehuone-2.jpeg"
-          alt="Höyrykoneen indikaattoreita.
-          Steam engine indicators.
-          Ångmotorindikatorer."
-        />
-      </button>
+          id="myBtn"
+          class="image-button"
+          data-image-source="img/tarmo-images/perakonehuone-2.jpeg"
+        >
+          <img
+            class="info-image"
+            src="img/tarmo-images/perakonehuone-2.jpeg"
+            data-fi-alt="Höyrykoneen indikaattoreita."
+            data-en-alt="Steam engine indicators."
+            data-swe-alt="Ångmotorindikatorer."
+          />
+        </button>
 
-      <p lang="fi" id="text" style="margin-bottom: 5%">
-        Höyrykoneen indikaattoreita, joilla mitattiin höyrypainetta.
-      </p>
+        <p lang="fi" id="text" style="margin-bottom: 5%">
+          Höyrykoneen indikaattoreita, joilla mitattiin höyrypainetta.
+        </p>
 
-      
         <button
           id="myBtn"
           class="image-button"
@@ -303,9 +310,9 @@
           <img
             class="floor-plan-image"
             src="img/floor-plans/perakonehuone.png"
-            alt="Kannen pohjapiirustus.
-              Deck floor plan.
-              Däcks planlösning."
+            data-fi-alt="Kannen pohjapiirustus."
+            data-en-alt="Deck floor plan."
+            data-swe-alt="Däcks planlösning."
           />
         </button>
       </div>
@@ -323,30 +330,34 @@
 
       <div id="control-buttons" class="controls-hidden">
         <p class="zoom-text" alt="Suurenna tekstiä">
-          <button class="button-zoom-text button-a" style="font-size: small">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '100%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('100%')"
+            class="button-zoom-text button-a"
+            style="font-size: small"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: medium">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '150%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('150%')"
+            class="button-zoom-text button-a"
+            style="font-size: medium"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: large">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '200%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('200%')"
+            class="button-zoom-text button-a"
+            style="font-size: large"
+          >
+            A
           </button>
         </p>
-        <button class="button-previous">Edellinen</button>
-        <button class="button-next">Seuraava</button>
+        <a class="button-next" href="kattilahuone.html">
+          <button>Seuraava</button>
+        </a>
+        <a class="button-previous" href="miehistohytti1.html">
+          <button>Edellinen</button>
+        </a>
       </div>
     </aside>
 

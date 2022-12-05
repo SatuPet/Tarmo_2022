@@ -202,7 +202,7 @@
         <h2 lang="en" class="info-title">Donkeyman's cabin</h2>
         <h2 lang="swe" class="info-title">DDonkeymannens hytt</h2>
 
-        <p lang="fi" id="text" style="margin-bottom: 5%">
+        <p lang="fi" class="text" style="margin-bottom: 5%">
           Koneapulainen, tunkki, donkeymies oli konemiesten työnjohtaja.
           Donkeymies hoiti ajon aikana pumppaukset ja vettä kattiloihin. Hän
           teki laivalla myös pieniä korjaustöitä. Donkeymies-nimitys on muisto
@@ -222,12 +222,12 @@
           model of donkey powered whim.
         </p>
 
-        <p lang="swe" id="text" style="margin-bottom: 2%">
+        <p lang="swe" id="class" style="margin-bottom: 2%">
           KDonkeymannen, maskinassistenten, var maskinmännens arbetsledare.
           Donkeymannen skötte pumpningarna och ångpannornas vattenförsörjning då
           fartyget var i trafik
         </p>
-        <p lang="swe" id="text" style="margin-bottom: 5%">
+        <p lang="swe" id="class" style="margin-bottom: 5%">
           Uttrycket har sitt ursprung i en liten ångmaskin som drev pumpar och
           andra maskiner. Den var alltså åsne- eller hästkraftens moderna
           version (engelskans donkey = åsna).
@@ -241,13 +241,13 @@
           <img
             class="info-image"
             src="img/tarmo-images/donkeymiehen-hytti.jpeg"
-            alt="Donkeymies töissä kenttäahjon kärjessä.
-            Donkeyman at work at the head of the field drive.
-            Donkeymannen på jobbet i spetsen för fältet enheten."
+            data-fi-alt="Donkeymies töissä kenttäahjon kärjessä."
+            data-en-alt="Donkeyman at work at the head of the field drive."
+            data-swe-alt="Donkeymannen på jobbet i spetsen för fältet enheten."
           />
         </button>
 
-        <p lang="fi" id="text" style="margin-bottom: 5%">
+        <p lang="fi" class="text" style="margin-bottom: 5%">
           Donkeymies Onni Hurtén sepän töissä kenttäahjon ääressä J/M Tarmolla
           vuonna 1957.
         </p>
@@ -260,9 +260,9 @@
           <img
             class="floor-plan-image"
             src="img/floor-plans/donkeymiehen-hytti.png"
-            alt="Kannen pohjapiirustus.
-            Deck floor plan.
-            Däcks planlösning."
+            data-fi-alt="Kannen pohjapiirustus."
+            data-en-alt="Deck floor plan."
+            data-swe-alt="Däcks planlösning."
           />
         </button>
       </div>
@@ -282,28 +282,32 @@
         <p class="zoom-text" alt="Suurenna tekstiä">
           <button class="button-zoom-text button-a" style="font-size: small">
             <span
-              onclick="document.getElementById('text').style.fontSize = '100%' "
+              onclick="document.querySelectorAll('.text').style.fontSize = '100%' "
             >
               A
             </span>
           </button>
           <button class="button-zoom-text button-a" style="font-size: medium">
             <span
-              onclick="document.getElementById('text').style.fontSize = '150%' "
+              onclick="document.querySelectorAll('.text').style.fontSize = '150%' "
             >
               A
             </span>
           </button>
           <button class="button-zoom-text button-a" style="font-size: large">
             <span
-              onclick="document.getElementById('text').style.fontSize = '200%' "
+              onclick="document.querySelectorAll('.text').style.fontSize = '200%' "
             >
               A
             </span>
           </button>
         </p>
-        <button class="button-previous">Edellinen</button>
-        <button class="button-next">Seuraava</button>
+        <a class="button-next" href="miehistomessi.html">
+          <button>Seuraava</button>
+        </a>
+        <a class="button-previous" href="vararuorihuone.html">
+          <button>Edellinen</button>
+        </a>
       </div>
     </aside>
 

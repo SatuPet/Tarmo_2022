@@ -234,9 +234,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/komentosilta-1.jpeg"
-            alt="Kuvassa lammasturkiksella vuorattu vahtiturkki.
-            In the picture, a watchman's coat lined with sheep fur.
-            På bilden en vaktkappa fodrad med fårpäls."
+            data-fi-alt="Kuvassa lammasturkiksella vuorattu vahtiturkki."
+            data-en-alt="In the picture, a watchman's coat lined with sheep fur."
+            data-swe-alt=" På bilden en vaktkappa fodrad med fårpäls."
           />
         </button>
 
@@ -248,11 +248,11 @@
           <img
             class="info-image"
             src="img/tarmo-images/komentosilta-2.jpeg"
-            alt="Lammasturkiksella vuorattu vahtiturkki. Vuorin alahelmaa on paikattu
-            vaaleammalla turkiksella.
-            Guard coat lined with sheep fur. The bottom hem of the mountain is
-          patched with lighter fur.
-          Skyddsrock fodrad med fårpäls. Den nedre fållen på berget är lappad
+          data-fi-alt="Lammasturkiksella vuorattu vahtiturkki. Vuorin alahelmaa on paikattu
+          vaaleammalla turkiksella."
+          data-en-alt="Guard coat lined with sheep fur. The bottom hem of the mountain is
+          patched with lighter fur."
+          data-swe-alt="Skyddsrock fodrad med fårpäls. Den nedre fållen på berget är lappad
           med ljusare päls."
           />
         </button>
@@ -270,9 +270,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/komentosilta-3.jpeg"
-            alt="Kuvassa Tarmon keulamastossa on märssykori, josta tähystettiin.
-            In the picture, there is a marching basket on the Tarmo's foremast, which was sighted.
-            På bilden finns en marschkorg på Tarmos förmast som siktades."
+            data-fi-alt="Kuvassa Tarmon keulamastossa on märssykori, josta tähystettiin."
+            data-en-alt="In the picture, there is a marching basket on the Tarmo's foremast, which was sighted."
+            data-swe-alt=" På bilden finns en marschkorg på Tarmos förmast som siktades."
           />
         </button>
 
@@ -292,9 +292,9 @@
           <img
             class="floor-plan-image"
             src="img/floor-plans/komentosilta.png"
-            alt="Kuva sijainnista laivassa.
-          Picture of the location on the ship.
-          Bild på platsen på fartyget."
+          data-fi-alt="Kuva sijainnista laivassa."
+          data-en-alt="Picture of the location on the ship."
+          data-swe-alt="Bild på platsen på fartyget."
           />
         </button>
 
@@ -312,30 +312,34 @@
 
       <div id="control-buttons" class="controls-hidden">
         <p class="zoom-text" alt="Suurenna tekstiä">
-          <button class="button-zoom-text button-a" style="font-size: small">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '100%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('100%')"
+            class="button-zoom-text button-a"
+            style="font-size: small"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: medium">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '150%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('150%')"
+            class="button-zoom-text button-a"
+            style="font-size: medium"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: large">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '200%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('200%')"
+            class="button-zoom-text button-a"
+            style="font-size: large"
+          >
+            A
           </button>
         </p>
-        <button class="button-previous">Edellinen</button>
-        <button class="button-next">Seuraava</button>
+        <a class="button-next" href="ruorihytti.html">
+          <button >Seuraava</button>
+        </a>
+        <a class="button-previous" href="pelastusvenekansi.html">
+          <button >Edellinen</button>
+        </a>
       </div>
     </aside>
 

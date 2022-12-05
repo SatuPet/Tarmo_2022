@@ -238,9 +238,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/paalystomessi-1.jpeg"
-            alt="Kannu jossa merenkulkuhallituksen tunnus.
-            A jug with the maritime administration's emblem.
-            En kanna med sjöfartsförvaltningens emblem."
+            data-fi-alt="Kannu jossa merenkulkuhallituksen tunnus."
+            data-en-alt="A jug with the maritime administration's emblem."
+            data-swe-alt="En kanna med sjöfartsförvaltningens emblem."
           />
         </button>
 
@@ -252,15 +252,17 @@
           <img
             class="info-image"
             src="img/tarmo-images/paalystomessi-2.jpeg"
-            alt="Kannu.
-          Jug.
-          Kanna."
+            data-fi-alt="Kannu."
+            data-en-alt="Jug."
+            data-swe-alt="Kanna."
           />
         </button>
 
-        <p lang="fi" id="text" style="margin-bottom: 5%">
+        <p lang="fi" id="text" style="margin-bottom: 2%">
           Tarmolla 1950-luvulla työskennellyt messityttö muistelee:
-          <br />Messityttö tarjoili ruuan. Se vei lautaset pöytään ja ruuan, kun
+        </p>
+          <p lang="fi" id="text" style="margin-bottom: 5%; font-family: light-font;">
+            Messityttö tarjoili ruuan. Se vei lautaset pöytään ja ruuan, kun
           ruoka-aika oli. Sitten se odotti keittiössä ja sitten, kun ne oli
           syöneet, ne soitti kelloa, joka kilahti keittiössä. Se meni ottamaan
           astiat pois ja laittoi jälkiruoka-astiat. Niitä passattiin kyllä
@@ -275,9 +277,9 @@
           <img
             class="floor-plan-image"
             src="img/floor-plans/paallystomessi.png"
-            alt="Kannen pohjapiirustus.
-              Deck floor plan.
-              Däcks planlösning."
+            data-fi-alt="Kannen pohjapiirustus."
+            data-en-alt="Deck floor plan."
+            data-swe-alt="Däcks planlösning."
           />
         </button>
       </div>
@@ -295,30 +297,34 @@
 
       <div id="control-buttons" class="controls-hidden">
         <p class="zoom-text" alt="Suurenna tekstiä">
-          <button class="button-zoom-text button-a" style="font-size: small">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '100%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('100%')"
+            class="button-zoom-text button-a"
+            style="font-size: small"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: medium">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '150%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('150%')"
+            class="button-zoom-text button-a"
+            style="font-size: medium"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: large">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '200%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('200%')"
+            class="button-zoom-text button-a"
+            style="font-size: large"
+          >
+            A
           </button>
         </p>
-        <button class="button-previous">Edellinen</button>
-        <button class="button-next">Seuraava</button>
+        <a class="button-next" href="keittio.html">
+          <button>Seuraava</button>
+        </a>
+        <a class="button-previous" href="miehistopesuhuone.html">
+          <button>Edellinen</button>
+        </a>
       </div>
     </aside>
 

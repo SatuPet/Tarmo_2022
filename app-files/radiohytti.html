@@ -261,9 +261,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/radiohytti-1.jpeg"
-            alt="Tarmo pelastamassa kalastajia jäältä.
-            Tarmo rescuing fishermen from the ice.
-            Tarmo räddar fiskare från isen."
+            data-fi-alt="Tarmo pelastamassa kalastajia jäältä."
+            data-en-alt="Tarmo rescuing fishermen from the ice."
+            data-swe-alt="Tarmo räddar fiskare från isen."
           />
         </button>
         <p lang="fi" id="text" style="margin-bottom: 5%">
@@ -278,9 +278,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/radiohytti-2.jpeg"
-            alt="Kalastajien tavaroita lastataan Tarmolle lankonkia pitkin.
-          Fishermen's goods are loaded to Tarmo along the lankonki.
-          Fiskares varor lastas till Tarmo längs lankonki."
+            data-fi-alt="Kalastajien tavaroita lastataan Tarmolle lankonkia pitkin."
+            data-en-alt="Fishermen's goods are loaded to Tarmo along the lankonki."
+            data-swe-alt="Fiskares varor lastas till Tarmo längs lankonki."
           />
         </button>
         <p lang="fi" id="text" style="margin-bottom: 5%">
@@ -325,9 +325,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/radiohytti-3.jpeg"
-            alt="Sähkösanoma.
-        Telegram.
-        Telegram."
+            data-fi-alt="Sähkösanoma."
+            data-en-alt="Telegram."
+            data-swe-alt="Telegram."
           />
         </button>
 
@@ -339,9 +339,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/radiohytti-4.jpeg"
-            alt="Sähkösanoma.
-        Telegram.
-        Telegram."
+            data-fi-alt="Sähkösanoma."
+            data-en-alt="Telegram."
+            data-swe-alt="Telegram."
           />
         </button>
 
@@ -364,9 +364,9 @@
           <img
             class="floor-plan-image"
             src="img/floor-plans/radiohytti.png"
-            alt="Kannen pohjapiirustus.
-            Deck floor plan.
-            Däcks planlösning."
+            data-fi-alt="Kannen pohjapiirustus."
+            data-en-alt="Deck floor plan."
+            data-swe-alt="Däcks planlösning."
           />
         </button>
       </div>
@@ -384,30 +384,34 @@
 
       <div id="control-buttons" class="controls-hidden">
         <p class="zoom-text" alt="Suurenna tekstiä">
-          <button class="button-zoom-text button-a" style="font-size: small">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '100%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('100%')"
+            class="button-zoom-text button-a"
+            style="font-size: small"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: medium">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '150%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('150%')"
+            class="button-zoom-text button-a"
+            style="font-size: medium"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: large">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '200%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('200%')"
+            class="button-zoom-text button-a"
+            style="font-size: large"
+          >
+            A
           </button>
         </p>
-        <button class="button-previous">Edellinen</button>
-        <button class="button-next">Seuraava</button>
+        <a class="button-next" href="miehistopesuhuone.html">
+          <button>Seuraava</button>
+        </a>
+        <a class="button-previous" href="pentteri.html">
+          <button>Edellinen</button>
+        </a>
       </div>
     </aside>
 

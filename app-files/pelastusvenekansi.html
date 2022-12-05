@@ -150,7 +150,7 @@
  <!-- Aside -->
 
 
-        <aside id="aside-window" class="aside">
+  <aside id="aside-window" class="aside">
           <div class="info-flex">
             <h1 lang="fi" alt="" title="Pelastusvenekansi">Pelastusvenekansi</h1>
             <h1 lang="en" alt="" title="lifeboat deck">lifeboat deck</h1>
@@ -172,9 +172,9 @@
               <img
                 class="info-image"
                 src="img/tarmo-images/pelastusvenekansi.jpeg"
-                alt="Konepuolen miehistöä jäänmurtaja Tarmon kannella vuonna 1949. Takana näkyy pelastusvenekansi.
-                The ship's crew on the deck of the icebreaker Tarmo in 1949. The lifeboat deck can be seen behind.
-                Fartygets besättning på isbrytaren Tarmos däck 1949. Livbåtsdäcket syns bakom."
+                data-fi-alt="Konepuolen miehistöä jäänmurtaja Tarmon kannella vuonna 1949. Takana näkyy pelastusvenekansi. "
+              data-en-alt="The ship's crew on the deck of the icebreaker Tarmo in 1949. The lifeboat deck can be seen behind."
+              data-swe-alt="Fartygets besättning på isbrytaren Tarmos däck 1949. Livbåtsdäcket syns bakom."
               />
             </button>
 
@@ -185,6 +185,7 @@
             </p>
 
             <button
+            style="visibility: hidden;"
             id="myBtn"
             class="image-button"
             data-image-source=""
@@ -239,8 +240,12 @@
                 </span>
               </button>
             </p>
-            <button class="button-previous">Edellinen</button>
-            <button class="button-next">Seuraava</button>
+            <a class="button-next" href="komentosilta.html">
+              <button >Seuraava</button>
+            </a>
+            <a class="button-previous" href="saakansi.html">
+              <button >Edellinen</button>
+            </a>
           </div>
         </aside>
 

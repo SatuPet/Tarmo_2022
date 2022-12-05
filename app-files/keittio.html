@@ -185,19 +185,14 @@
         <h1 lang="fi" alt="" title="Keittiö">Keittiö</h1>
         <h1 lang="en" alt="" title="Galley">Galley</h1>
         <h1 lang="swe" alt="" title="Kabyssen">Kabyssen</h1>
-        <button
-          id="info-button"
-          class="black-buttons"
-          alt="Informaatio sivusta"
-        >
-          Info
-        </button>
+
+        <button id="info-button" class="black-buttons" alt="Informaatio sivusta">Info</button>
       </div>
 
       <div id="info-content" class="info-hidden">
-        <h2 lang="fi" class="info-title">Keittiö</h2>
-        <h2 lang="en" class="info-title">Galley</h2>
-        <h2 lang="swe" class="info-title">Kabyssen (köket)</h2>
+        <h2 lang="fi" id="text" class="info-title">Keittiö</h2>
+        <h2 lang="en" id="text" class="info-title">Galley</h2>
+        <h2 lang="swe" id="text" class="info-title">Kabyssen (köket)</h2>
 
         <p lang="fi" id="text" style="margin-bottom: 2%">
           Tarmon keittiössä tehtiin ruokaa noin neljällekymmenelle hengelle.
@@ -236,9 +231,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/keittio-1.jpeg"
-            alt="Tarmon miehistön jäseniä nauttimassa kahvia hytissä.
-            Tarmo crew members enjoying coffee in the cabin.
-            Tarmo-besättningsmedlemmar njuter av kaffe i kabinen."
+            data-fi-alt="Tarmon miehistön jäseniä nauttimassa kahvia hytissä."
+            data-en-alt="Tarmo crew members enjoying coffee in the cabin."
+            data-swe-alt="Tarmo-besättningsmedlemmar njuter av kaffe i kabinen."
           />
         </button>
 
@@ -254,15 +249,17 @@
           <img
             class="info-image"
             src="img/tarmo-images/keittio-2.jpeg"
-            alt="Tarmon emännän työtakki.
-          Tarmo's hostess' work jacket.
-          Tarmos värdinnas arbetsjacka."
+            data-fi-alt="Tarmon emännän työtakki."
+            data-en-alt="Tarmo's hostess' work jacket."
+            data-swe-alt="Tarmos värdinnas arbetsjacka."
           />
         </button>
 
-        <p lang="fi" id="text" style="margin-bottom: 5%">
+        <p lang="fi" id="text" style="margin-bottom: 2%">
           Tarmolla 1950-luvuvulla työskennellyt keittäjä muistelee:
-          <br />Meitä työskenteli yleensä keittiössä kaksi keittäjää. Hyvin
+        </p>
+          <p lang="fi" id="text" style="margin-bottom: 5%; font-family: light-font;">
+            Meitä työskenteli yleensä keittiössä kaksi keittäjää. Hyvin
           siinä mahtui työskentelemään. Ainoa haitta oli, kun siinä oli korkea
           kynnys, niin minulla oli aina jalka säärestä auki. Kun lähti
           keittiöstä muonavarastoon, muisti jalan nostaa, mutta toinen jalka löi
@@ -279,9 +276,9 @@
           <img
             class="floor-plan-image"
             src="img/floor-plans/keittio.png"
-            alt="Kannen pohjapiirustus.
-              Deck floor plan.
-              Däcks planlösning."
+            data-fi-alt="Kannen pohjapiirustus."
+            data-en-alt="Deck floor plan."
+            data-swe-alt="Däcks planlösning."
           />
         </button>
       </div>
@@ -299,30 +296,34 @@
 
       <div id="control-buttons" class="controls-hidden">
         <p class="zoom-text" alt="Suurenna tekstiä">
-          <button class="button-zoom-text button-a" style="font-size: small">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '100%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('100%')"
+            class="button-zoom-text button-a"
+            style="font-size: small"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: medium">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '150%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('150%')"
+            class="button-zoom-text button-a"
+            style="font-size: medium"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: large">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '200%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('200%')"
+            class="button-zoom-text button-a"
+            style="font-size: large"
+          >
+            A
           </button>
         </p>
-        <button class="button-previous">Edellinen</button>
-        <button class="button-next">Seuraava</button>
+        <a class="button-next" href="konetyoverstas.html">
+          <button>Seuraava</button>
+        </a>
+        <a class="button-previous" href="paallystomessi.html">
+          <button>Edellinen</button>
+        </a>
       </div>
     </aside>
 

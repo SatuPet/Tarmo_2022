@@ -246,9 +246,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/keulakonehuone-1.jpeg"
-            alt="Öljykannu.
-            Oilcan.
-            Oljekanna."
+            data-fi-alt="Öljykannu."
+            data-en-alt="Oilcan."
+            data-swe-alt="Oljekanna."
           />
         </button>
 
@@ -260,9 +260,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/keulakonehuone-2.jpeg"
-            alt="Öljykannu.
-          Oilcan.
-          Oljekanna."
+            data-fi-alt="Öljykannu."
+            data-en-alt="Oilcan."
+            data-swe-alt="Oljekanna."
           />
         </button>
 
@@ -274,9 +274,9 @@
           <img
             class="info-image"
             src="img/tarmo-images/keulakonehuone-3.jpeg"
-            alt="Miehet öljyävät keulakonetta.
-            The men are oiling the bow engine.
-            Männen oljar bogmotorn."
+            data-fi-alt="Miehet öljyävät keulakonetta."
+            data-en-alt="The men are oiling the bow engine."
+            data-swe-alt="Männen oljar bogmotorn."
           />
         </button>
 
@@ -294,7 +294,9 @@
           <img
             class="floor-plan-image"
             src="img/floor-plans/keulakonehuone.png"
-            alt="Kannen pohjapiirustus"
+            data-fi-alt="Kannen pohjapiirustus."
+            data-en-alt="Deck floor plan."
+            data-swe-alt="Däcks planlösning."
           />
         </button>
       </div>
@@ -312,30 +314,34 @@
 
       <div id="control-buttons" class="controls-hidden">
         <p class="zoom-text" alt="Suurenna tekstiä">
-          <button class="button-zoom-text button-a" style="font-size: small">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '100%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('100%')"
+            class="button-zoom-text button-a"
+            style="font-size: small"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: medium">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '150%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('150%')"
+            class="button-zoom-text button-a"
+            style="font-size: medium"
+          >
+            A
           </button>
-          <button class="button-zoom-text button-a" style="font-size: large">
-            <span
-              onclick="document.getElementById('text').style.fontSize = '200%' "
-            >
-              A
-            </span>
+          <button
+            onclick="changeTextSize('200%')"
+            class="button-zoom-text button-a"
+            style="font-size: large"
+          >
+            A
           </button>
         </p>
-        <button class="button-previous">Edellinen</button>
-        <button class="button-next">Seuraava</button>
+        <a class="button-next" href="sauna.html">
+          <button>Seuraava</button>
+        </a>
+        <a class="button-previous" href="kattilahuone.html">
+          <button>Edellinen</button>
+        </a>
       </div>
     </aside>
 
