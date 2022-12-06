@@ -57,7 +57,7 @@ header {
   width: 100%;
   position: fixed;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   z-index: 9999;
 }
 
@@ -396,7 +396,7 @@ a {
   text-align: left;
 }
 
-.kissa2.droppi-menu {
+.langButtons.droppi-menu {
   background-color: aqua;
 }
 
@@ -406,11 +406,11 @@ a {
   margin-left: .5rem;
 }
 
-.droppi.active.kissa2 {
+.droppi.active.langButtons {
   margin-left: auto;
 }
 
-.droppi.active.kissa2 > .droppi-menu {
+.droppi.active.langButtons > .droppi-menu {
   width: 100px;
 }
 
@@ -424,11 +424,16 @@ a {
   pointer-events: auto;
 }
 
-#kissa {
-  width: 15px;
+#burgerBars {
+  /* width: 15px;
   height: 15px;
-  background-color: #fff;
+  background-color: #fff; */
   display: none;
+}
+
+.fa-bars {
+  color: #fff;
+  font-size: 1.25rem;
 }
 
 .mobiili {
@@ -437,9 +442,9 @@ a {
   height: auto;
 }
 
-.kissa2 {
+.langButtons {
   margin-left: auto;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 /* SEARCH */
@@ -487,13 +492,13 @@ input{
   display: none;
 }
 
-@media (max-width: 1020px) {
-  .hide {
+@media (max-width: 1100px) {
+  #search {
     display: none;
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 880px) {
   .droppi {
     display: none;
     height: auto;
@@ -508,12 +513,12 @@ input{
     max-height: 420px;
   }
   
-  .droppi.active.kissa2 {
+  .droppi.active.langButtons {
     margin-left: 0;
     left: 0.5rem;
   }
   
-  .droppi.active.kissa2 > .droppi-menu {
+  .droppi.active.langButtons > .droppi-menu {
     width: 80px;
     left: .5rem;
   }
@@ -539,18 +544,14 @@ input{
     height: auto;
   }
   
-  #kissa {
+  #burgerBars {
     display: block;
     position: absolute;
-    right: 1rem;
-    top: 2rem;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: 1rem;
+    right: .75rem;
+    top: 1.5rem;
   }
   
-  .kissa2 {
+  .langButtons {
     margin-left: .5rem;
   }
   

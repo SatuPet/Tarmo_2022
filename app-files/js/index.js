@@ -74,7 +74,7 @@ let activeDropdown;
 let activeButton = e.target.closest('.linkki');
 if (isDropdownButton) {
     activeDropdown = e.target.closest('.droppi');
-    console.log(activeDropdown.classList);
+    //console.log(activeDropdown.classList);
     // toi on se divi
     //activeDropdown.classList.add('active');
     activeDropdown.classList.toggle('active');
@@ -105,11 +105,11 @@ if (e.key === "Escape") {
 });
 
 const hederi = document.querySelector('header');
-const kissa = document.querySelector('#kissa');
-const kissa2 = document.querySelector('.kissa2');
+const burgerBars = document.querySelector('#burgerBars');
+const langButtons = document.querySelector('.langButtons');
 const haku = document.querySelector('#search');
 let active;
-kissa.addEventListener('click', e => {
+burgerBars.addEventListener('click', e => {
 if (active) {
     hederi.classList.remove('mobiili');
     document.querySelectorAll('.droppi').forEach(droppi => {
@@ -122,7 +122,7 @@ if (active) {
 }
 if (!active) {
     hederi.classList.toggle('mobiili');
-    kissa2.classList.remove('hide');
+    langButtons.classList.remove('hide');
     document.querySelectorAll('.droppi').forEach(droppi => {
     droppi.style.display = "flex";
     haku.style.display = "block";

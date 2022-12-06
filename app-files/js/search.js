@@ -25,29 +25,33 @@ const getDatData = (data) => {
         jsonNimet.push(i.name);
         jsonHref.push(i.href);
     }
-    //console.log(jsonNimet);
-    jsonNimetSorted = jsonNimet.sort();
-    //console.log(jsonHref);
-    jsonHrefSorted = jsonHref.sort();
-    console.log(jsonNimetSorted);
-    console.log(jsonHrefSorted);
+    console.log(jsonNimet);
+    //jsonNimetSorted = jsonNimet.sort();
+    console.log(jsonHref);
+    //jsonHrefSorted = jsonHref.sort();
+    //console.log(jsonNimetSorted);
+    //console.log(jsonHrefSorted);
 };
 
 input.addEventListener("keyup", e => {
+    e.preventDefault();
 
     lista.classList.remove("lista-piiloon");
 
     removeElements();
 
-    for (let i of jsonNimetSorted) {
+    let where;
+
+    for (let i of jsonNimet) {
 
         if (i.toLowerCase().startsWith(input.value.toLowerCase()) 
         && input.value != "") {
 
             //paikka listalla, href listalla melkein samalla paikalla vastaava linkki ->HUOM
-            console.log(jsonNimetSorted.indexOf(i), 'hakutulosten paikka listalla');
-            console.log(i);
-            console.log(jsonHrefSorted[jsonNimetSorted.indexOf(i)], 'hakutulosten paikka href listalla');
+            console.log(jsonNimet.indexOf(i), 'i paikka listalla');
+            console.log(jsonHref[jsonNimet.indexOf(i)], 'i paikka href listalla');
+            //console.log(i);
+            //console.log(jsonHref[jsonNimet.indexOf(i)], 'hakutulosten paikka href listalla');
 
             //HUOM! ä ja ö sekottaa järjestyksen, jsonii pitää lisää index minkä perusteella se järjestää
             
@@ -55,7 +59,8 @@ input.addEventListener("keyup", e => {
             listItem.classList.add("list-item");
             listItem.style.cursor = "pointer";
             listItem.setAttribute("onClick", "displayNames('" + i + "', '"+ 
-            jsonHrefSorted[jsonNimetSorted.indexOf(i)] +"')");
+            jsonHref[jsonNimet.indexOf(i)] +"')");
+            where = jsonHref[jsonNimet.indexOf(i)];
 
             let word = i.substring(0,input.value.length);
             word += i.substring(input.value.length);
@@ -64,9 +69,15 @@ input.addEventListener("keyup", e => {
             listItem.innerHTML = word;
             document.querySelector(".list").appendChild(listItem);
         }
-
-
     }
+
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        console.log('pääsin tähän asti');
+        console.log(where);
+        relocate(where);
+    }
+
 });
 
 function displayNames(value, where) {
@@ -76,8 +87,10 @@ function displayNames(value, where) {
     if (lista.innerHTML === "") {
         lista.classList.toggle("lista-piiloon");
     };
+    console.log(where);
+    input.focus();
     //klikkaamisen jälkeen relocate vai vasta enterin jälkeen?
-    relocate(where);
+    //relocate(where);
 }
 
 function removeElements() {

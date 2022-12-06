@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="vendor/reset.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://kit.fontawesome.com/6a3ffa0283.js" crossorigin="anonymous"></script>
   </head>
 
   <!-- Body -->
@@ -35,7 +36,9 @@
           title="Tarmo - Etusivulle"
         />
       </a>
-      <div id="kissa"></div>
+      <div id="burgerBars">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <nav>
         <!-- KANSI -->
         <div class="droppi">
@@ -120,7 +123,7 @@
                 <a href="#">HYTTI</a>
             </div>
         </div> -->
-        <div class="hide droppi kissa2">
+        <div class="hide droppi langButtons">
           <button onclick="setLanguage('fi')" lang="fi" class="linkki">
             FI
           </button>
@@ -136,7 +139,7 @@
             <button onclick="setLanguage('swe')">SWE</button>
           </div>
         </div>
-        <form autocomplete="off">
+        <form autocomplete="off" onsubmit="return false;">
           <input id="search" class="hide" type="text" placeholder="Search..">
           <ul id="results" class="list"></ul>
         </form>
