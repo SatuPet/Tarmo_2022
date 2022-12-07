@@ -108,7 +108,7 @@ let activeDropdown;
 let activeButton = e.target.closest('.linkki');
 if (isDropdownButton) {
     activeDropdown = e.target.closest('.droppi');
-    console.log(activeDropdown.classList);
+    //console.log(activeDropdown.classList);
     // toi on se divi
     //activeDropdown.classList.add('active');
     activeDropdown.classList.toggle('active');
@@ -139,23 +139,27 @@ if (e.key === "Escape") {
 });
 
 const hederi = document.querySelector('header');
-const kissa = document.querySelector('#kissa');
-const kissa2 = document.querySelector('.kissa2');
+const burgerBars = document.querySelector('#burgerBars');
+const langButtons = document.querySelector('.langButtons');
+const haku = document.querySelector('#search');
 let active;
-kissa.addEventListener('click', e => {
+burgerBars.addEventListener('click', e => {
 if (active) {
     hederi.classList.remove('mobiili');
     document.querySelectorAll('.droppi').forEach(droppi => {
         droppi.style.display = "none";
     });
+    haku.style.display = "none";
+
     active = false;
     return;
 }
 if (!active) {
     hederi.classList.toggle('mobiili');
-    kissa2.classList.remove('hide');
+    langButtons.classList.remove('hide');
     document.querySelectorAll('.droppi').forEach(droppi => {
     droppi.style.display = "flex";
+    haku.style.display = "block";
     });
     active = true;
     return;
@@ -297,7 +301,7 @@ languageInit();
       { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.jpg" });
     var geometry = new Marzipano.CubeGeometry(data.levels);
 
-    var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
+    var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize*2, 100*Math.PI/180, 120*Math.PI/180);
     var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
 
     var scene = viewer.createScene({

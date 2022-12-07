@@ -28,15 +28,6 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
-      "linkHotspots": [],
-      "infoHotspots": [
-        {
-          "yaw": 0.5098256119681288,
-          "pitch": 0.005436753165039221,
-          "title": "Testii",
-          "text": "Tähän vielä jotain tekstiä"
-        }
-      ]
     }
   ],
   "name": "Project Title",
