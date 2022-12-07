@@ -184,9 +184,15 @@
 
     <aside id="aside-window" class="aside">
       <div class="info-flex">
-        <h1 lang="fi" alt="" title="Höyryjäänmurtaja Tarmo">Höyryjäänmurtaja Tarmo</h1>
-        <h1 lang="en" alt="" title="Ice breaking steamer Tarmo">Ice breaking steamer Tarmo</h1>
-        <h1 lang="swe" alt="" title="Ångisbrytaren Tarmo">Ångisbrytaren Tarmo</h1>
+        <h1 lang="fi" alt="" title="Höyryjäänmurtaja Tarmo">
+          Höyryjäänmurtaja Tarmo
+        </h1>
+        <h1 lang="en" alt="" title="Ice breaking steamer Tarmo">
+          Ice breaking steamer Tarmo
+        </h1>
+        <h1 lang="swe" alt="" title="Ångisbrytaren Tarmo">
+          Ångisbrytaren Tarmo
+        </h1>
         <button
           id="info-button"
           class="black-buttons"
@@ -196,9 +202,11 @@
         </button>
       </div>
       <div id="info-content" class="info-hidden">
-        <h2 lang="fi" class="info-title">Höyryjäänmurtaja Tarmo</h2>
-        <h2 lang="en" class="info-title">Ice breaking steamer Tarmo</h2>
-        <h2 lang="swe" class="info-title">Ångisbrytaren Tarmo</h2>
+        <h2 lang="fi" id="text" class="info-title">Höyryjäänmurtaja Tarmo</h2>
+        <h2 lang="en" id="text" class="info-title">
+          Ice breaking steamer Tarmo
+        </h2>
+        <h2 lang="swe" id="text" class="info-title">Ångisbrytaren Tarmo</h2>
 
         <p
           role="title"
@@ -206,44 +214,42 @@
           aria-label="teksti versio kaksi"
           id="text"
         >
-          Jäänmurtajan päällikkö oli usein mukana komentosillalla, varsinkin
-          hankalissa paikoissa. Lisäksi tehtäviin kuului muiden muassa kansi- ja
-          talouspuolen väen palkkaaminen, miehistöluettelon ylläpito ja
-          käteiskassan hoito. Aluksen kassassa saattoi olla suuriakin
-          rahasummia, koska palkat maksettiin käteisenä vielä 1960-luvulla. Myös
-          emäntä tarvitsi rahaa elintarvikkeiden ostoon. Jäänmurtajien
-          avustustoiminta oli muuten maksutonta, mutta hinauksesta veloitettiin
-          erikseen ja näistäkin rahoista vastasi päällikkö.
+          tekstiä
         </p>
 
-        <button
-          id="myBtn"
-          class="image-button"
-          data-image-source="img/paalikonhytti.jpeg"
-        >
-          <img
-            class="info-image"
-            src="img/paalikonhytti.jpeg"
-            alt="Kuva työhakemuksesta"
-          />
-        </button>
+        <div class="indexLogos">
+            <img
+              title="Suomen Merimuseo"
+              class="info-image, indexImage"
+              src="img/kansallismuseo_valk.png"
+              data-fi-alt="Suomen Merimuseon logo"
+              data-en-alt="Logo of the Finnish Maritime Museum"
+              data-swe-alt="Finlands sjöfartsmuseums logotyp"
+            />
 
-        <p>
-          Heinäkuulta 1967 on säilynyt tämä työhakemus. Hakemus kannatti, sillä
-          toinen pojista otettiin Tarmolle ”konekalleksi” ja toinen sai paikan
-          jäänmurtaja Sammolta.
-        </p>
+            <img
+              title="Merikeskus Vellamo"
+              class="info-image, indexImage"
+              src="img/Vellamo_logo_valkoinen.png"
+              style="width: 40%;"
+              data-fi-alt="Merikeskus Vellamon logo"
+              data-en-alt="Merikeskus Vellamon logo"
+              data-swe-alt="Merikeskus Vellamo logotyp"
+            />
+ 
+            <img
+              title="Metropolia Ammattikorkeakoulu"
+              class="info-image, indexImage"
+              src="img/metropolia_l_orange.png"
+              data-fi-alt="Metropolian Ammattikorkeakoulun logo"
+              data-en-alt="Logo of Metropolia University of Applied Sciences"
+              data-swe-alt="Logotyp för Metropolia University of Applied Sciences"
+            />
 
-        <button
-          id="myBtn"
-          class="image-button"
-          data-image-source=""
-        >
-          <img
-            class="floor-plan-image"
-            src=""
-            alt=""
-          />
+        </div>
+
+        <button style="display: none;" id="myBtn" class="image-button" data-image-source="">
+          <img class="floor-plan-image" src="" alt="" />
         </button>
       </div>
 
@@ -284,10 +290,14 @@
         </p>
 
         <a class="button-next" href="saakansi.html">
-          <button>Seuraava</button>
+          <button lang="fi">Seuraava</button>
+          <button lang="en">Next</button>
+          <button lang="swe">Nästa</button>
         </a>
         <a class="button-previous" href="sauna.html">
-          <button>Edellinen</button>
+          <button lang="fi">Edellinen</button>
+          <button lang="en">Previous</button>
+          <button lang="swe">Tidigare</button>
         </a>
       </div>
     </aside>

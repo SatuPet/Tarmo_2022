@@ -135,7 +135,7 @@ input{
   }
 
   .aside{
-    width: 15em;
+    width: 18em;
     height: 50px;
     background-color: #101010;
     position: fixed;
@@ -178,6 +178,18 @@ input{
     margin-bottom: 13em;
     display: flex;
     flex-direction: column;
+}
+
+.indexLogos{
+  background-color: #101010;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.indexImage{
+  width: 27%;
+  height: auto;
+  padding: 4%;
 }
 
 .info-image{
