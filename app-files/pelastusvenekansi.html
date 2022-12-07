@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="vendor/reset.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://kit.fontawesome.com/6a3ffa0283.js" crossorigin="anonymous"></script>
   </head>
 
   <!-- Body -->
@@ -25,7 +26,9 @@
         <img class="logo" src="img/Suomen_merimuseo_vaakalogo.png" alt="Suomen merimuseon logo"
         title="Tarmo - Etusivulle">
     </a>
-    <div id="kissa"></div>
+    <div id="burgerBars">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     <nav>
       <!-- KANSI -->
       <div class="droppi">
@@ -98,7 +101,7 @@
                 <a href="#">HYTTI</a>
             </div>
         </div> -->
-      <div class="hide droppi kissa2">
+      <div class="hide droppi langButtons">
           <button onclick="setLanguage('fi')" lang="fi" class="linkki">FI</button>
           <button onclick="setLanguage('en')" lang="en" class="linkki">ENG</button>
           <button onclick="setLanguage('swe')" lang="swe" class="linkki">SWE</button>
@@ -108,9 +111,9 @@
             <button onclick="setLanguage('swe')">SWE</button>
           </div>
       </div>
-      <form autocomplete="off">
-        <input id="search" class="hide kissa3" type="text" placeholder="Search..">
-        <ul class="list"></ul>
+      <form autocomplete="off" onsubmit="return false;">
+        <input id="search" class="hide burgerBars3" type="text" placeholder="Search..">
+        <ul id="results" class="list"></ul>
       </form>
     </nav>
     </header>
