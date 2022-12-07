@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+  <head>
+    <title>Tarmo</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui"
+    />
+    <style>
+      @-ms-viewport {
+        width: device-width;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="vendor/reset.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <!-- Body -->
+  <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+  <body class="single-scene view-control-buttons">
+    <!-- Header -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+    <header>
+      <a href="index.html">
+        <img
+          class="logo"
+          src="img/Suomen_merimuseo_vaakalogo.png"
+          alt="Suomen merimuseon logo"
+          title="Tarmo - Etusivulle"
+        />
+      </a>
+      <div id="kissa"></div>
+      <nav>
+        <!-- KANSI -->
+        <div class="droppi">
+          <button class="linkki">KANSI</button>
+          <div class="droppi-menu">
+            <a href="saakansi.html">Ulko- eli sääkansi</a>
+            <a href="pelastusvenekansi.html">Pelastusvenekansi</a>
+          </div>
+        </div>
+
+        <!-- KANSIRANKENNUS -->
+        <div class="droppi">
+          <button
+            id="otsikko"
+            class="linkki"
+            aria-expanded="false"
+            aria-controls="lista"
+          >
+            KANSIRAKENNUS
+          </button>
+          <div
+            id="lista"
+            role="region"
+            aria-labelledby="otsikko"
+            class="droppi-menu"
+          >
+            <a href="komentosilta.html">Komentosilta</a>
+            <a href="ruorihytti.html">Ruorihytti</a>
+            <a href="karttahytti.html">Karttahytti</a>
+            <a href="paallikontoimisto.html">Päällikön toimisto</a>
+            <a href="paallikonhytti.html">Päällikön hytti</a>
+            <a href="salonki.html">Salonki</a>
+            <a href="emannoitsijanhytti.html">Emännoitsijän hytti</a>
+            <a href="pentteri.html">Pentteri</a>
+            <a href="radiohytti.html">Radiohytti</a>
+          </div>
+        </div>
+
+        <!-- PÄÄKANSI -->
+        <div class="droppi">
+          <button class="linkki">PÄÄKANSI</button>
+          <div class="droppi-menu">
+            <a href="miehistopesuhuone.html">Miehistön pesuhuone</a>
+            <a href="paallystomessi.html">Päällystömessi</a>
+            <a href="keittio.html">Keittiö</a>
+            <a href="konetyoverstas.html">Konetyöverstas</a>
+            <a href="1peramiehenhytti.html">1. perämihen hytti</a>
+            <a href="paallystonkylpyhuone.html">Päällystön kylpyhuone</a>
+            <a href="2konemestarinhytti.html">2. konemestarin hytti</a>
+            <a href="1konemestarinhytti.html">1. konemestarin hytti</a>
+            <a href="konepaallikonhytti.html">Konepäällikön hytti</a>
+            <a href="vararuorihuone.html">Vararuorihuone</a>
+            <a href="donkeymiehenhytti.html">Donkeymiehen hytti</a>
+            <a href="miehistomessi.html">Miehistömessi</a>
+            <a href="talousvarasto.html">Talousvarasto</a>
+            <a href="talousapulaisenhytti.html">Talousapulaisen hytti</a>
+            <a href="miehistohytti2.html">Miehistön hytti 1</a>
+            <a href="maalivarasto.html">Maalivarasto</a>
+            <a href="lyhtyvarasto.html">Lyhtyvarasto</a>
+            <a href="miehistohytti3.html">Miehistön hytti 2</a>
+            <a href="miehistohytti1.html">Miehistön hytti 3</a>
+          </div>
+        </div>
+
+        <!-- KONEKANSI -->
+        <div class="droppi">
+          <button class="linkki">KONEKANSI</button>
+          <div class="droppi-menu">
+            <a href="perakonehuone.html">Peräkonehuone</a>
+            <a href="kattilahuone.html">Kattilahuone</a>
+            <a href="keulakonehuone.html">Keulakonehuone</a>
+            <a href="sauna.html">Sauna</a>
+          </div>
+        </div>
+
+        <!-- TESTINAPPI -->
+        <!-- <div class="droppi">
+            <button class="linkki">TESTINAPPI</button>
+            <div class="droppi-menu"        >
+                <a class="kontentti" href="https://tarmo.kansallismuseo.fi/"  >HYTTI</a>
+                <a href="#">HYTTI</a>
+                <a href="#">HYTTI</a>
+            </div>
+        </div> -->
+        <div class="hide droppi kissa2">
+          <button onclick="setLanguage('fi')" lang="fi" class="linkki">
+            FI
+          </button>
+          <button onclick="setLanguage('en')" lang="en" class="linkki">
+            ENG
+          </button>
+          <button onclick="setLanguage('swe')" lang="swe" class="linkki">
+            SWE
+          </button>
+          <div class="droppi-menu">
+            <button onclick="setLanguage('fi')">FI</button>
+            <button onclick="setLanguage('en')">ENG</button>
+            <button onclick="setLanguage('swe')">SWE</button>
+          </div>
+        </div>
+        <form autocomplete="off">
+          <input
+            id="search"
+            class="hide kissa3"
+            type="text"
+            placeholder="Search.."
+          />
+          <ul class="list"></ul>
+        </form>
+      </nav>
+    </header>
+
+    <!-- Panorama -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+    <div id="pano"></div>
+
+    <div id="sceneList">
+      <ul class="scenes">
+        <a href="javascript:void(0)" class="scene" data-id="7-salonki">
+          <li class="text">1peramiehenhytti.html</li>
+        </a>
+      </ul>
+    </div>
+
+    <!-- Selvitä mitkä koodin kannalta tarpeellisia -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+
+    <a href="javascript:void(0)" id="autorotateToggle">
+      <img class="icon off" src="img/play.png" />
+      <img class="icon on" src="img/pause.png" />
+    </a>
+
+    <a href="javascript:void(0)" id="fullscreenToggle">
+      <img class="icon off" src="img/fullscreen.png" />
+      <img class="icon on" src="img/windowed.png" />
+    </a>
+
+    <a href="javascript:void(0)" id="sceneListToggle">
+      <img class="icon off" src="img/expand.png" />
+      <img class="icon on" src="img/collapse.png" />
+    </a>
+
+    <!-- Aside -->
+
+    <aside id="aside-window" class="aside">
+      <div class="info-flex">
+        <h1 lang="fi" alt="" title="Salonki">Salonki</h1>
+        <h1 lang="en" alt="" title="Saloon">Saloon</h1>
+        <h1 lang="swe" alt="" title="Salongen">Salongen</h1>
+        <button
+          id="info-button"
+          class="black-buttons"
+          alt="Informaatio sivusta"
+        >
+          Info
+        </button>
+      </div>
+
+      <div id="info-content" class="info-hidden">
+        <h2 lang="fi" id="text" class="info-title">Salonki</h2>
+        <h2 lang="en" id="text" class="info-title">Saloon</h2>
+        <h2 lang="swe" id="text" class="info-title">Salongen</h2>
+
+        <p lang="fi" id="text" style="margin-bottom: 2%">
+          Salonki oli laivan arvokkain tila. Se oli Tarmon päällikön ja hänen
+          vieraidensa käytössä. Silloin, kun vieraita ei ollut, päällikkö söi
+          salongissa yksin. Sota-aikana päällikön kanssa salongissa ruokailivat
+          upseerit.
+        </p>
+        <p lang="fi" id="text" style="margin-bottom: 5%">
+          Tarmon salonki oli alun perin laivan peräosassa välikannella, jossa
+          nykyään on päällystön asuintiloja. Peruskorjauksen yhteydessä
+          1950-luvun alussa komentosillan taakse rakennettiin uusi
+          kansirakennus, johon alemmalta kannelta siirrettiin muiden muassa
+          salonki ja päällikön hytti. Nykyisen salongin huonekaluista
+          peilipiironki, ruokapöydät ja tuolit on siirretty vanhasta salongista.
+        </p>
+        <h2 lang="fi" style="margin-bottom: 2%">Tarmon kaappaus 1918</h2>
+        <p lang="fi" id="text" style="margin-bottom: 2%">
+          Sisällissodan aikana alkuvuodesta 1918 Helsinki oli punaisten
+          hallussa, ja kaupungissa piileskeli useita hallituksen senaattoreita.
+          Senaatti oli siirretty Vaasaan, ja sinne pyrki Helsingistä myös
+          senaatin puheenjohtaja P. E. Svinhufvud.
+        </p>
+
+        <p lang="fi" id="text" style="margin-bottom: 5%">
+          Hänen ensimmäinen pakoyrityksensä lentokoneella päättyi pakkolaskuun
+          pian nousun jälkeen. Maaliskuussa uhkarohkean seikkailun päätteeksi
+          sekä Svinhufvud, senaattori Jalmar Castrén että venäläisten hallusta
+          itsenäisyysaktivisteille kaapattu jäänmurtaja Tarmo pääsivät
+          onnistuneesti saksalaisten valtaamaan Tallinnaan.
+        </p>
+
+        <p lang="en" id="text" style="margin-bottom: 2%">
+          The grandest room of the ship, the saloon, was built at the beginning
+          of the 1950s. It was used by the captain and his guests. Food was
+          served from a separate small galley and there is also a 'Dumb Waiter'
+          (a serving lift).
+        </p>
+        <p lang="en" id="text" style="margin-bottom: 5%">
+          On the wall there are two memorial tablets commemorating casualities
+          on board Tarmo in World War 2 bombings (above) and Tarmo's
+          participation in the Finnish civil war 1918 (below).
+        </p>
+
+        <p lang="swe" id="text" style="margin-bottom: 2%">
+          Fartygets elegantaste utrymme, salongen, är inredd på samma sätt som i
+          början av 1950-talet. Salongen användes av kaptenen och hans gäster.
+          För serveringen finns det ett hjälpkök och en serveringshiss mellan
+          däcken.
+        </p>
+        <p lang="swe" id="text" style="margin-bottom: 5%">
+          På väggen finns det en minnestavla för dem som avlidit vid
+          bombardemanget av Tarmo 18.1.1940 och en minnesplatta över
+          medborgarkriget år 1918.
+        </p>
+
+        <button
+          id="myBtn"
+          class="image-button"
+          data-image-source="img/tarmo-images/salonki-1.jpeg"
+        >
+          <img
+            class="info-image"
+            src="img/tarmo-images/salonki-1.jpeg"
+            data-fi-alt="Miehistöä."
+            data-en-alt="The crew."
+            data-swe-alt="Besättningen."
+          />
+        </button>
+
+        <p lang="fi" id="text" style="margin-bottom: 5%">
+          Tarmon kaappareita vuonna 1918.
+        </p>
+
+        <h2 lang="fi" style="margin-bottom: 2%">
+          C. G. Mannerheimin vierailu Ruotsissa 1919
+        </h2>
+        <p lang="fi" id="text" style="margin-bottom: 5%">
+          Helmikuussa 1919 Tarmoon nousi arvovaltainen vieras, valtionhoitaja C.
+          G. Mannerheim, joka teki Tarmon mukana valtiovierailun Ruotsiin ja
+          Tanskaan. Mannerheimin mukaan valtionpäämies ja hänen seurueensa
+          otettiin Tarmolla vastaan ystävällisesti ja juhlallisesti, vaikka alus
+          itse olikin vaatimaton ja sisällissodan kolhima. Tukholmassa
+          Mannerheim vilustui ja lepäsi muutaman päivän Tarmon vierashytissä.
+        </p>
+
+        <h2 lang="fi" style="margin-bottom: 2%">Tarmon pommitus 1940</h2>
+        <p lang="fi" id="text" style="margin-bottom: 5%">
+          Talvisodan aikana 18.1.1940 Tarmo oli juuri kiinnittynyt Kotkan
+          hiililaituriin, ja miehistö oli aloittanut ruokailunsa, kun alukseen
+          osui kaksi vihollisen lentokoneen pudottamaa pommia. Päivä oli Tarmon
+          historian synkin; yhteensä 39 miestä kuoli ja yli 10 haavoittui.
+          Lisäksi aluksen keula tuhoutui välikanteen asti. Runkoon ei kuitenkaan
+          tullut vuotoa eikä laiva uponnut. Salongin seinällä olevassa
+          muistotaulussa on pommituksessa kaatuneiden nimet.
+        </p>
+
+        <button
+          id="myBtn"
+          class="image-button"
+          data-image-source="img/tarmo-images/salonki-2.jpeg"
+        >
+          <img
+            class="info-image"
+            src="img/tarmo-images/salonki-2.jpeg"
+            data-fi-alt="Tarmo pommi-iskujen jälkeen."
+            data-en-alt="Tarmo after the bombings."
+            data-swe-alt="Tarmo efter bombningarna."
+          />
+        </button>
+
+        <p lang="fi" id="text" style="margin-bottom: 5%">
+          Tarmo pommituksen jälkeen Kotkan satamassa.
+        </p>
+
+        <button
+          id="myBtn"
+          class="image-button"
+          data-image-source="img/floor-plans/salonki.png"
+        >
+          <img
+            class="floor-plan-image"
+            src="img/floor-plans/salonki.png"
+            data-fi-alt="Kannen pohjapiirustus."
+            data-en-alt="Deck floor plan."
+            data-swe-alt="Däcks planlösning."
+          />
+        </button>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <button class="close" alt="Sulje ikkuna" title="Sulje ikkuna">
+            <span>&times;</span>
+          </button>
+          <img class="modal-image" src="" alt="" />
+        </div>
+      </div>
+
+      <div id="control-buttons" class="controls-hidden">
+        <p class="zoom-text" alt="Suurenna tekstiä">
+          <button
+            onclick="changeTextSize('100%')"
+            class="button-zoom-text button-a"
+            style="font-size: small"
+          >
+            A
+          </button>
+          <button
+            onclick="changeTextSize('150%')"
+            class="button-zoom-text button-a"
+            style="font-size: medium"
+          >
+            A
+          </button>
+          <button
+            onclick="changeTextSize('200%')"
+            class="button-zoom-text button-a"
+            style="font-size: large"
+          >
+            A
+          </button>
+        </p>
+        <a class="button-next" href="emannoitsijanhytti.html">
+          <button lang="fi">Seuraava</button>
+          <button lang="en">Next</button>
+          <button lang="swe">Nästa</button>
+        </a>
+        <a class="button-previous" href="paallikonhytti.html">
+          <button lang="fi">Edellinen</button>
+          <button lang="en">Previous</button>
+          <button lang="swe">Tidigare</button>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+
+    <main class="main-flex">
+      <div id="panoNav">
+        <a
+          href="javascript:void(0)"
+          id="viewUp"
+          class="viewControlButton viewControlButton-1 tooltip"
+        >
+          <img class="icon" src="img/up.png" />
+          <span class="tooltiptext">Ylös</span>
+        </a>
+        <a
+          href="javascript:void(0)"
+          id="viewDown"
+          class="viewControlButton viewControlButton-2 tooltip"
+        >
+          <img class="icon" src="img/down.png" />
+          <span class="tooltiptext">Alas</span>
+        </a>
+        <a
+          href="javascript:void(0)"
+          id="viewLeft"
+          class="viewControlButton viewControlButton-3 tooltip"
+        >
+          <img class="icon" src="img/left.png" />
+          <span class="tooltiptext">Vasen</span>
+        </a>
+        <a
+          href="javascript:void(0)"
+          id="viewRight"
+          class="viewControlButton viewControlButton-4 tooltip"
+        >
+          <img class="icon" src="img/right.png" />
+          <span class="tooltiptext">Oikea</span>
+        </a>
+        <a
+          href="javascript:void(0)"
+          id="viewIn"
+          class="viewControlButton viewControlButton-5 tooltip"
+        >
+          <img class="icon" src="img/plus.png" />
+          <span class="tooltiptext">Lähennä</span>
+        </a>
+        <a
+          href="javascript:void(0)"
+          id="viewOut"
+          class="viewControlButton viewControlButton-6 tooltip"
+        >
+          <img class="icon" src="img/minus.png" />
+          <span class="tooltiptext">Loitonna</span>
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+    <footer></footer>
+
+    <!-- JS links -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+    <script src="vendor/screenfull.min.js"></script>
+    <script src="vendor/bowser.min.js"></script>
+    <script src="vendor/marzipano.js"></script>
+
+    <script src="./js/data/salonki.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/search.js"></script>
+  </body>
+</html>
