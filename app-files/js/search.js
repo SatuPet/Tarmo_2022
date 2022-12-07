@@ -90,7 +90,7 @@ function displayNames(value, where) {
     console.log(where);
     input.focus();
     //klikkaamisen jälkeen relocate vai vasta enterin jälkeen?
-    //relocate(where);
+    relocate(where);
 }
 
 function removeElements() {
