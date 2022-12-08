@@ -288,6 +288,10 @@ input{
     border: 0;
 }
 
+.button-next:focus{
+  border: 0;
+}
+
 .image-button{
     border: none;
     background-color: transparent;
