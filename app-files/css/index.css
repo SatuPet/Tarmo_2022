@@ -119,7 +119,7 @@ nav{
     display: grid;
     top: 80px;
     transition: all 1s ease;
-    z-index: 9999;
+    z-index: 999;
   }
 
   .aside-open{
