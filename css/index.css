@@ -37,19 +37,19 @@ p{
 
  @font-face {
     font-family: bold-font;
-    src: url(/app-files/fonts/Linotype-Univers-65Bold.otf);
+    src: url(/fonts/Linotype-Univers-65Bold.otf);
   }
   @font-face {
     font-family: roman-font;
-    src: url(/app-files/fonts/Linotype-Univers-55Roman.otf);
+    src: url(/fonts/Linotype-Univers-55Roman.otf);
   }
   @font-face {
     font-family: light-font;
-    src: url(/app-files/fonts/Linotype-Univers-45Light.otf);
+    src: url(/fonts/Linotype-Univers-45Light.otf);
   }
   @font-face {
     font-family: belton-font;
-    src: url(/app-files/fonts/Benton-Cyrillic.otf);
+    src: url(/fonts/Benton-Cyrillic.otf);
   }
 
 header {
