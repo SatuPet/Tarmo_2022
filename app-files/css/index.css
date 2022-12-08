@@ -122,6 +122,14 @@ nav{
     z-index: 999;
   }
 
+  .title-button{
+    cursor: auto;
+  }
+
+  .title-button:hover{
+    border: 0;
+  }
+
   .aside-open{
     width: 30em;
     height: 100vh;
