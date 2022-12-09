@@ -164,13 +164,13 @@ nav{
     flex-direction: column;
 }
 
-.indexLogos{
+.index-logos{
   background-color: #101010;
   display: flex;
   justify-content: space-evenly;
 }
 
-.indexImage{
+.index-image{
   width: 27%;
   height: auto;
   padding: 4%;
