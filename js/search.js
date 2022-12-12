@@ -48,9 +48,16 @@ input.addEventListener("keyup", e => {
 
 });
 
+let bars = document.querySelector('#burgerBars');
+
 document.addEventListener("keyup", e => {
     if (e.key === 'Enter') {
         e.preventDefault();
+        
+        if (e.target === bars) {
+            bars.click();
+        }
+
         if (document.activeElement.innerHTML === "") {
             return; 
         } else if (e.target.matches('.list-item')){
