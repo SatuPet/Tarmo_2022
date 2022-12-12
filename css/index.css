@@ -1,6 +1,7 @@
 
 * {
     margin: 0;
+    /* box-sizing: border-box; */
   }
 
 p{
@@ -30,6 +31,7 @@ p{
  }
  button:hover{
      border: #fff 1px solid;
+     margin: -1px;
  }
  .button-a:focus{
      border-bottom: #fff 2px solid;
@@ -252,6 +254,7 @@ nav{
     background-color: #101010;
     color: #fff;
     border: 0;
+    outline: none;
 }
 
 .button-next{
@@ -263,6 +266,7 @@ nav{
     background-color: #101010;
     color: #fff;
     border: 0;
+    outline: none;
 }
 
 .image-button{
@@ -364,7 +368,7 @@ a {
   color: #fff;
   background-color: #101010;
   /* border-left: 1px solid #fff; */
-  padding: 0;
+  padding: 5px;
   max-height: 620px;
   /* min-width: 120px; */
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
