@@ -43,21 +43,21 @@ if (!controls.classList.contains('controls-hidden')) {
 //Gives correct languages for aside closing button
 function getAsideOpenButtonTexts (languageSettings) {
   let buttonClosedText = "Sulje";
-  let buttonOpenText = "Info";
+  let buttonOpenText = "Lue lisää";
   switch (languageSettings) {
     case 'en':
       buttonClosedText = "Close";
-      buttonOpenText = "Info";
+      buttonOpenText = "Read more";
       break;
 
       case 'swe':
         buttonClosedText = "Stänga";
-        buttonOpenText = "Info";
+        buttonOpenText = "Läs mer";
         break;
   
     default:
       buttonClosedText = "Sulje";
-      buttonOpenText = "Info";
+      buttonOpenText = "Lue lisää";
       break;
   }
   return [buttonOpenText,buttonClosedText]
