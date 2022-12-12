@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+  <head>
+    <title>Tarmo</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui"
+    />
+    <style>
+      @-ms-viewport {
+        width: device-width;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="vendor/reset.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://kit.fontawesome.com/6a3ffa0283.js" crossorigin="anonymous"></script>
+  </head>
+
+  <!-- Body -->
+  <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+  <body class="single-scene view-control-buttons">
+    <!-- Header -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+    <header>
+      <a href="index.html">
+        <img
+          class="logo"
+          src="img/Suomen_merimuseo_vaakalogo.png"
+          alt="Suomen merimuseon logo"
+          title="Tarmo - Etusivulle"
+        />
+      </a>
+      <div id="burgerBars">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <nav>
+        <!-- KANSI -->
+        <div class="droppi">
+          <button class="linkki">KANSI</button>
+          <div class="droppi-menu">
+            <a href="saakansi.html">Ulko- eli sääkansi</a>
+            <a href="pelastusvenekansi.html">Pelastusvenekansi</a>
+          </div>
+        </div>
+
+        <!-- KANSIRANKENNUS -->
+        <div class="droppi">
+          <button
+            id="otsikko"
+            class="linkki"
+            aria-expanded="false"
+            aria-controls="lista"
+          >
+            KANSIRAKENNUS
+          </button>
+          <div
+            id="lista"
+            role="region"
+            aria-labelledby="otsikko"
+            class="droppi-menu"
+          >
+            <a href="komentosilta.html">Komentosilta</a>
+            <a href="ruorihytti.html">Ruorihytti</a>
+            <a href="karttahytti.html">Karttahytti</a>
+            <a href="paallikontoimisto.html">Päällikön toimisto</a>
+            <a href="paallikonhytti.html">Päällikön hytti</a>
+            <a href="salonki.html">Salonki</a>
+            <a href="emannoitsijanhytti.html">Emännoitsijän hytti</a>
+            <a href="pentteri.html">Pentteri</a>
+            <a href="radiohytti.html">Radiohytti</a>
+          </div>
+        </div>
+
+        <!-- PÄÄKANSI -->
+        <div class="droppi">
+          <button class="linkki">PÄÄKANSI</button>
+          <div class="droppi-menu">
+            <a href="miehistopesuhuone.html">Miehistön pesuhuone</a>
+            <a href="paallystomessi.html">Päällystömessi</a>
+            <a href="keittio.html">Keittiö</a>
+            <a href="konetyoverstas.html">Konetyöverstas</a>
+            <a href="1peramiehenhytti.html">1. perämihen hytti</a>
+            <a href="paallystonkylpyhuone.html">Päällystön kylpyhuone</a>
+            <a href="2konemestarinhytti.html">2. konemestarin hytti</a>
+            <a href="1konemestarinhytti.html">1. konemestarin hytti</a>
+            <a href="konepaallikonhytti.html">Konepäällikön hytti</a>
+            <a href="vararuorihuone.html">Vararuorihuone</a>
+            <a href="donkeymiehenhytti.html">Donkeymiehen hytti</a>
+            <a href="miehistomessi.html">Miehistömessi</a>
+            <a href="talousvarasto.html">Talousvarasto</a>
+            <a href="talousapulaisenhytti.html">Talousapulaisen hytti</a>
+            <a href="miehistohytti2.html">Miehistön hytti 1</a>
+            <a href="maalivarasto.html">Maalivarasto</a>
+            <a href="lyhtyvarasto.html">Lyhtyvarasto</a>
+            <a href="miehistohytti3.html">Miehistön hytti 2</a>
+            <a href="miehistohytti1.html">Miehistön hytti 3</a>
+          </div>
+        </div>
+
+        <!-- KONEKANSI -->
+        <div class="droppi">
+          <button class="linkki">KONEKANSI</button>
+          <div class="droppi-menu">
+            <a href="perakonehuone.html">Peräkonehuone</a>
+            <a href="kattilahuone.html">Kattilahuone</a>
+            <a href="keulakonehuone.html">Keulakonehuone</a>
+            <a href="sauna.html">Sauna</a>
+          </div>
+        </div>
+
+
+        <div class="hide droppi langButtons">
+          <button onclick="setLanguage('fi')" lang="fi" class="linkki">
+            FI
+          </button>
+          <button onclick="setLanguage('en')" lang="en" class="linkki">
+            ENG
+          </button>
+          <button onclick="setLanguage('swe')" lang="swe" class="linkki">
+            SWE
+          </button>
+          <div class="droppi-menu">
+            <button onclick="setLanguage('fi')">FI</button>
+            <button onclick="setLanguage('en')">ENG</button>
+            <button onclick="setLanguage('swe')">SWE</button>
+          </div>
+        </div>
+        <form autocomplete="off" onsubmit="return false;">
+          <input
+            id="search"
+            class="hide burgerBars3"
+            type="text"
+            placeholder="Search.."
+          />
+          <ul id="results" class="list"></ul>
+        </form>
+      </nav>
+    </header>
+
+    <!-- Aside -->
+
+    <aside id="aside-window" class="aside">
+      <div class="info-flex">
+        <button lang="fi" aria-label="360 kuvassa näkyy puinen pöytä, jossa karttoja" class="title-button" title="Karttahytti">Karttahytti</button>
+        <button lang="en" aria-label="The 360 ​​image shows a wooden table with maps" class="title-button" title="chart room">Chart room</button>
+        <button lang="swe" aria-label="360-bilden visar ett träbord med kartor" class="title-button" title="karthytt">Karthytt</button>
+
+        <button
+          id="info-button"
+          class="black-buttons"
+          alt="Informaatio sivusta"
+        >
+          Info
+        </button>
+      </div>
+      <div id="info-content" class="info-hidden">
+        <h2 lang="fi" id="text" class="info-title">Karttahytti</h2>
+        <h2 lang="en" id="text" class="info-title">Chart room</h2>
+        <h2 lang="swe" id="text" class="info-title">Karthytt</h2>
+
+        <p lang="en" id="text" style="margin-bottom: 5%">
+          Part of the navigation and radio equipment is located in the wheel
+          house and chart room. During the first years each helm and look-out
+          watch lasted two hours, later only one hour.
+        </p>
+        <p lang="swe" id="text" style="margin-bottom: 5%">
+          I styr- och karthytterna finns fartygets navigerings- och
+          radioapparatur. Under de första åren räckte styr- och utkiksturerna
+          två timmar, under senare år en timme.
+        </p>
+
+        <button
+          id="myBtn"
+          class="image-button"
+          data-image-source="img/tarmo-images/karttahytti-1.jpeg"
+        >
+          <img
+            class="info-image"
+            src="img/tarmo-images/karttahytti-1.jpeg"
+            data-fi-alt="Merikartta jossa näkyy Newcastle upon Tyne jossa Tarmo rakennettu."
+            data-en-alt="Sea map showing Newcastle upon Tyne where Tarmo was built."
+            data-swe-alt="Havskarta som visar Newcastle upon Tyne där Tarmo byggdes."
+          />
+        </button>
+
+        <p lang="fi" id="text" style="margin-bottom: 5%">
+          Yksi Tarmon neljästä vanhimmasta merikartasta on Pohjanmereltä.
+          Kartassa näkyy Newcastle upon Tyne, jossa Tarmo on rakennettu.
+        </p>
+
+        <button
+          id="myBtn"
+          class="image-button"
+          data-image-source="img/tarmo-images/karttahytti-2.jpeg"
+        >
+          <img
+            class="info-image"
+            src="img/tarmo-images/karttahytti-2.jpeg"
+            data-fi-alt="Kuvassa Tarmoaa rakennetaan."
+            data-en-alt="In the picture, Tarmoa is being built."
+            data-swe-alt="På bilden byggs Tarmoa."
+          />
+        </button>
+
+        <p lang="fi" id="text" style="margin-bottom: 5%">
+          Tarmoa rakennetaan telakalla Newcastle upon Tynessä
+          Koillis-Englannissa.
+        </p>
+
+        <button
+          id="myBtn"
+          class="image-button"
+          data-image-source="img/tarmo-images/karttahytti-3.jpeg"
+        >
+          <img
+            class="info-image"
+            src="img/tarmo-images/karttahytti-3.jpeg"
+            data-fi-alt="Kuvassa Lonnan demagnetointi radan kartta."
+            data-en-alt="The picture shows the map of Lonna's demagnetization track."
+            data-swe-alt="Bilden visar kartan över Lonnas avmagnetiseringsspår."
+          />
+        </button>
+
+        <p lang="fi" id="text" style="margin-bottom: 2%">
+          Toisen maailmansodan aikana Neuvostoliitto alkoi käyttää merenpohjaan
+          asetettavia, laivan rungon magneettisuudesta räjähtäviä miinoja.
+          Miinojen vaikutus oli mahdollista mitätöidä poistamalla
+          teräsrunkoisten alusten magneettisuus.
+        </p>
+        <p lang="fi" id="text" style="margin-bottom: 5%">
+          Saksalaiset asiantuntijat rakensivat Suomenlinnan lähistölle, Lonnan
+          saarelle demagnetisointiaseman vuonna 1943. Kuvassa Lonnan
+          demagnetisointiradan kartta.
+        </p>
+
+        <button
+          id="myBtn"
+          class="image-button"
+          data-image-source="img/floor-plans/ruori-ja-karttahytti.png"
+        >
+          <img
+            class="floor-plan-image"
+            src="img/floor-plans/ruori-ja-karttahytti.png"
+            data-fi-alt="Kannen pohjapiirustus."
+            data-en-alt="Deck floor plan."
+            data-swe-alt="Däcks planlösning."
+          />
+        </button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <button class="close" alt="Sulje ikkuna" title="Sulje ikkuna">
+              <span>&times;</span>
+            </button>
+            <img class="modal-image" src="" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div id="control-buttons" class="controls-hidden">
+        <p class="zoom-text" alt="Suurenna tekstiä">
+          <button
+            onclick="changeTextSize('100%')"
+            class="button-zoom-text button-a"
+            style="font-size: small"
+          >
+            A
+          </button>
+          <button
+            onclick="changeTextSize('150%')"
+            class="button-zoom-text button-a"
+            style="font-size: medium"
+          >
+            A
+          </button>
+          <button
+            onclick="changeTextSize('200%')"
+            class="button-zoom-text button-a"
+            style="font-size: large"
+          >
+            A
+          </button>
+        </p>
+        <a class="button-next" href="paallikontoimisto.html">
+          <button lang="fi">Seuraava</button>
+          <button lang="en">Next</button>
+          <button lang="swe">Nästa</button>
+        </a>
+        <a class="button-previous" href="ruorihytti.html">
+          <button lang="fi">Edellinen</button>
+          <button lang="en">Previous</button>
+          <button lang="swe">Tidigare</button>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+
+    <main>
+
+      <!-- Panorama -->
+      <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+      <div id="pano"></div>
+
+      <div id="sceneList">
+        <ul class="scenes">
+          <a href="javascript:void(0)" class="scene" data-id="4-karttahytti">
+            <li class="text">1peramiehenhytti.html</li>
+          </a>
+        </ul>
+      </div>
+
+      <!-- Hidden features -->
+      <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+
+      <a href="javascript:void(0)" id="autorotateToggle">
+        <img class="icon off" src="img/play.png" />
+        <img class="icon on" src="img/pause.png" />
+      </a>
+
+      <a href="javascript:void(0)" id="fullscreenToggle">
+        <img class="icon off" src="img/fullscreen.png" />
+        <img class="icon on" src="img/windowed.png" />
+      </a>
+
+      <a href="javascript:void(0)" id="sceneListToggle">
+        <img class="icon off" src="img/expand.png" />
+        <img class="icon on" src="img/collapse.png" />
+      </a>
+
+      <!-- Panorama nav -->
+      <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+      <div id="panoNav">
+        <a
+          href="javascript:void(0)"
+          id="viewUp"
+          class="viewControlButton viewControlButton-1 tooltip"
+        >
+          <img class="icon" src="img/up.png" />
+          <span class="tooltiptext">Ylös</span>
+        </a>
+        <a
+          href="javascript:void(0)"
+          id="viewDown"
+          class="viewControlButton viewControlButton-2 tooltip"
+        >
+          <img class="icon" src="img/down.png" />
+          <span class="tooltiptext">Alas</span>
+        </a>
+        <a
+          href="javascript:void(0)"
+          id="viewLeft"
+          class="viewControlButton viewControlButton-3 tooltip"
+        >
+          <img class="icon" src="img/left.png" />
+          <span class="tooltiptext">Vasen</span>
+        </a>
+        <a
+          href="javascript:void(0)"
+          id="viewRight"
+          class="viewControlButton viewControlButton-4 tooltip"
+        >
+          <img class="icon" src="img/right.png" />
+          <span class="tooltiptext">Oikea</span>
+        </a>
+        <a
+          href="javascript:void(0)"
+          id="viewIn"
+          class="viewControlButton viewControlButton-5 tooltip"
+        >
+          <img class="icon" src="img/plus.png" />
+          <span class="tooltiptext">Lähennä</span>
+        </a>
+        <a
+          href="javascript:void(0)"
+          id="viewOut"
+          class="viewControlButton viewControlButton-6 tooltip"
+        >
+          <img class="icon" src="img/minus.png" />
+          <span class="tooltiptext">Loitonna</span>
+        </a>
+      </div>
+    </main>
+
+
+
+    <!-- JS links -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------  -->
+    <script src="vendor/screenfull.min.js"></script>
+    <script src="vendor/bowser.min.js"></script>
+    <script src="vendor/marzipano.js"></script>
+
+    <script src="./js/data/karttahytti.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/search.js"></script>
+  </body>
+</html>
