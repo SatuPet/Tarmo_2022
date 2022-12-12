@@ -1,92 +1,92 @@
 /* Hide scrollbar for Chrome, Safari and Opera */
 ::-webkit-scrollbar {
   display: none;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
- }
-  
- html, body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
- }
-  
- body {
-  height: auto;
-  width: auto;
- }
-  
- main {
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
   height: 100%;
   width: 100%;
   margin-top: 80px;
- }
-  
- .mainpageImg {
+}
+
+.mainpageImg {
   height: 100%;
   background-position: center center;
   width: 100%;
   background-size: cover;
   background-image: url("/img/tarmo-images/Tarmo_Topi_Leikas.jpg");
- }
-  
- #pano {
+}
+
+#pano {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
- }
-  
- /* Ominaisuuksia piilossa */
- /* ---------------------------------------------------------------------------------------------------------------------------- */
-  
- .scene {
+}
+
+/* Ominaisuuksia piilossa */
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+.scene {
   display: none;
- }
-  
- #autorotateToggle {
+}
+
+#autorotateToggle {
   display: none;
- }
-  
- #fullscreenToggle {
+}
+
+#fullscreenToggle {
   display: none;
- }
-  
- #sceneListToggle {
+}
+
+#sceneListToggle {
   display: none;
- }
-  
-  
- /* View control buttons */
- /* ---------------------------------------------------------------------------------------------------------------------------- */
-  
- .viewControlButton {
+}
+
+/* View control buttons */
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+.viewControlButton {
   position: absolute;
   margin: auto;
   width: 8%;
   padding-top: 8%;
   background-color: rgba(40, 40, 40, 0);
   border-radius: 2px;
- }
-  
- .viewControlButton:hover {
+}
+
+.viewControlButton:hover {
   box-shadow: 0px 0px 20px 2px#fff;
- }
-  
- body.view-control-buttons .viewControlButton {
+}
+
+body.view-control-buttons .viewControlButton {
   display: block;
- }
-  
- .viewControlButton .icon {
+}
+
+.viewControlButton .icon {
   position: absolute;
   top: 10%;
   left: 10%;
   width: 80%;
-  padding-bottom: 80%
- }
-  
- #panoNav {
+  padding-bottom: 80%;
+}
+
+#panoNav {
   display: block;
   position: absolute;
   left: 50px;
@@ -95,94 +95,89 @@
   padding-top: 15%;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.4);
-  z-index: 98; 
- }
-  
- body.view-control-buttons .viewControlButton {
+  z-index: 98;
+}
+
+body.view-control-buttons .viewControlButton {
   border-radius: 50%;
   transform: translate(-50%, 50%);
   width: 30%;
   padding-top: 30%;
- }
-  
- .viewControlButton-1 {
+}
+
+.viewControlButton-1 {
   left: 50%;
   top: -10%;
- }
- .viewControlButton-2 {
+}
+.viewControlButton-2 {
   left: 50%;
   top: 50%;
- }
- .viewControlButton-3 {
+}
+.viewControlButton-3 {
   left: 20%;
   top: 20%;
- }
- .viewControlButton-4 {
+}
+.viewControlButton-4 {
   left: 80%;
   top: 20%;
- }
- .viewControlButton-5 {
+}
+.viewControlButton-5 {
   left: 110%;
   top: -20%;
- }
- .viewControlButton-6 {
+}
+.viewControlButton-6 {
   left: 110%;
   top: 60%;
- }
-  
-  
- /* Button tooltips */
- /* ---------------------------------------------------------------------------------------------------------------------------- */
-  
-  
- .tooltip .tooltiptext {
+}
+
+/* Button tooltips */
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+.tooltip .tooltiptext {
   visibility: hidden;
   width: 100%;
   color: #fff;
   border-radius: 50px;
-  
+
   /* Position the tooltip */
   position: absolute;
   top: -60%;
   left: 0;
   text-align: center;
- }
-  
- .tooltip:hover .tooltiptext {
+}
+
+.tooltip:hover .tooltiptext {
   visibility: visible;
   z-index: 999;
- }
-  
- .tooltip:focus {
+}
+
+.tooltip:focus {
   outline: 2px solid white;
- }
-  
-  
-  
- /* Move controls when width is too small (mobile) */
- /* ---------------------------------------------------------------------------------------------------------------------------- */
-  
- @media (min-width: 1000px) {
+}
+
+/* Move controls when width is too small (mobile) */
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 1000px) {
   #panoNav {
     width: 10%;
     padding-top: 10%;
   }
- }
-  
- @media (min-width: 1920px) {
+}
+
+@media (min-width: 1920px) {
   #panoNav {
     width: 8%;
     padding-top: 8%;
   }
- }
-  
- @media (max-width: 800px) {
-  
+}
+
+@media (max-width: 800px) {
   #panoNav {
     width: 20%;
     padding-top: 20%;
   }
-  
+
   body.view-control-buttons .viewControlButton {
     position: absolute;
     border-radius: 50%;
@@ -190,8 +185,4 @@
     width: 30%;
     padding-top: 30%;
   }
-  
- }
-  
- 
- 
+}
