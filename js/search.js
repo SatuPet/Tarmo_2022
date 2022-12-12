@@ -4,7 +4,7 @@ let jsonHref = [];
 let input = document.getElementById("search");
 let lista = document.getElementById("results");
 
-if (lista.innerHTML === "") {
+if (lista.innerHTML === "" || input.value === "") {
     lista.classList.toggle("lista-piiloon");
 };
 
@@ -63,6 +63,10 @@ document.addEventListener("keyup", e => {
         } else if (e.target.matches('.list-item')){
             relocate(jsonHref[jsonNimet.indexOf(document.activeElement.innerHTML)]);
         }
+    }
+
+    if (e.key === 'Backspace' || input.value === "") {
+        lista.classList.toggle("lista-piiloon");
     }
 });
 
