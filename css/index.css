@@ -579,6 +579,7 @@ input{
     right: .75rem;
     top: 1.6rem;
     margin-right: 1rem;
+    cursor: pointer;
   }
   
   .langButtons {
