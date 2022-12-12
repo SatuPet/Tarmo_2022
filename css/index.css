@@ -1,9 +1,11 @@
 
 * {
     margin: 0;
-    /* box-sizing: border-box; */
+    
   }
-
+  #info-content {
+    scrollbar-width: none;
+  }
 p{
     color: #101010;
     font-family: roman-font;
@@ -166,6 +168,7 @@ nav{
     display: flex;
     flex-direction: column;
 }
+
 
 .index-logos{
   display: flex;
@@ -406,6 +409,10 @@ a {
   padding: 0.75rem;
 }
 
+.droppi-menu > a:hover {
+  text-decoration: underline;
+}
+
 .droppi-menu > button {
   font-family: light-font;
   font-size: 1rem;
@@ -501,10 +508,11 @@ input{
 
 .list-item {
   padding: .5rem;
+
 }
 
 .list-item:hover {
-  background-color: #888
+  text-decoration: underline;
 }
 
 #search {
@@ -592,4 +600,11 @@ input{
     
   }
   
+}
+
+@media (max-width: 370px) {
+  .logo{
+    width: 80%;
+    height: auto;
+  }
 }
