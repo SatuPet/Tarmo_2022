@@ -53,7 +53,7 @@ let bars = document.querySelector('#burgerBars');
 document.addEventListener("keyup", e => {
     if (e.key === 'Enter') {
         e.preventDefault();
-        
+
         if (e.target === bars) {
             bars.click();
         }
@@ -85,6 +85,5 @@ function removeElements() {
 }
 
 const relocate = (where) => {
-    console.log(where, 'relocate funkt sisältä');
     location.replace(`./${where}`);
 };
