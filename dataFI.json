@@ -66,6 +66,73 @@
     {
         "name": "Päällystön kylpyhuone",
         "href": "paallystonkylpyhuone.html"
+    },
+    {
+        "name": "2. konemestarin hytti",
+        "href": "2konemestarinhytti.html"
+    },
+    {
+        "name": "1. konemestarin hytti",
+        "href": "1konemestarinhytti.html"
+    },
+    {
+        "name": "Konepäällikön hytti",
+        "href": "konepaallikonhytti.html"
+    },
+    {
+        "name": "Vararuorihuone",
+        "href": "vararuorihuone.html"
+    },
+    {
+        "name": "Donkeymiehen hytti",
+        "href": "donkeymiehenhytti.html"
+    },
+    {
+        "name": "Miehistömessi",
+        "href": "miehistomessi.html"
+    },
+    {
+        "name": "Talousvarasto",
+        "href": "talousvarasto.html"
+    },
+    {
+        "name": "Talousapulaisen hytti",
+        "href": "talousapulaisenhytti.html"
+    },
+    {
+        "name": "Miehistön hytti 1",
+        "href": "miehistohytti2.html"
+    },
+    {
+        "name": "Maalivarasto",
+        "href": "maalivarasto.html"
+    },
+    {
+        "name": "Lyhtyvarasto",
+        "href": "lyhtyvarasto.html"
+    },
+    {
+        "name": "Miehistön hytti 2",
+        "href": "miehistohytti3.html"
+    },
+    {
+        "name": "Miehistön hytti 3",
+        "href": "miehistohytti1.html"
+    },
+    {
+        "name": "Peräkonehuone",
+        "href": "perakonehuone.html"
+    },
+    {
+        "name": "Kattilahuone",
+        "href": "kattilahuone.html"
+    },
+    {
+        "name": "Keulakonehuone",
+        "href": "keulakonehuone.html"
+    },
+    {
+        "name": "Sauna",
+        "href": "sauna.html"
     }
-    
 ]

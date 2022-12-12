@@ -12,8 +12,9 @@ body {
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  height: auto;
+  width: auto;
+  background-color: #101010;
 }
 
 main {
@@ -23,11 +24,9 @@ main {
 }
 
 .mainpageImg {
-  height: 100%;
-  background-position: center center;
-  width: 100%;
-  background-size: cover;
-  background-image: url("/img/tarmo-images/Tarmo_Topi_Leikas.jpg");
+  height: auto;
+  width: 100vw;
+
 }
 
 #pano {

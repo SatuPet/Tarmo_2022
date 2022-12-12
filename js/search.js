@@ -1,18 +1,8 @@
-let nimiLista = ['Komentosilta','Ruorihytti','Karttahytti','Päällikön toimisto',
-'Päällikön hytti','Salonki','Emännoitsijän hytti','Pentteri','Radiohytti',
-'Miehistön pesuhuone','Päällystömessi','Keittiö','Konetyöverstas'];
-
 let jsonNimet = [];
-let jsonNimetSorted = [];
 let jsonHref = [];
-let jsonHrefSorted = [];
-
-let nimetSorted = nimiLista.sort();
-//console.log(nimetSorted);
 
 let input = document.getElementById("search");
 let lista = document.getElementById("results");
-console.log(lista.innerHTML === "");
 
 if (lista.innerHTML === "") {
     lista.classList.toggle("lista-piiloon");
@@ -25,12 +15,6 @@ const getDatData = (data) => {
         jsonNimet.push(i.name);
         jsonHref.push(i.href);
     }
-    console.log(jsonNimet);
-    //jsonNimetSorted = jsonNimet.sort();
-    console.log(jsonHref);
-    //jsonHrefSorted = jsonHref.sort();
-    //console.log(jsonNimetSorted);
-    //console.log(jsonHrefSorted);
 };
 
 input.addEventListener("keyup", e => {
@@ -40,56 +24,48 @@ input.addEventListener("keyup", e => {
 
     removeElements();
 
-    let where;
-
     for (let i of jsonNimet) {
 
         if (i.toLowerCase().startsWith(input.value.toLowerCase()) 
         && input.value != "") {
-
-            //paikka listalla, href listalla melkein samalla paikalla vastaava linkki ->HUOM
-            console.log(jsonNimet.indexOf(i), 'i paikka listalla');
-            console.log(jsonHref[jsonNimet.indexOf(i)], 'i paikka href listalla');
-            //console.log(i);
-            //console.log(jsonHref[jsonNimet.indexOf(i)], 'hakutulosten paikka href listalla');
-
-            //HUOM! ä ja ö sekottaa järjestyksen, jsonii pitää lisää index minkä perusteella se järjestää
             
             let listItem = document.createElement("li");
             listItem.classList.add("list-item");
             listItem.style.cursor = "pointer";
+            listItem.tabIndex = 0;
             listItem.setAttribute("onClick", "displayNames('" + i + "', '"+ 
             jsonHref[jsonNimet.indexOf(i)] +"')");
             where = jsonHref[jsonNimet.indexOf(i)];
 
             let word = i.substring(0,input.value.length);
             word += i.substring(input.value.length);
-            console.log(word, 'word alkuperäsestä koodista');
 
             listItem.innerHTML = word;
             document.querySelector(".list").appendChild(listItem);
         }
-    }
 
-    if (e.key === 'Enter') {
-        e.preventDefault();
-        console.log('pääsin tähän asti');
-        console.log(where);
-        relocate(where);
     }
 
 });
 
+document.addEventListener("keyup", e => {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        if (document.activeElement.innerHTML === "") {
+            return; 
+        } else if (e.target.matches('.list-item')){
+            relocate(jsonHref[jsonNimet.indexOf(document.activeElement.innerHTML)]);
+        }
+    }
+});
+
 function displayNames(value, where) {
     input.value = value;
-    //console.log(value, 'value ja where', where);
     removeElements();
     if (lista.innerHTML === "") {
         lista.classList.toggle("lista-piiloon");
     };
-    console.log(where);
     input.focus();
-    //klikkaamisen jälkeen relocate vai vasta enterin jälkeen?
     relocate(where);
 }
 

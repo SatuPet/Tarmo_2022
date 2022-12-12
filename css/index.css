@@ -515,9 +515,7 @@ input{
   #search {
     display: none;
   }
-}
 
-@media (max-width: 880px) {
   .droppi {
     display: none;
     height: auto;
@@ -568,6 +566,7 @@ input{
     position: absolute;
     right: .75rem;
     top: 1.6rem;
+    margin-right: 1rem;
   }
   
   .langButtons {
@@ -582,6 +581,11 @@ input{
     top: 100%;
     width: calc(200px + .5rem);
     margin-left: .5rem;
+  }
+
+  .mainpageImg {
+    margin-top: 150px;
+    
   }
   
 }
