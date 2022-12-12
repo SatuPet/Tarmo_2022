@@ -173,13 +173,13 @@ nav{
 }
 
 .index-logos{
-  background-color: #101010;
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 5%;
 }
 
 .index-image{
-  width: 27%;
+  width: 17%;
   height: auto;
   padding: 4%;
 }
