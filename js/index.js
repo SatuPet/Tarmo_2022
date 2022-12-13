@@ -188,6 +188,13 @@ const showLanguageElements = (language) => {
     image.alt = altText
   })
 
+  document.querySelectorAll('input')
+  .forEach(input => {
+    let placeholderText = input.getAttribute(`data-${language}-placeholder`)
+    input.placeholder = placeholderText
+  })
+
+
   // Changes the aside button language
   let closedState = sideMenuOpen ? 1 : 0;
   let buttonText = getAsideOpenButtonTexts(language)[closedState];
