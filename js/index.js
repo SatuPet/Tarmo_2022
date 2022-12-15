@@ -387,6 +387,8 @@ languageInit();
     });
   });
 
+  viewer.controls().enableMethodGroup('arrowKeys');
+
   // DOM elements for view controls.
   var viewUpElement = document.querySelector('#viewUp');
   var viewDownElement = document.querySelector('#viewDown');
